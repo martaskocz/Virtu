@@ -3,7 +3,151 @@
   padding: 0;
   width: 100%; }
 
-.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-12, .row {
+.col-xs-1 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-1 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-1 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-2 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-2 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-2 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-3 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-3 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-3 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-4 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-4 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-4 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-5 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-5 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-5 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-6 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-6 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-6 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-7 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-7 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-7 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-8 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-8 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-8 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-9 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-9 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-9 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-10 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-10 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-10 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-11 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-11 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-11 {
+  margin: 0;
+  padding: 0; }
+
+.col-xs-12 {
+  margin: 0;
+  padding: 0; }
+
+.col-sm-12 {
+  margin: 0;
+  padding: 0; }
+
+.col-md-12 {
+  margin: 0;
+  padding: 0; }
+
+.row {
   margin: 0;
   padding: 0; }
 
@@ -14,6 +158,18 @@
 
 .h100 {
   height: 100%; }
+
+.inner1 {
+  padding-bottom: 3px; }
+
+.inner2 {
+  padding: 3px 3px 3px 0; }
+
+.inner3 {
+  padding: 3px 0 3px 3px; }
+
+.inner4 {
+  padding: 3px; }
 
 .positionCenter {
   left: 0;
@@ -26,14 +182,7 @@
 .hide {
   display: none; }
 
-@media (min-width: 992px) {
-  html {
-    display: table;
-    margin: auto;
-    height: 100%; } }
-html body {
-  overflow-x: hidden;
-  /* -----------------------GLOWNA------------------------ */
+html {
   /* --------------------KONIEC glowna---------------------*/
   /* ---------------------O FIRMIE------------------------ */
   /* ------------------KONIEC o firmie---------------------*/
@@ -48,268 +197,288 @@ html body {
   /* -----------------------NAGRODY----------------------- */
   /* --------------------KONIEC nagrody--------------------*/ }
   @media (min-width: 992px) {
-    html body {
-      width: 992px;
-      height: 100%;
-      display: table-cell;
-      vertical-align: middle; } }
-  html body nav {
-    margin: 0 auto;
-    border-bottom: solid 2px #e7e7e7;
-    height: 70px; }
-    html body nav .logo {
-      position: absolute;
-      transform: translate(-50%, 0%);
-      top: 0;
-      left: 50%;
-      z-index: 100; }
-    html body nav .menubar {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 95%; }
-  html body .rozwijaneMenu {
-    height: 277px;
-    background-image: url("../img/menu/Tlo.png"); }
-    html body .rozwijaneMenu .liniaMenu {
-      position: absolute;
-      right: 0;
-      top: 56px; }
-    html body .rozwijaneMenu .menuLeft img {
-      position: absolute;
-      transform: translate(262px, 56px);
-      top: 0;
-      left: 0; }
-    html body .rozwijaneMenu .menuLeft table {
-      width: 70%;
-      position: absolute;
-      transform: translate(159px, 113px);
-      top: 0;
-      left: 0; }
-      html body .rozwijaneMenu .menuLeft table td {
-        font-size: 11px;
-        padding: 4px;
-        text-align: center; }
-    html body .rozwijaneMenu .menuRight img {
-      position: absolute;
-      transform: translate(112px, 56px);
-      top: 0;
-      left: 0; }
-    html body .rozwijaneMenu .menuRight table {
-      width: 70%;
-      position: absolute;
-      transform: translate(25px, 113px);
-      top: 0;
-      left: 0; }
-      html body .rozwijaneMenu .menuRight table td {
-        font-size: 11px;
-        padding: 4px;
-        text-align: center; }
-  html body .sec_line .inner1 {
-    height: 269px;
-    padding: 0 3px 3px 0; }
-    html body .sec_line .inner1 .ofirmie {
-      background-image: url("../img/ofirmie.png");
-      background-size: cover;
-      height: 100%; }
-      html body .sec_line .inner1 .ofirmie .helper {
-        display: inline-block;
+    html {
+      display: table;
+      margin: auto;
+      height: 100%; } }
+  html body {
+    overflow-x: hidden;
+    /* -----------------------GLOWNA------------------------ */ }
+    @media (min-width: 992px) {
+      html body {
+        width: 992px;
         height: 100%;
-        vertical-align: middle; }
-      html body .sec_line .inner1 .ofirmie img {
-        padding-left: 17px;
-        padding-bottom: 18px;
-        vertical-align: bottom; }
-  html body .sec_line .inner2 {
-    height: 269px;
-    padding: 0 0 3px 3px; }
-    html body .sec_line .inner2 .misjafirmy {
-      height: 100%;
-      text-align: center; }
-      html body .sec_line .inner2 .misjafirmy .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-      html body .sec_line .inner2 .misjafirmy img {
-        vertical-align: middle; }
-  html body .third_line .hconst {
-    height: 490px; }
-  html body .third_line .h50 {
-    height: 50%; }
-  html body .third_line .inner3 {
-    padding: 3px 3px 3px 0;
-    height: 100%; }
-    html body .third_line .inner3 .produkty img:nth-child(1) {
-      padding-left: 16px;
-      padding-top: 17px;
-      vertical-align: top;
-      left: 0; }
-    html body .third_line .inner3 .produkty img:nth-child(2) {
-      position: absolute;
-      transform: translate(0, 71px);
-      left: 17px; }
-    html body .third_line .inner3 .produkty p {
-      font-size: 14px;
-      color: #706f6f;
-      text-transform: uppercase;
-      position: absolute;
-      transform: translate(87px, 94px);
-      right: 315px;
-      top: 0;
-      left: 0;
-      z-index: 1; }
-    html body .third_line .inner3 .produkty img:nth-child(4) {
-      position: absolute;
-      transform: translate(0, 0);
-      right: 1%; }
-  html body .third_line .inner3 .kariera {
-    background-image: url(../img/kariera_tlo.png);
-    background-size: cover;
-    height: 100%; }
-    html body .third_line .inner3 .kariera img {
-      padding-left: 18px;
-      padding-top: 17px;
-      vertical-align: top;
-      left: 0; }
-    html body .third_line .inner3 .kariera .kariera_text {
-      color: white;
-      font-family: Verdana, sans-serif;
-      padding-left: 18px;
-      padding-right: 78px;
-      padding-bottom: 8px; }
-      html body .third_line .inner3 .kariera .kariera_text h4 {
-        font-size: 14px;
-        margin: 8px 0 3px 0; }
-        html body .third_line .inner3 .kariera .kariera_text h4:first-of-type {
-          margin-top: 34px; }
-      html body .third_line .inner3 .kariera .kariera_text p {
-        font-size: 10px; }
-  html body .third_line .inner4 {
-    padding: 3px; }
-    html body .third_line .inner4 .aktualnosci {
-      background-color: #e7e7e7;
-      height: 100%;
-      padding-left: 13px;
-      color: #706f6f; }
-      html body .third_line .inner4 .aktualnosci img {
-        padding-top: 15px; }
-      html body .third_line .inner4 .aktualnosci h4 {
-        font-size: 15px;
-        padding-right: 16px; }
-        html body .third_line .inner4 .aktualnosci h4:first-of-type {
-          margin-top: 32px; }
-      html body .third_line .inner4 .aktualnosci p {
-        font-size: 11px;
-        padding-right: 16px; }
-  html body .third_line .inner4 .post {
-    position: absolute;
-    transform: translate(3px, 37px);
-    left: 0;
-    z-index: -100; }
-  html body .third_line a {
-    text-decoration: none; }
-    html body .third_line a .inner5 {
-      height: 99%;
-      margin: 3px 0 3px 3px;
-      border: 6px solid #e7e7e7; }
-      html body .third_line a .inner5 img:first-of-type {
-        padding-top: 10px;
-        padding-left: 11px; }
-      html body .third_line a .inner5 h4 {
-        font-size: 15px;
-        padding-left: 11px;
-        color: #706f6f;
-        margin-top: 24px;
-        margin-bottom: 0; }
-      html body .third_line a .inner5 p {
-        font-size: 11px;
-        padding-left: 11px;
-        color: #706f6f; }
-      html body .third_line a .inner5 .nagroda {
+        display: table-cell;
+        vertical-align: middle; } }
+    html body nav {
+      margin: 0 auto;
+      border-bottom: solid 2px #e7e7e7;
+      height: 70px; }
+      html body nav .logo {
         position: absolute;
-        transform: translate(-3px, 110px);
-        z-index: -100;
+        transform: translate(-50%, 0%);
+        top: 0;
+        left: 50%;
+        z-index: 100; }
+      html body nav .menubar {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 95%; }
+    html body .rozwijaneMenu {
+      height: 277px;
+      background-image: url("../img/menu/Tlo.png"); }
+      html body .rozwijaneMenu .liniaMenu {
+        position: absolute;
+        right: 0;
+        top: 56px; }
+      html body .rozwijaneMenu .menuLeft img {
+        position: absolute;
+        transform: translate(-50%, 56px);
+        top: 0;
+        left: 55%; }
+      html body .rozwijaneMenu .menuLeft table {
+        width: 70%;
+        position: absolute;
+        transform: translate(-30px, 113px);
         top: 0;
         right: 0; }
-  html body .fourth_line .inner3 {
-    height: 241px;
-    width: 406px;
-    margin: 3px 3px 3px 0; }
-    html body .fourth_line .inner3 iframe {
+        html body .rozwijaneMenu .menuLeft table td {
+          font-size: 11px;
+          padding: 4px;
+          text-align: center; }
+      html body .rozwijaneMenu .menuRight img {
+        position: absolute;
+        transform: translate(112px, 56px);
+        top: 0;
+        left: 0; }
+      html body .rozwijaneMenu .menuRight table {
+        width: 70%;
+        position: absolute;
+        transform: translate(25px, 113px);
+        top: 0;
+        left: 0; }
+        html body .rozwijaneMenu .menuRight table td {
+          font-size: 11px;
+          padding: 4px;
+          text-align: center; }
+    html body .sec_line .ofirmie {
+      height: 269px; }
+      html body .sec_line .ofirmie .ofirmieIn {
+        background-image: url("../img/ofirmie.png");
+        background-size: cover;
+        height: 100%; }
+        html body .sec_line .ofirmie .ofirmieIn .helper {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle; }
+        html body .sec_line .ofirmie .ofirmieIn img {
+          padding-left: 17px;
+          padding-bottom: 18px;
+          vertical-align: bottom; }
+    html body .sec_line .misjafirmy {
+      height: 269px; }
+      html body .sec_line .misjafirmy .misjafirmyIn {
+        height: 100%;
+        text-align: center; }
+        html body .sec_line .misjafirmy .misjafirmyIn .helper {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle; }
+        html body .sec_line .misjafirmy .misjafirmyIn img {
+          vertical-align: middle; }
+    html body .hconst {
+      height: 490px; }
+    html body .h50 {
+      height: 50%; }
+    html body .inner2 {
       height: 100%; }
-  html body .fourth_line .inner5 {
-    height: 100%;
-    margin: 3px 0 3px 3px; }
-    html body .fourth_line .inner5 .historia {
+      html body .inner2 .produkty img:nth-child(1) {
+        padding-left: 16px;
+        padding-top: 17px;
+        vertical-align: top;
+        left: 0; }
+      html body .inner2 .produkty img:nth-child(2) {
+        position: absolute;
+        transform: translate(0, 71px);
+        left: 17px; }
+      html body .inner2 .produkty p {
+        font-size: 14px;
+        color: #706f6f;
+        text-transform: uppercase;
+        position: absolute;
+        transform: translate(87px, 94px);
+        right: 315px;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+        @media (max-width: 500px) {
+          html body .inner2 .produkty p {
+            display: none; } }
+      html body .inner2 .produkty img:nth-child(4) {
+        position: absolute;
+        transform: translate(0, 0);
+        right: 1%;
+        z-index: -1; }
+    html body .inner2 .kariera {
+      background-image: url(../img/kariera_tlo.png);
+      background-size: cover;
+      height: 100%; }
+      html body .inner2 .kariera img {
+        padding-left: 18px;
+        padding-top: 17px;
+        vertical-align: top;
+        left: 0; }
+      html body .inner2 .kariera .kariera_text {
+        color: white;
+        font-family: Verdana, sans-serif;
+        padding-left: 18px;
+        padding-right: 78px;
+        padding-bottom: 8px; }
+        html body .inner2 .kariera .kariera_text h4 {
+          font-size: 14px;
+          margin: 8px 0 3px 0; }
+          html body .inner2 .kariera .kariera_text h4:first-of-type {
+            margin-top: 34px; }
+        html body .inner2 .kariera .kariera_text p {
+          font-size: 10px; }
+    html body .inner4 {
+      padding: 3px; }
+      html body .inner4 .aktualnosci {
+        background-color: #e7e7e7;
+        height: 100%;
+        padding-left: 13px;
+        color: #706f6f; }
+        html body .inner4 .aktualnosci img {
+          padding-top: 15px; }
+        html body .inner4 .aktualnosci h4 {
+          font-size: 15px;
+          padding-right: 16px; }
+          html body .inner4 .aktualnosci h4:first-of-type {
+            margin-top: 32px; }
+        html body .inner4 .aktualnosci p {
+          font-size: 11px;
+          padding-right: 16px; }
+    html body .inner4 .post {
+      transform: translate(0px, 20px);
+      z-index: -100; }
+    html body a {
+      text-decoration: none; }
+      html body a .inner5 {
+        height: 99%;
+        margin: 3px 0 3px 3px;
+        border: 6px solid #e7e7e7; }
+        @media (max-width: 992px) {
+          html body a .inner5 {
+            margin: 3px 3px 3px 0; } }
+        html body a .inner5 img:first-of-type {
+          padding-top: 10px;
+          padding-left: 11px; }
+        html body a .inner5 h4 {
+          font-size: 15px;
+          padding-left: 11px;
+          color: #706f6f;
+          margin-top: 24px;
+          margin-bottom: 0; }
+        html body a .inner5 p {
+          font-size: 11px;
+          padding-left: 11px;
+          color: #706f6f; }
+        html body a .inner5 .nagroda {
+          position: absolute;
+          transform: translate(-3px, 110px);
+          z-index: -100;
+          top: 0;
+          right: 0; }
+    html body .hconst2 {
+      height: 241px; }
+    html body .movie {
+      height: 241px;
+      width: 406px; }
+      @media (max-width: 992px) {
+        html body .movie {
+          position: absolute;
+          transform: translate(-50%, 0);
+          left: 50%; } }
+      @media (max-width: 400px) {
+        html body .movie {
+          width: 350px;
+          height: auto; } }
+    html body iframe {
+      height: 100%; }
+      @media (max-width: 400px) {
+        html body iframe {
+          width: 350px;
+          height: auto; } }
+  html .inner3 {
+    height: 100%; }
+    html .inner3 .historia {
       height: 241px;
       background-image: url("../img/Historia_tlo.png"); }
-      html body .fourth_line .inner5 .historia p {
+      @media (max-width: 992px) {
+        html .inner3 .historia {
+          margin-top: 3px; } }
+      html .inner3 .historia p {
         color: #ffffff;
         font-size: 11px;
-        text-align: center; }
-        html body .fourth_line .inner5 .historia p:nth-child(3) {
-          left: 0;
-          top: 0;
-          right: 470px;
-          position: absolute;
-          transform: translate(31px, 194px); }
-        html body .fourth_line .inner5 .historia p:nth-child(6) {
-          left: 0;
-          top: 0;
-          right: 435px;
-          position: absolute;
-          transform: translate(210px, 169px); }
-        html body .fourth_line .inner5 .historia p:nth-child(9) {
-          left: 0;
-          top: 0;
-          right: 475px;
-          position: absolute;
-          transform: translate(428px, 103px); }
-      html body .fourth_line .inner5 .historia img:first-of-type {
+        text-align: center;
+        margin: 0 32px 0 32px; }
+      html .inner3 .historia .p1His {
+        margin-left: 10px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 151px); }
+      html .inner3 .historia .p2His {
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 126px); }
+      html .inner3 .historia .p3His {
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 60px); }
+      html .inner3 .historia .historiaLogo {
         padding-top: 14px;
         padding-left: 18px; }
-      html body .fourth_line .inner5 .historia .r92 {
+      html .inner3 .historia .r92 {
         left: 0;
         top: 0;
         position: absolute;
-        transform: translate(17px, 127px); }
-      html body .fourth_line .inner5 .historia .s1 {
+        transform: translate(17px, 84px); }
+      html .inner3 .historia .s1 {
         left: 0;
         top: 0;
         position: absolute;
-        transform: translate(150px, 125px); }
-      html body .fourth_line .inner5 .historia .r95 {
+        transform: translate(150px, 82px); }
+      html .inner3 .historia .r95 {
+        left: 50%;
+        top: 0;
+        position: absolute;
+        transform: translate(-50%, 61px); }
+      html .inner3 .historia .s2 {
         left: 0;
         top: 0;
         position: absolute;
-        transform: translate(216px, 104px); }
-      html body .fourth_line .inner5 .historia .s2 {
-        left: 0;
+        transform: translate(283px, 13px); }
+      html .inner3 .historia .r01 {
+        left: 50%;
         top: 0;
         position: absolute;
-        transform: translate(283px, 56px); }
-      html body .fourth_line .inner5 .historia .r01 {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(408px, 40px); }
-  html body .inner1 .oFirmieTitle {
+        transform: translate(-50%, 0px); }
+  html .inner1 .oFirmieTitle {
     height: 372px;
     background-image: url("../img/ofirmie/zdjecie_top.png"); }
-    html body .inner1 .oFirmieTitle img {
-      position: absolute;
-      transform: translate(268px, 139px);
-      left: 0;
-      top: 0; }
-  html body .segment1 .oFirmieOrange {
+  html .segment1 .oFirmieOrange {
     height: 411px;
     background-image: url("../img/ofirmie/tlo_pomaranczowe.png"); }
-    html body .segment1 .oFirmieOrange img {
+    html .segment1 .oFirmieOrange img {
       position: absolute;
       transform: translate(79px, 128px);
       left: 0;
       top: 0; }
-    html body .segment1 .oFirmieOrange p {
+    html .segment1 .oFirmieOrange p {
       position: absolute;
       transform: translate(79px, 261px);
       left: 0;
@@ -317,14 +486,14 @@ html body {
       right: 158px;
       font-size: 11px;
       color: #ffffff; }
-  html body .segment1 .oFirmieSerce {
+  html .segment1 .oFirmieSerce {
     height: 411px; }
-    html body .segment1 .oFirmieSerce img {
+    html .segment1 .oFirmieSerce img {
       position: absolute;
-      transform: translate(95px, 65px);
-      left: 0;
+      transform: translate(-50%, 65px);
+      left: 50%;
       top: 0; }
-    html body .segment1 .oFirmieSerce p {
+    html .segment1 .oFirmieSerce p {
       position: absolute;
       transform: translate(18px, 302px);
       left: 0;
@@ -333,34 +502,37 @@ html body {
       font-size: 16px;
       text-align: center;
       color: #706f6f; }
-  html body .segment2 .oFirmieBiuro {
+  html .segment2 .oFirmieBiuro {
     height: 411px;
     background-image: url("../img/ofirmie/zdjecie_biuro.png"); }
-  html body .segment2 .oFirmieOpis {
+  html .segment2 .oFirmieOpis {
     height: 411px;
     background-image: url("../img/ofirmie/tlo_szare.png"); }
-    html body .segment2 .oFirmieOpis img {
+    html .segment2 .oFirmieOpis img {
       position: absolute;
       transform: translate(91px, 91px);
       left: 0;
       top: 0; }
-    html body .segment2 .oFirmieOpis div {
+    html .segment2 .oFirmieOpis div {
       position: absolute;
       transform: translate(92px, 146px);
       left: 0;
       top: 0;
       right: 158px; }
-      html body .segment2 .oFirmieOpis div p {
+      html .segment2 .oFirmieOpis div p {
         font-size: 11px;
         color: #706f6f; }
-  html body .segment3 h3 {
+  html .segment3 .oFirmieYears h3 {
     position: absolute;
     transform: translate(15px, 325px);
     left: 0;
     top: 0;
     margin-top: 0;
     color: #7d4835; }
-  html body .segment3 p {
+    @media (max-width: 992px) {
+      html .segment3 .oFirmieYears h3 {
+        transform: translate(15px, 300px); } }
+  html .segment3 .oFirmieYears p {
     position: absolute;
     transform: translate(14px, 369px);
     left: 0;
@@ -368,100 +540,97 @@ html body {
     right: 27px;
     font-size: 14px;
     color: #706f6f; }
-  html body .segment3 .pad-right {
+    @media (max-width: 992px) {
+      html .segment3 .oFirmieYears p {
+        transform: translate(15px, 340px); } }
+  html .segment3 .oFirmieYears img:nth-child(2) {
+    /*position: absolute;
+    transform: translate(0px, 78px);
+    left: 0;
+    top: 0;*/
+    width: 100%;
+    margin-top: 72px;
+    padding-bottom: calc(215 / 242 * 100%); }
+  html .segment3 .oFirmieYears .pad-right {
     padding-right: 5px; }
-    html body .segment3 .pad-right .oFirmie1992 {
+    html .segment3 .oFirmieYears .pad-right .oFirmie1992 {
       height: 468px;
       padding: 3.5px;
       background-image: url("../img/ofirmie/tlo_v1.png"); }
-      html body .segment3 .pad-right .oFirmie1992 img:first-of-type {
+      html .segment3 .oFirmieYears .pad-right .oFirmie1992 img:first-of-type {
         position: absolute;
         transform: translate(13px, 17px);
         left: 0;
         top: 0; }
-      html body .segment3 .pad-right .oFirmie1992 img:nth-child(2) {
-        position: absolute;
-        transform: translate(0px, 78px);
-        left: 0;
-        top: 0; }
-  html body .segment3 .oFirmie1995 {
+  html .segment3 .oFirmieYears .oFirmie1995 {
     height: 468px;
     padding: 3.5px;
     background-image: url("../img/ofirmie/tlo_v2.png"); }
-    html body .segment3 .oFirmie1995 img:first-of-type {
+    html .segment3 .oFirmieYears .oFirmie1995 img:first-of-type {
       position: absolute;
       transform: translate(13px, 17px);
       left: 0;
       top: 0; }
-    html body .segment3 .oFirmie1995 img:nth-child(2) {
-      position: absolute;
-      transform: translate(2.5px, 78px);
-      left: 0;
-      top: 0; }
-  html body .segment3 .oFirmie1997 {
+  html .segment3 .oFirmieYears .oFirmie1997 {
     height: 468px;
     padding: 3.5px;
     background-image: url("../img/ofirmie/tlo_v1.png"); }
-    html body .segment3 .oFirmie1997 img:first-of-type {
+    html .segment3 .oFirmieYears .oFirmie1997 img:first-of-type {
       position: absolute;
       transform: translate(13px, 17px);
       left: 0;
       top: 0; }
-    html body .segment3 .oFirmie1997 img:nth-child(2) {
-      position: absolute;
-      transform: translate(3px, 78px);
-      left: 0;
-      top: 0; }
-  html body .segment3 .pad-left {
+  html .segment3 .oFirmieYears .pad-left {
     padding-left: 5px; }
-    html body .segment3 .pad-left .oFirmie2000 {
+    html .segment3 .oFirmieYears .pad-left .oFirmie2000 {
       height: 468px;
       padding: 3.5px;
       background-image: url("../img/ofirmie/tlo_v2.png"); }
-      html body .segment3 .pad-left .oFirmie2000 img:first-of-type {
+      html .segment3 .oFirmieYears .pad-left .oFirmie2000 img:first-of-type {
         position: absolute;
         transform: translate(13px, 17px);
         left: 0;
         top: 0; }
-      html body .segment3 .pad-left .oFirmie2000 img:nth-child(2) {
-        position: absolute;
-        transform: translate(5px, 78px);
-        left: 0;
-        top: 0; }
-  html body .certyfikat {
+  html .certyfikat {
     height: 633px; }
-    html body .certyfikat img:first-of-type {
+    html .certyfikat img:first-of-type {
       position: absolute;
-      transform: translate(306px, 54px);
-      left: 0;
+      transform: translate(-50%, 54px);
+      left: 50%;
       top: 0; }
-    html body .certyfikat img:nth-child(2) {
+    html .certyfikat img:nth-child(2) {
       position: absolute;
-      transform: translate(362px, 117px);
-      left: 0;
+      transform: translate(-50%, 117px);
+      left: 50%;
       top: 0; }
-    html body .certyfikat div {
+    html .certyfikat div {
       position: absolute;
       transform: translate(90px, 251px);
       left: 0;
       top: 0;
       right: 195px;
       color: #706f6f; }
-      html body .certyfikat div .colorFormat {
+      html .certyfikat div .colorFormat {
         color: #7d4835; }
-    html body .certyfikat img:nth-child(4) {
+    html .certyfikat img:nth-child(4) {
       position: absolute;
       transform: translate(107px, 500px);
       left: 0;
       top: 0; }
-    html body .certyfikat img:nth-child(5) {
+      @media (max-width: 992px) {
+        html .certyfikat img:nth-child(4) {
+          transform: translate(80px, 500px); } }
+    html .certyfikat img:nth-child(5) {
       position: absolute;
       transform: translate(620px, 494px);
       left: 0;
       top: 0; }
-  html body .misja {
+      @media (max-width: 992px) {
+        html .certyfikat img:nth-child(5) {
+          transform: translate(540px, 494px); } }
+  html .misja {
     height: 311px; }
-  html body .segment1 .misjaSilosy {
+  html .segment1 .misjaSilosy {
     background-image: url("../img/misja/Foto_silosy.png");
     width: 100%;
     background-size: contain;
@@ -469,14 +638,14 @@ html body {
     height: 0;
     padding-top: calc(411 / 618 * 100%);
     /* (img-height / img-width * container-width) */ }
-  html body .segment1 .misjaOpis {
+  html .segment1 .misjaOpis {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     height: 0;
     padding-top: calc(411 / 368 * 100%);
     /* (img-height / img-width * container-width) */ }
-    html body .segment1 .misjaOpis img {
+    html .segment1 .misjaOpis img {
       position: absolute;
       transform: translate(-32px, 119px);
       right: 0;
@@ -484,7 +653,7 @@ html body {
       max-width: 100%;
       width: auto;
       height: auto; }
-  html body .segment2 .misjaSeg2 {
+  html .segment2 .misjaSeg2 {
     width: 100%;
     background-color: white;
     background-size: contain;
@@ -492,15 +661,15 @@ html body {
     height: 0;
     padding-top: calc(411 / 618 * 100%);
     /* (img-height / img-width * container-width) */ }
-    html body .segment2 .misjaSeg2 .misjaOpis2 img {
+    html .segment2 .misjaSeg2 .misjaOpis2 img {
       position: absolute;
       transform: translate(79px, 92px);
       left: 0;
       top: 0; }
       @media (max-width: 900px) {
-        html body .segment2 .misjaSeg2 .misjaOpis2 img {
+        html .segment2 .misjaSeg2 .misjaOpis2 img {
           transform: translate(45px, 40px); } }
-    html body .segment2 .misjaSeg2 .misjaOpis2 div {
+    html .segment2 .misjaSeg2 .misjaOpis2 div {
       position: absolute;
       transform: translate(79px, 154px);
       left: 0;
@@ -508,11 +677,11 @@ html body {
       right: 133px;
       font-size: 11px; }
       @media (max-width: 900px) {
-        html body .segment2 .misjaSeg2 .misjaOpis2 div {
+        html .segment2 .misjaSeg2 .misjaOpis2 div {
           transform: translate(45px, 100px);
           right: 103px;
           font-size: 1.2vw; } }
-  html body .segment2 .misjaBiuro {
+  html .segment2 .misjaBiuro {
     /*height: 411px;*/
     background-image: url("../img/misja/Foto_biuro.png");
     width: 100%;
@@ -521,80 +690,85 @@ html body {
     height: 0;
     padding-top: calc(411 / 368 * 100%);
     /* (img-height / img-width * container-width) */ }
-  html body .segment3 .inner7 {
+  html .segment3 .inner7 {
     padding: 3px 0 3px 0; }
-    html body .segment3 .inner7 .dziekujemy {
+    html .segment3 .inner7 .dziekujemy {
       width: 100%;
       background-image: url("../img/misja/Foto_tasma.png");
       background-size: contain;
       background-repeat: no-repeat;
       height: 0;
-      padding-top: calc(562/992 *100%);
+      padding-top: calc(562 / 992 * 100%);
       /* (img-height / img-width * container-width) */ }
-      html body .segment3 .inner7 .dziekujemy div {
+      html .segment3 .inner7 .dziekujemy div {
         max-height: 167px;
         max-width: 433px; }
-        html body .segment3 .inner7 .dziekujemy div img {
+        html .segment3 .inner7 .dziekujemy div img {
           width: auto;
           height: auto;
           position: absolute;
           transform: translate(-35px, 55px);
           right: 0;
           top: 0; }
-  html body .inner1 {
-    padding-bottom: 3px; }
-  html body .top .produkty {
+  html .top .produkty {
     height: 269px;
     background-image: url("../img/produkty/Zdjecie_top.png"); }
-    html body .top .produkty img {
+    html .top .produkty img {
       position: absolute;
-      transform: translate(341px, 64px);
-      left: 0;
+      transform: translate(-50%, 64px);
+      left: 50%;
       top: 0; }
-    html body .top .produkty .produktyText {
+    html .top .produkty .produktyText {
       padding-top: 158px; }
-      html body .top .produkty .produktyText p {
+      html .top .produkty .produktyText p {
         color: white;
         margin: 0;
         font-size: 11px;
         text-align: center; }
-  html body .inner2 {
-    padding: 3px 3px 3px 0; }
-  html body .segment1 .pierogi {
+  html .segment1 .pierogi {
     background-image: url("../img/produkty/Tlo_pierogi.png");
     height: 269px; }
-    html body .segment1 .pierogi img:first-of-type {
+    html .segment1 .pierogi .pierogiPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(48px, -35px); }
-    html body .segment1 .pierogi img {
+      @media (max-width: 992px) {
+        html .segment1 .pierogi .pierogiPack {
+          width: 70%; } }
+    html .segment1 .pierogi .pierogiLogo {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(319px, 64px); }
-    html body .segment1 .pierogi p {
+      transform: translate(-50%, 64px); }
+      @media (max-width: 992px) {
+        html .segment1 .pierogi .pierogiLogo {
+          width: 80%; } }
+    html .segment1 .pierogi p {
       position: absolute;
       left: 0;
       bottom: 0;
-      right: 346px;
-      transform: translate(320px, -29px);
+      margin: 0 20px 0 20px;
+      transform: translate(0, -29px);
       font-size: 11px;
       color: #706f6f; }
-  html body .segment1 .kubekNaRaz {
+  html .segment1 .kubekNaRaz {
     background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
     height: 269px; }
-    html body .segment1 .kubekNaRaz img:first-of-type {
+    html .segment1 .kubekNaRaz .kubekLogo {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(26px, 29px); }
-    html body .segment1 .kubekNaRaz img {
+    html .segment1 .kubekNaRaz .kubekPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(116px, -31px); }
-    html body .segment1 .kubekNaRaz p {
+      @media (max-width: 992px) {
+        html .segment1 .kubekNaRaz .kubekPack {
+          width: 60%; } }
+    html .segment1 .kubekNaRaz p {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -602,69 +776,67 @@ html body {
       transform: translate(42px, -31px);
       font-size: 11px;
       color: #ffffff; }
-  html body .inner3 {
-    padding: 3px 0 3px 3px; }
-  html body .segment2 .krokiety {
+  html .segment2 .krokiety {
     background-image: url("../img/produkty/Tlo_krokiety.png");
     height: 269px; }
-    html body .segment2 .krokiety img:first-of-type {
+    html .segment2 .krokiety .krokietyPack {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 25px); }
+    html .segment2 .krokiety .krokietyNazwa {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 78px); }
+    html .segment2 .krokiety p {
       position: absolute;
       left: 0;
       top: 0;
-      transform: translate(45px, 25px); }
-    html body .segment2 .krokiety img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translate(278px, 78px); }
-    html body .segment2 .krokiety p {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 293px;
-      transform: translate(279px, 139px);
+      right: 50px;
+      transform: translate(35px, 139px);
       font-size: 11px;
       color: #706f6f; }
-  html body .segment2 .nalesniki {
+  html .segment2 .nalesniki {
     background-image: url("../img/produkty/Tlo_nalesniki.png");
     height: 269px; }
-    html body .segment2 .nalesniki img:first-of-type {
+    html .segment2 .nalesniki .nalesnikiNazwa {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 71px); }
+    html .segment2 .nalesniki p {
       position: absolute;
       left: 0;
       top: 0;
-      transform: translate(302px, 25px); }
-    html body .segment2 .nalesniki img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translate(28px, 71px); }
-    html body .segment2 .nalesniki p {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 294px;
+      right: 50px;
       transform: translate(29px, 139px);
       font-size: 11px;
       color: #706f6f; }
-  html body .segment3 .virtus {
+    html .segment2 .nalesniki .nalesnikiPack {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 25px); }
+  html .segment3 .virtus {
     background-image: url("../img/produkty/Tlo_virtus.png");
     height: 546px; }
-    html body .segment3 .virtus img:first-of-type {
+    html .segment3 .virtus img:first-of-type {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(70px, 33px); }
-    html body .segment3 .virtus img:nth-child(2) {
+      transform: translate(-50%, 33px); }
+    html .segment3 .virtus img:nth-child(2) {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(82px, 182px); }
-    html body .segment3 .virtus img:nth-child(3) {
+      transform: translate(-50%, 182px); }
+    html .segment3 .virtus img:nth-child(3) {
       position: absolute;
       bottom: 0;
       left: 0;
       transform: translate(0px, -2px); }
-    html body .segment3 .virtus p {
+    html .segment3 .virtus p {
       position: absolute;
       left: 0;
       top: 0;
@@ -672,74 +844,98 @@ html body {
       transform: translate(205px, 478px);
       font-size: 11px;
       color: #ffffff; }
-  html body .segment3 .daniaGotowe {
+      @media (max-width: 992px) {
+        html .segment3 .virtus p {
+          transform: translate(200px, 460px); } }
+  html .segment3 .daniaGotowe {
     background-image: url("../img/produkty/Tlo_dania_gotowe.png");
     height: 269px; }
-    html body .segment3 .daniaGotowe img:first-of-type {
+    html .segment3 .daniaGotowe img:first-of-type {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(66px, 24px); }
-    html body .segment3 .daniaGotowe img:nth-child(2) {
+      transform: translate(-50%, 24px); }
+    html .segment3 .daniaGotowe img:nth-child(2) {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(27px, 211px); }
-  html body .segment3 .kluski {
+      transform: translate(-50%, 211px); }
+      @media (max-width: 992px) {
+        html .segment3 .daniaGotowe img:nth-child(2) {
+          width: 100%;
+          margin-top: 211px;
+          padding-bottom: calc(21 / 188 * 100%);
+          max-width: 188px;
+          transform: translate(-50%, 0); } }
+  html .segment3 .kluski {
     background-image: url("../img/produkty/Tlo_kluski.png");
     height: 269px; }
-    html body .segment3 .kluski img:first-of-type {
+    html .segment3 .kluski img:first-of-type {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(62px, 26px); }
-    html body .segment3 .kluski img {
+      transform: translate(-50%, 26px); }
+    html .segment3 .kluski img:nth-child(2) {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(16px, 211px); }
-  html body .segment3 .nowosci {
+      transform: translate(-50%, 211px); }
+      @media (max-width: 992px) {
+        html .segment3 .kluski img:nth-child(2) {
+          width: 100%;
+          margin-top: 211px;
+          padding-bottom: calc(21 / 212 * 100%);
+          max-width: 212px;
+          transform: translate(-50%, 0); } }
+  html .segment3 .nowosci {
     background-image: url("../img/produkty/Tlo_nowosci.png");
     height: 270px; }
-    html body .segment3 .nowosci img:first-of-type {
+    html .segment3 .nowosci img:first-of-type {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(64px, 17px); }
-    html body .segment3 .nowosci img:nth-child(2) {
+      transform: translate(-50%, 17px); }
+    html .segment3 .nowosci img:nth-child(2) {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(47px, 160px); }
-    html body .segment3 .nowosci img:nth-child(3) {
+      transform: translate(-50%, 160px); }
+      @media (max-width: 992px) {
+        html .segment3 .nowosci img:nth-child(2) {
+          width: 100%;
+          margin-top: 160px;
+          padding-bottom: calc(41 / 400 * 100%);
+          max-width: 400px;
+          transform: translate(-50%, 0); } }
+    html .segment3 .nowosci img:nth-child(3) {
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      transform: translate(128px, 123px); }
-  html body .segment3 .pizza {
+      transform: translate(-50%, 123px); }
+  html .segment3 .pizza {
     background-image: url("../img/produkty/Tlo_pizza.png");
     height: 545px; }
-    html body .segment3 .pizza img:first-of-type {
+    html .segment3 .pizza img:first-of-type {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(148px, 44px); }
-    html body .segment3 .pizza img:nth-child(2) {
+    html .segment3 .pizza img:nth-child(2) {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(39px, 32px); }
-    html body .segment3 .pizza img:nth-child(3) {
+    html .segment3 .pizza img:nth-child(3) {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(27px, 175px); }
-    html body .segment3 .pizza img:nth-child(4) {
+    html .segment3 .pizza img:nth-child(4) {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(28px, 413px); }
-    html body .segment3 .pizza p {
+    html .segment3 .pizza p {
       position: absolute;
       left: 0;
       top: 0;
@@ -747,246 +943,303 @@ html body {
       transform: translate(30px, 485px);
       font-size: 11px;
       color: #706f6f; }
-  html body .inner4 {
-    padding: 3px; }
-  html body .segment1 .produkt {
+  html .segment1 .produkt {
     height: 605px;
     background-image: url("../img/pierogi/Tlo_produkt.png"); }
-    html body .segment1 .produkt img:first-of-type {
+    html .segment1 .produkt .pierogiWiz {
       position: absolute;
       transform: translate(30px, 66px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt .lezace {
+    html .segment1 .produkt .lezace {
       position: absolute;
       transform: translate(212px, 445px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt .pierogiTitle {
+    html .segment1 .produkt .pierogiTitle {
       position: absolute;
-      transform: translate(483px, 95px);
+      transform: translate(0, 95px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt .pikto1 {
+      @media (max-width: 992px) {
+        html .segment1 .produkt .pierogiTitle {
+          width: 80%; } }
+    html .segment1 .produkt .pikto1 {
       position: absolute;
-      transform: translate(491px, 239px);
+      transform: translate(0, 239px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt .pikto2 {
+    html .segment1 .produkt .pikto2 {
       position: absolute;
-      transform: translate(631px, 241px);
+      transform: translate(120%, 241px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt .pikto3 {
+      @media (max-width: 992px) {
+        html .segment1 .produkt .pikto2 {
+          transform: translate(80%, 241px); } }
+    html .segment1 .produkt .pikto3 {
       position: absolute;
-      transform: translate(806px, 239px);
+      transform: translate(270%, 239px);
       top: 0;
       left: 0; }
-    html body .segment1 .produkt h3 {
+      @media (max-width: 992px) {
+        html .segment1 .produkt .pikto3 {
+          transform: translate(200%, 239px); } }
+    html .segment1 .produkt h3 {
       position: absolute;
       left: 0;
       top: 0;
-      right: 723px;
-      transform: translate(477px, 424px);
+      transform: translate(0, 424px);
       margin-top: 0;
       font-size: 20px;
       color: #7d4835; }
-    html body .segment1 .produkt p {
+    html .segment1 .produkt p {
       position: absolute;
       left: 0;
       top: 0;
-      right: 533px;
-      transform: translate(475px, 459px);
+      right: 30px;
+      transform: translate(0, 459px);
       font-size: 11px;
       color: #706f6f; }
-  html body .segment2 .ilustracja {
+  html .segment2 .ilustracja {
     height: 763px;
     margin-top: 10px;
     background-image: url("../img/pierogi/Tlo_ilustracja.png");
     background-position: bottom;
     background-repeat: no-repeat; }
-    html body .segment2 .ilustracja img:first-of-type {
+    html .segment2 .ilustracja img:first-of-type {
       position: absolute;
-      transform: translate(114px, 0px);
+      transform: translate(-50%, 0px);
       top: 0;
-      left: 0; }
-    html body .segment2 .ilustracja img:nth-child(2) {
+      left: 50%; }
+    html .segment2 .ilustracja img:nth-child(2) {
       position: absolute;
       transform: translate(159px, 136px);
       top: 0;
       left: 0; }
-    html body .segment2 .ilustracja img:nth-child(3) {
+    html .segment2 .ilustracja img:nth-child(3) {
       position: absolute;
       transform: translate(249px, 151px);
       top: 0;
       left: 0; }
-    html body .segment2 .ilustracja img:nth-child(4) {
+    html .segment2 .ilustracja img:nth-child(4) {
       position: absolute;
-      transform: translate(709px, 614px);
-      top: 0;
-      left: 0; }
-    html body .segment2 .ilustracja img:nth-child(5) {
+      transform: translate(-180%, -10%);
+      bottom: 0;
+      right: 0; }
+    html .segment2 .ilustracja img:nth-child(5) {
       position: absolute;
-      transform: translate(833px, 615px);
-      top: 0;
-      left: 0; }
-    html body .segment2 .ilustracja img:nth-child(6) {
+      transform: translate(-10%, -290%);
+      right: 0;
+      bottom: 0; }
+    html .segment2 .ilustracja img:nth-child(6) {
       position: absolute;
-      transform: translate(824px, 678px);
-      top: 0;
-      left: 0; }
-  html body .produktKubek {
+      bottom: 0;
+      right: 0; }
+  html .produktKubek {
     height: 519px;
     background-image: url("../img/kubek/Tlo_produkt.png");
     background-repeat: no-repeat; }
-    html body .produktKubek .col-md-12 {
+    html .produktKubek .col-md-12 {
       height: 100%; }
-      html body .produktKubek .col-md-12 .inner1 img {
+      html .produktKubek .col-md-12 .inner1 img {
         position: absolute;
         transform: translate(24px, 59px);
         top: 0;
         left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:first-of-type {
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner1 img {
+            width: 90%; } }
+      html .produktKubek .col-md-12 .inner2 .kubLogo {
         position: absolute;
         transform: translate(0, 97px);
         top: 0;
         left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(2) {
+      html .produktKubek .col-md-12 .inner2 img:nth-child(2) {
         position: absolute;
         transform: translate(119px, 105px);
         top: 0;
         left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(3) {
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner2 img:nth-child(2) {
+            width: 60%; } }
+      html .produktKubek .col-md-12 .inner2 img:nth-child(3) {
         position: absolute;
         transform: translate(117px, 148px);
         top: 0;
         left: 0; }
-      html body .produktKubek .col-md-12 .inner2 p:nth-child(4) {
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner2 img:nth-child(3) {
+            width: 60%; } }
+      html .produktKubek .col-md-12 .inner2 p:nth-child(4) {
         position: absolute;
         transform: translate(4px, 282px);
         top: 0;
         left: 0;
         right: 35px;
         font-size: 11px; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(5) {
+      html .produktKubek .col-md-12 .inner2 .prostoZKubka {
         position: absolute;
-        transform: translate(-8px, 391px);
+        transform: translate(-50%, 391px);
         top: 0;
-        left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(6) {
+        left: 50%; }
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner2 .prostoZKubka {
+            width: 90%; } }
+      html .produktKubek .col-md-12 .inner2 .swieze {
         position: absolute;
-        transform: translate(162px, 393px);
+        transform: translate(-50%, 393px);
         top: 0;
-        left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(7) {
+        left: 50%; }
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner2 .swieze {
+            width: 90%; } }
+      html .produktKubek .col-md-12 .inner2 .gotoweMin {
         position: absolute;
-        transform: translate(336px, 392px);
+        transform: translate(-50%, 392px);
         top: 0;
-        left: 0; }
-  html body .ilustracjaKubek {
+        left: 50%; }
+        @media (max-width: 992px) {
+          html .produktKubek .col-md-12 .inner2 .gotoweMin {
+            width: 90%; } }
+  html .ilustracjaKubek {
     height: 747px;
     background-image: url("../img/kubek/Tlo_ilustracja.png");
     background-position: bottom;
     background-repeat: no-repeat; }
-    html body .ilustracjaKubek .col-md-12 {
+    @media (max-width: 992px) {
+      html .ilustracjaKubek {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(747 / 992 * 100%); } }
+    html .ilustracjaKubek .col-md-12 {
       height: 100%; }
-      html body .ilustracjaKubek .col-md-12 img {
+      html .ilustracjaKubek .col-md-12 img {
         position: absolute;
         transform: translate(44px, -45px);
         top: 0;
         left: 0; }
-  html body .daneLogistyczne {
+        @media (max-width: 992px) {
+          html .ilustracjaKubek .col-md-12 img {
+            transform: translate(44px, -250%); } }
+  html .daneLogistyczne {
     height: 516px;
     background-color: #ffffff; }
-    html body .daneLogistyczne .daneTitle {
+    html .daneLogistyczne .daneTitle {
       position: absolute;
       transform: translate(119px, 56px);
       top: 0;
       left: 0; }
-    html body .daneLogistyczne .daneAll {
+    html .daneLogistyczne .daneAll {
       padding: 162px 110px 0 119px; }
-    html body .daneLogistyczne .col-md-4 {
+      @media (max-width: 992px) {
+        html .daneLogistyczne .daneAll {
+          padding: 162px 50px 0 60px; } }
+      @media (max-width: 860px) {
+        html .daneLogistyczne .daneAll {
+          padding: 162px 0 0 0; } }
+    html .daneLogistyczne .col-md-4 {
       height: 178px; }
-      html body .daneLogistyczne .col-md-4 .daneTabela p:first-of-type {
+      html .daneLogistyczne .col-md-4 .daneTabela p:first-of-type {
         margin-bottom: 8px;
         font-size: 14px; }
-      html body .daneLogistyczne .col-md-4 .daneTabela P {
+      html .daneLogistyczne .col-md-4 .daneTabela P {
         font-size: 12px; }
-      html body .daneLogistyczne .col-md-4 .daneTabela img:nth-child(2) {
+      html .daneLogistyczne .col-md-4 .daneTabela img:nth-child(2) {
         vertical-align: top; }
-      html body .daneLogistyczne .col-md-4 .daneTabela img:nth-child(3) {
+      html .daneLogistyczne .col-md-4 .daneTabela img:nth-child(3) {
         position: absolute;
         transform: translate(0, 68px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela img:nth-child(4) {
+      html .daneLogistyczne .col-md-4 .daneTabela img:nth-child(4) {
         position: absolute;
         transform: translate(7px, 32px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela p:nth-child(5) {
+      html .daneLogistyczne .col-md-4 .daneTabela p:nth-child(5) {
         position: absolute;
         transform: translate(11px, 76px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela img:nth-child(6) {
+      html .daneLogistyczne .col-md-4 .daneTabela img:nth-child(6) {
         position: absolute;
         transform: translate(76px, 42px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela p:nth-child(7) {
+      html .daneLogistyczne .col-md-4 .daneTabela p:nth-child(7) {
         position: absolute;
         transform: translate(65px, 76px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela img:nth-child(8) {
+      html .daneLogistyczne .col-md-4 .daneTabela img:nth-child(8) {
         position: absolute;
         transform: translate(176px, 42px);
         left: 0;
         top: 0; }
-      html body .daneLogistyczne .col-md-4 .daneTabela p:nth-child(9) {
+      html .daneLogistyczne .col-md-4 .daneTabela p:nth-child(9) {
         position: absolute;
         transform: translate(139px, 76px);
         left: 0;
         top: 0; }
-  html body .top .nagrody {
+  html .top .nagrody {
     background: url("../img/nagrody/podium.png") bottom no-repeat;
     height: 371px; }
-    html body .top .nagrody img {
+    html .top .nagrody img {
       position: absolute;
-      transform: translate(259px, 77px);
-      left: 0;
+      transform: translate(-50%, 77px);
+      left: 50%;
       top: 0; }
-  html body .segment1 .nagrodyOrange {
+  html .segment1 .nagrodyOrange {
     height: 411px;
     background: url("../img/nagrody/Tlo_segment1.png"); }
-    html body .segment1 .nagrodyOrange img {
+    html .segment1 .nagrodyOrange img {
       position: absolute;
       transform: translate(69px, 128px);
       left: 0;
-      top: 0; }
-  html body .segment1 .przebojowy img {
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 992px) {
+        html .segment1 .nagrodyOrange img {
+          width: 120%; } }
+    html .segment1 .nagrodyOrange p {
+      position: absolute;
+      transform: translate(70px, 261px);
+      left: 0;
+      top: 0;
+      right: -100px;
+      font-size: 11px;
+      color: #666666;
+      z-index: 1; }
+  html .segment1 .przebojowy img {
     position: absolute;
     transform: translate(0px, -42px);
     right: 0;
     top: 0; }
-  html body .segment2 .diament {
+    @media (max-width: 992px) {
+      html .segment1 .przebojowy img {
+        width: 70%; } }
+  html .segment2 .diament {
     height: 411px; }
-    html body .segment2 .diament img {
+    html .segment2 .diament img {
       position: absolute;
       transform: translate(14px, 92px);
       left: 0;
       top: 0;
       z-index: 1; }
-  html body .segment2 .diament2 {
+      @media (max-width: 992px) {
+        html .segment2 .diament img {
+          width: 120%; } }
+  html .segment2 .diament2 {
     height: 411px;
     border: solid 6px #eeeeee; }
-    html body .segment2 .diament2 img {
+    html .segment2 .diament2 img {
       position: absolute;
-      transform: translate(-148px, 92px);
-      right: 0;
+      transform: translate(96px, 92px);
+      left: 0;
       top: 0; }
-    html body .segment2 .diament2 div {
+    html .segment2 .diament2 div {
       position: absolute;
       transform: translate(96px, 146px);
       left: 0;
@@ -994,15 +1247,15 @@ html body {
       right: 163px;
       font-size: 11px;
       color: #706f6f; }
-  html body .segment3 .perla1 {
+  html .segment3 .perla1 {
     height: 411px;
     background-image: url("../img/nagrody/Tlo_seg3.png"); }
-    html body .segment3 .perla1 img {
+    html .segment3 .perla1 img {
       position: absolute;
       transform: translate(69px, 112px);
       left: 0;
       top: 0; }
-    html body .segment3 .perla1 p {
+    html .segment3 .perla1 p {
       position: absolute;
       transform: translate(69px, 246px);
       left: 0;
@@ -1010,35 +1263,47 @@ html body {
       right: 94px;
       font-size: 11px;
       color: #706f6f; }
-  html body .segment3 .perla2 img:first-of-type {
+  html .segment3 .perla2 img:first-of-type {
     position: absolute;
     transform: translate(47px, -30px);
     left: 0;
     top: 0;
     z-index: 2; }
-  html body .segment3 .perla2 img:nth-child(2) {
+    @media (max-width: 992px) {
+      html .segment3 .perla2 img:first-of-type {
+        width: 50%; } }
+  html .segment3 .perla2 img:nth-child(2) {
     position: absolute;
     transform: translate(314px, 67px);
     left: 0;
     top: 0;
     z-index: 3; }
-  html body .segment4 .jakosc1 {
+    @media (max-width: 992px) {
+      html .segment3 .perla2 img:nth-child(2) {
+        width: 45%;
+        transform: translate(-19px, 67px);
+        right: 0;
+        left: auto; } }
+  html .segment4 .jakosc1 {
     height: 411px; }
-    html body .segment4 .jakosc1 img {
+    html .segment4 .jakosc1 img {
       position: absolute;
       transform: translate(70px, 45px);
       left: 0;
       top: 0;
       z-index: 1; }
-  html body .segment4 .jakosc2 {
+      @media (max-width: 992px) {
+        html .segment4 .jakosc1 img {
+          width: 100%; } }
+  html .segment4 .jakosc2 {
     height: 411px;
     background-image: url("../img/nagrody/Tlo_seg4.png"); }
-    html body .segment4 .jakosc2 img {
+    html .segment4 .jakosc2 img {
       position: absolute;
       transform: translate(92px, 151px);
       left: 0;
       top: 0; }
-    html body .segment4 .jakosc2 p {
+    html .segment4 .jakosc2 p {
       position: absolute;
       transform: translate(92px, 207px);
       left: 0;
@@ -1046,20 +1311,23 @@ html body {
       right: 157px;
       font-size: 11px;
       color: #7d4835; }
-  html body .segment5 .paragon {
+  html .segment5 .paragon {
     height: 411px;
     border: solid 6px #eeeeee; }
-    html body .segment5 .paragon img:first-of-type {
+    html .segment5 .paragon img:first-of-type {
       position: absolute;
-      transform: translate(159px, 28px);
-      left: 0;
+      transform: translate(-50%, 28px);
+      left: 50%;
       top: 0; }
-    html body .segment5 .paragon img:nth-child(2) {
+    html .segment5 .paragon img:nth-child(2) {
       position: absolute;
       transform: translate(69px, 245px);
       left: 0;
       top: 0; }
-    html body .segment5 .paragon p {
+      @media (max-width: 992px) {
+        html .segment5 .paragon img:nth-child(2) {
+          transform: translate(40px, 245px); } }
+    html .segment5 .paragon p {
       position: absolute;
       transform: translate(69px, 340px);
       left: 0;
@@ -1067,26 +1335,29 @@ html body {
       right: 98px;
       font-size: 11px;
       color: #706f6f; }
-  html body footer {
+      @media (max-width: 992px) {
+        html .segment5 .paragon p {
+          transform: translate(40px, 340px); } }
+  html footer {
     height: 244px; }
-    html body footer .inner6 {
+    html footer .inner6 {
       margin-top: 3px;
       height: 100%;
       background-image: url("../img/stopka_tlo.png"); }
-      html body footer .inner6 .stopkaNav {
+      html footer .inner6 .stopkaNav {
         position: absolute;
         transform: translate(121px, 78px);
         left: 0;
         top: 0; }
-        html body footer .inner6 .stopkaNav img {
+        html footer .inner6 .stopkaNav img {
           display: block;
           margin-bottom: 8px; }
-      html body footer .inner6 .kontakt {
+      html footer .inner6 .kontakt {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%; }
-        html body footer .inner6 .kontakt p {
+        html footer .inner6 .kontakt p {
           color: white;
           font-family: Verdana, sans-serif;
           font-size: 11px;
