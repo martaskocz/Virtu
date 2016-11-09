@@ -2,6 +2,8 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @for $i from 1 through 12 {
@@ -34,6 +36,10 @@
   height: 100%;
 }
 
+.h50 {
+  height: 50%;
+}
+
 .inner1 {
   padding-bottom: 3px;
 }
@@ -61,6 +67,14 @@
 
 .hide {
   display: none;
+}
+
+@media (max-width: 480px) {
+  .col-xxs {
+    display:block;
+    float:none;
+    width: 100%
+  }
 }
 
 html {
@@ -107,6 +121,10 @@ html {
         position: absolute;
         right: 0;
         top: 56px;
+        @media (max-width: 480px) {
+          transform: rotate(90deg);
+          right: 50%;
+        }
       }
       .menuLeft {
         img {
@@ -114,6 +132,10 @@ html {
           transform: translate(-50%, 56px);
           top: 0;
           left: 55%;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 60%);
+            left: 50%;
+          }
         }
         table {
           width: 70%;
@@ -121,6 +143,10 @@ html {
           transform: translate(-30px, 113px);
           top: 0;
           right: 0;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 90%);
+            left: 50%;
+          }
           td {
             font-size: 11px;
             padding: 4px;
@@ -132,9 +158,13 @@ html {
       .menuRight {
         img {
           position: absolute;
-          transform: translate(112px, 56px);
+          transform: translate(-50%, 56px);
           top: 0;
-          left: 0;
+          left: 40%;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 40%);
+            left: 50%;
+          }
         }
         table {
           width: 70%;
@@ -142,6 +172,10 @@ html {
           transform: translate(25px, 113px);
           top: 0;
           left: 0;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 80%);
+            left: 50%;
+          }
           td {
             font-size: 11px;
             padding: 4px;
@@ -369,262 +403,245 @@ html {
         transform: translate(-50%, 0);
         left: 50%;
       }
-      @media (max-width: 400px) {
-        width: 350px;
-        height: auto;
+      @media (max-width: 480px) {
+        width: 100%;
       }
     }
 
     iframe {
       height: 100%;
-      @media (max-width: 400px) {
-        width: 350px;
-        height: auto;
-      }
-    }
-  }
-
-  .inner3 {
-    height: 100%;
-    .historia {
-      height: 241px;
-      background-image: url("../img/Historia_tlo.png");
-      @media (max-width: 992px) {
-        margin-top: 3px;
-      }
-      p {
-        color: #ffffff;
-        font-size: 11px;
-        text-align: center;
-        margin: 0 32px 0 32px;
-      }
-      .p1His {
-        margin-left: 10px;
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 151px);
-      }
-      .p2His {
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 126px);
-      }
-      .p3His {
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 60px);
-      }
-
-      .historiaLogo {
-        padding-top: 14px;
-        padding-left: 18px;
-      }
-
-      .r92 {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(17px, 84px);
-      }
-
-      .s1 {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(150px, 82px);
-      }
-
-      .r95 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(-50%, 61px);
-      }
-
-      .s2 {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(283px, 13px);
-      }
-
-      .r01 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(-50%, 0px);
-      }
-    }
-  }
-
-  /* --------------------KONIEC glowna---------------------*/
-
-  /* ---------------------O FIRMIE------------------------ */
-
-  .inner1 {
-    .oFirmieTitle {
-      height: 372px;
-      background-image: url("../img/ofirmie/zdjecie_top.png");
-    }
-  }
-
-  .segment1 {
-    .oFirmieOrange {
-      height: 411px;
-      background-image: url("../img/ofirmie/tlo_pomaranczowe.png");
-      img {
-        position: absolute;
-        transform: translate(79px, 128px);
-        left: 0;
-        top: 0;
-      }
-      p {
-        position: absolute;
-        transform: translate(79px, 261px);
-        left: 0;
-        top: 0;
-        right: 158px;
-        font-size: 11px;
-        color: #ffffff;
+      @media (max-width: 480px) {
+        width: 100%;
       }
     }
 
-    .oFirmieSerce {
-      height: 411px;
-      img {
-        position: absolute;
-        transform: translate(-50%, 65px);
-        left: 50%;
-        top: 0;
-      }
-      p {
-        position: absolute;
-        transform: translate(18px, 302px);
-        left: 0;
-        top: 0;
-        right: 32px;
-        font-size: 16px;
-        text-align: center;
-        color: #706f6f;
-      }
-    }
-  }
-
-  .segment2 {
-    .oFirmieBiuro {
-      height: 411px;
-      background-image: url("../img/ofirmie/zdjecie_biuro.png");
-    }
-
-    .oFirmieOpis {
-      height: 411px;
-      background-image: url("../img/ofirmie/tlo_szare.png");
-      img {
-        position: absolute;
-        transform: translate(91px, 91px);
-        left: 0;
-        top: 0;
-      }
-      div {
-        position: absolute;
-        transform: translate(92px, 146px);
-        left: 0;
-        top: 0;
-        right: 158px;
+    .inner3 {
+      height: 100%;
+      .historia {
+        height: 241px;
+        background-image: url("../img/Historia_tlo.png");
+        @media (max-width: 992px) {
+          margin-top: 3px;
+        }
         p {
+          color: #ffffff;
           font-size: 11px;
+          text-align: center;
+          margin: 0 32px 0 32px;
+        }
+        .p1His {
+          margin-left: 10px;
+          top: 0;
+          left: 0;
+          position: absolute;
+          transform: translate(0, 151px);
+        }
+        .p2His {
+          top: 0;
+          left: 0;
+          position: absolute;
+          transform: translate(0, 126px);
+        }
+        .p3His {
+          top: 0;
+          left: 0;
+          position: absolute;
+          transform: translate(0, 60px);
+        }
+
+        .historiaLogo {
+          padding-top: 14px;
+          padding-left: 18px;
+        }
+
+        .r92 {
+          left: 0;
+          top: 0;
+          position: absolute;
+          transform: translate(17px, 84px);
+          @media (max-width: 768px) {
+            width: 55%;
+          }
+        }
+
+        .s1 {
+          left: 50%;
+          top: 0;
+          position: absolute;
+          transform: translate(80%, 82px);
+          @media (max-width: 480px) {
+            width: 35%;
+          }
+        }
+
+        .r95 {
+          left: 50%;
+          top: 0;
+          position: absolute;
+          transform: translate(-50%, 61px);
+          @media (max-width: 768px) {
+            width: 55%;
+          }
+        }
+
+        .s2 {
+          left: 50%;
+          top: 0;
+          position: absolute;
+          transform: translate(10%, 13px);
+          @media (max-width: 480px) {
+            width: 55%;
+          }
+        }
+
+        .r01 {
+          left: 50%;
+          top: 0;
+          position: absolute;
+          transform: translate(-50%, 0px);
+          @media (max-width: 768px) {
+            width: 55%;
+          }
+        }
+      }
+    }
+
+    /* --------------------KONIEC glowna---------------------*/
+
+    /* ---------------------O FIRMIE------------------------ */
+
+    .inner1 {
+      .oFirmieTitle {
+        height: 372px;
+        background-image: url("../img/ofirmie/zdjecie_top.png");
+      }
+    }
+
+    .segment1 {
+      .oFirmieOrange {
+        height: 411px;
+        background-image: url("../img/ofirmie/tlo_pomaranczowe.png");
+        img {
+          position: absolute;
+          transform: translate(79px, 128px);
+          left: 0;
+          top: 0;
+        }
+        p {
+          position: absolute;
+          transform: translate(79px, 261px);
+          left: 0;
+          top: 0;
+          right: 158px;
+          font-size: 11px;
+          color: #ffffff;
+        }
+      }
+
+      .oFirmieSerce {
+        height: 411px;
+        img {
+          position: absolute;
+          transform: translate(-50%, 65px);
+          left: 50%;
+          top: 0;
+        }
+        p {
+          position: absolute;
+          transform: translate(18px, 302px);
+          left: 0;
+          top: 0;
+          right: 32px;
+          font-size: 16px;
+          text-align: center;
           color: #706f6f;
         }
       }
     }
-  }
 
-  .segment3 {
-    .oFirmieYears {
-      h3 {
-        position: absolute;
-        transform: translate(15px, 325px);
-        left: 0;
-        top: 0;
-        margin-top: 0;
-        color: #7d4835;
-        @media (max-width: 992px) {
-          transform: translate(15px, 300px);
+    .segment2 {
+      .oFirmieBiuro {
+        height: 411px;
+        background-image: url("../img/ofirmie/zdjecie_biuro.png");
+      }
+
+      .oFirmieOpis {
+        height: 411px;
+        background-image: url("../img/ofirmie/tlo_szare.png");
+        img {
+          position: absolute;
+          transform: translate(91px, 91px);
+          left: 0;
+          top: 0;
         }
-      }
-
-      p {
-        position: absolute;
-        transform: translate(14px, 369px);
-        left: 0;
-        top: 0;
-        right: 27px;
-        font-size: 14px;
-        color: #706f6f;
-        @media (max-width: 992px) {
-          transform: translate(15px, 340px);
-        }
-      }
-
-      img:nth-child(2) {
-        /*position: absolute;
-        transform: translate(0px, 78px);
-        left: 0;
-        top: 0;*/
-        width: 100%;
-        margin-top: 72px;
-        padding-bottom: calc(215 / 242 * 100%);
-      }
-
-      .pad-right {
-        padding-right: 5px;
-        .oFirmie1992 {
-          height: 468px;
-          padding: 3.5px;
-          background-image: url("../img/ofirmie/tlo_v1.png");
-
-          img:first-of-type {
-            position: absolute;
-            transform: translate(13px, 17px);
-            left: 0;
-            top: 0;
+        div {
+          position: absolute;
+          transform: translate(92px, 146px);
+          left: 0;
+          top: 0;
+          right: 158px;
+          p {
+            font-size: 11px;
+            color: #706f6f;
           }
         }
       }
+    }
 
-      .oFirmie1995 {
-        height: 468px;
-        padding: 3.5px;
-        background-image: url("../img/ofirmie/tlo_v2.png");
-
-        img:first-of-type {
+    .segment3 {
+      .oFirmieYears {
+        h3 {
           position: absolute;
-          transform: translate(13px, 17px);
+          transform: translate(15px, 325px);
           left: 0;
           top: 0;
+          margin-top: 0;
+          color: #7d4835;
+          @media (max-width: 992px) {
+            transform: translate(15px, 300px);
+          }
         }
-      }
 
-      .oFirmie1997 {
-        height: 468px;
-        padding: 3.5px;
-        background-image: url("../img/ofirmie/tlo_v1.png");
-
-        img:first-of-type {
+        p {
           position: absolute;
-          transform: translate(13px, 17px);
+          transform: translate(14px, 369px);
           left: 0;
           top: 0;
+          right: 27px;
+          font-size: 14px;
+          color: #706f6f;
+          @media (max-width: 992px) {
+            transform: translate(15px, 340px);
+          }
         }
-      }
 
-      .pad-left {
-        padding-left: 5px;
+        img:nth-child(2) {
+          /*position: absolute;
+          transform: translate(0px, 78px);
+          left: 0;
+          top: 0;*/
+          width: 100%;
+          margin-top: 72px;
+          padding-bottom: calc(215 / 242 * 100%);
+        }
 
-        .oFirmie2000 {
+        .pad-right {
+          padding-right: 5px;
+          .oFirmie1992 {
+            height: 468px;
+            padding: 3.5px;
+            background-image: url("../img/ofirmie/tlo_v1.png");
+
+            img:first-of-type {
+              position: absolute;
+              transform: translate(13px, 17px);
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+
+        .oFirmie1995 {
           height: 468px;
           padding: 3.5px;
           background-image: url("../img/ofirmie/tlo_v2.png");
@@ -636,1072 +653,1127 @@ html {
             top: 0;
           }
         }
+
+        .oFirmie1997 {
+          height: 468px;
+          padding: 3.5px;
+          background-image: url("../img/ofirmie/tlo_v1.png");
+
+          img:first-of-type {
+            position: absolute;
+            transform: translate(13px, 17px);
+            left: 0;
+            top: 0;
+          }
+        }
+
+        .pad-left {
+          padding-left: 5px;
+
+          .oFirmie2000 {
+            height: 468px;
+            padding: 3.5px;
+            background-image: url("../img/ofirmie/tlo_v2.png");
+
+            img:first-of-type {
+              position: absolute;
+              transform: translate(13px, 17px);
+              left: 0;
+              top: 0;
+            }
+          }
+        }
       }
     }
-  }
 
-  .certyfikat {
-    height: 633px;
+    .certyfikat {
+      height: 633px;
 
-    img:first-of-type {
-      position: absolute;
-      transform: translate(-50%, 54px);
-      left: 50%;
-      top: 0;
-    }
-    img:nth-child(2) {
-      position: absolute;
-      transform: translate(-50%, 117px);
-      left: 50%;
-      top: 0;
-    }
-    div {
-      position: absolute;
-      transform: translate(90px, 251px);
-      left: 0;
-      top: 0;
-      right: 195px;
-      color: #706f6f;
-      .colorFormat {
-        color: #7d4835;
-      }
-    }
-    img:nth-child(4) {
-      position: absolute;
-      transform: translate(107px, 500px);
-      left: 0;
-      top: 0;
-      @media (max-width: 992px) {
-        transform: translate(80px, 500px);
-      }
-    }
-    img:nth-child(5) {
-      position: absolute;
-      transform: translate(620px, 494px);
-      left: 0;
-      top: 0;
-      @media (max-width: 992px) {
-        transform: translate(540px, 494px);
-      }
-    }
-  }
-
-  /* ------------------KONIEC o firmie---------------------*/
-
-  /* -------------------MISJA FIRMY----------------------- */
-
-  .misja {
-    height: 311px;
-  }
-
-  .segment1 {
-    .misjaSilosy {
-      background-image: url("../img/misja/Foto_silosy.png");
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 0;
-      padding-top: calc(411 / 618 * 100%); /* (img-height / img-width * container-width) */
-    }
-    .misjaOpis {
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 0;
-      padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
-      img {
+      img:first-of-type {
         position: absolute;
-        transform: translate(-32px, 119px);
-        right: 0;
+        transform: translate(-50%, 54px);
+        left: 50%;
         top: 0;
-        max-width: 100%;
-        width: auto;
-        height: auto;
       }
-    }
-  }
-
-  .segment2 {
-    .misjaSeg2 {
-      width: 100%;
-      background-color: white;
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 0;
-      padding-top: calc(411 / 618 * 100%); /* (img-height / img-width * container-width) */
-
-      .misjaOpis2 {
-        img {
-          position: absolute;
-          transform: translate(79px, 92px);
-          left: 0;
-          top: 0;
-          @media (max-width: 900px) {
-            transform: translate(45px, 40px);
-          }
-        }
-        div {
-          position: absolute;
-          transform: translate(79px, 154px);
-          left: 0;
-          top: 0;
-          right: 133px;
-          font-size: 11px;
-          @media (max-width: 900px) {
-            transform: translate(45px, 100px);
-            right: 103px;
-            font-size: 1.2vw;
-          }
+      img:nth-child(2) {
+        position: absolute;
+        transform: translate(-50%, 117px);
+        left: 50%;
+        top: 0;
+      }
+      div {
+        position: absolute;
+        transform: translate(90px, 251px);
+        left: 0;
+        top: 0;
+        right: 195px;
+        color: #706f6f;
+        .colorFormat {
+          color: #7d4835;
         }
       }
-
+      img:nth-child(4) {
+        position: absolute;
+        transform: translate(107px, 500px);
+        left: 0;
+        top: 0;
+        @media (max-width: 992px) {
+          transform: translate(80px, 500px);
+        }
+      }
+      img:nth-child(5) {
+        position: absolute;
+        transform: translate(620px, 494px);
+        left: 0;
+        top: 0;
+        @media (max-width: 992px) {
+          transform: translate(540px, 494px);
+        }
+      }
     }
 
-    .misjaBiuro {
-      /*height: 411px;*/
-      background-image: url("../img/misja/Foto_biuro.png");
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 0;
-      padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
-    }
-  }
+    /* ------------------KONIEC o firmie---------------------*/
 
-  .segment3 {
-    .inner7 {
-      padding: 3px 0 3px 0;
-      .dziekujemy {
+    /* -------------------MISJA FIRMY----------------------- */
+
+    .misja {
+      height: 311px;
+    }
+
+    .segment1 {
+      .misjaSilosy {
+        background-image: url("../img/misja/Foto_silosy.png");
         width: 100%;
-        background-image: url("../img/misja/Foto_tasma.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 0;
-        padding-top: calc(562 / 992 * 100%); /* (img-height / img-width * container-width) */
-        div {
-          max-height: 167px;
-          max-width: 433px;
+        padding-top: calc(411 / 618 * 100%); /* (img-height / img-width * container-width) */
+      }
+      .misjaOpis {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
+        img {
+          position: absolute;
+          transform: translate(-32px, 119px);
+          right: 0;
+          top: 0;
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    .segment2 {
+      .misjaSeg2 {
+        width: 100%;
+        background-color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-top: calc(411 / 618 * 100%); /* (img-height / img-width * container-width) */
+
+        .misjaOpis2 {
           img {
-            width: auto;
-            height: auto;
             position: absolute;
-            transform: translate(-35px, 55px);
-            right: 0;
+            transform: translate(79px, 92px);
+            left: 0;
+            top: 0;
+            @media (max-width: 900px) {
+              transform: translate(45px, 40px);
+            }
+          }
+          div {
+            position: absolute;
+            transform: translate(79px, 154px);
+            left: 0;
+            top: 0;
+            right: 133px;
+            font-size: 11px;
+            @media (max-width: 900px) {
+              transform: translate(45px, 100px);
+              right: 103px;
+              font-size: 1.2vw;
+            }
+          }
+        }
+
+      }
+
+      .misjaBiuro {
+        /*height: 411px;*/
+        background-image: url("../img/misja/Foto_biuro.png");
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
+      }
+    }
+
+    .segment3 {
+      .inner7 {
+        padding: 3px 0 3px 0;
+        .dziekujemy {
+          width: 100%;
+          background-image: url("../img/misja/Foto_tasma.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 0;
+          padding-top: calc(562 / 992 * 100%); /* (img-height / img-width * container-width) */
+          div {
+            max-height: 167px;
+            max-width: 433px;
+            img {
+              width: auto;
+              height: auto;
+              position: absolute;
+              transform: translate(-35px, 55px);
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    /* ------------------KONIEC misja firmy------------------*/
+
+    /* -----------------------PRODUKTY---------------------- */
+
+    .top {
+      .produkty {
+        height: 269px;
+        background-image: url("../img/produkty/Zdjecie_top.png");
+
+        img {
+          position: absolute;
+          transform: translate(-50%, 64px);
+          left: 50%;
+          top: 0;
+        }
+
+        .produktyText {
+          padding-top: 158px;
+          p {
+            color: white;
+            margin: 0;
+            font-size: 11px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .segment1 {
+      .pierogi {
+        background-image: url("../img/produkty/Tlo_pierogi.png");
+        height: 269px;
+
+        .pierogiPack {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(48px, -35px);
+          @media (max-width: 992px) {
+            width: 70%;
+          }
+        }
+
+        .pierogiLogo {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 64px);
+          @media (max-width: 992px) {
+            width: 80%;
+          }
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          margin: 0 20px 0 20px;
+          transform: translate(0, -29px);
+          font-size: 11px;
+          color: #706f6f;
+        }
+      }
+
+      .kubekNaRaz {
+        background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
+        height: 269px;
+
+        .kubekLogo {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(26px, 29px);
+        }
+
+        .kubekPack {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(116px, -31px);
+          @media (max-width: 992px) {
+            width: 60%;
+          }
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 75px;
+          transform: translate(42px, -31px);
+          font-size: 11px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .segment2 {
+      .krokiety {
+        background-image: url("../img/produkty/Tlo_krokiety.png");
+        height: 269px;
+
+        .krokietyPack {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 25px);
+        }
+
+        .krokietyNazwa {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 78px);
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 50px;
+          transform: translate(35px, 139px);
+          font-size: 11px;
+          color: #706f6f;
+        }
+      }
+
+      .nalesniki {
+        background-image: url("../img/produkty/Tlo_nalesniki.png");
+        height: 269px;
+
+        .nalesnikiNazwa {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 71px);
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 50px;
+          transform: translate(29px, 139px);
+          font-size: 11px;
+          color: #706f6f;
+        }
+
+        .nalesnikiPack {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 25px);
+        }
+      }
+    }
+
+    .segment3 {
+      .virtus {
+        background-image: url("../img/produkty/Tlo_virtus.png");
+        height: 546px;
+
+        img:first-of-type {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 33px);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 182px);
+        }
+
+        img:nth-child(3) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translate(0px, -2px);
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 221px;
+          transform: translate(205px, 478px);
+          font-size: 11px;
+          color: #ffffff;
+          @media (max-width: 992px) {
+            transform: translate(200px, 460px);
+          }
+        }
+      }
+
+      .daniaGotowe {
+        background-image: url("../img/produkty/Tlo_dania_gotowe.png");
+        height: 269px;
+
+        img:first-of-type {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 24px);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 211px);
+          @media (max-width: 992px) {
+            width: 100%;
+            margin-top: 211px;
+            padding-bottom: calc(21 / 188 * 100%);
+            max-width: 188px;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+
+      .kluski {
+        background-image: url("../img/produkty/Tlo_kluski.png");
+        height: 269px;
+
+        img:first-of-type {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 26px);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 211px);
+          @media (max-width: 992px) {
+            width: 100%;
+            margin-top: 211px;
+            padding-bottom: calc(21 / 212 * 100%);
+            max-width: 212px;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+
+      .nowosci {
+        background-image: url("../img/produkty/Tlo_nowosci.png");
+        height: 270px;
+
+        img:first-of-type {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 17px);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 160px);
+          @media (max-width: 992px) {
+            width: 100%;
+            margin-top: 160px;
+            padding-bottom: calc(41 / 400 * 100%);
+            max-width: 400px;
+            transform: translate(-50%, 0);
+          }
+        }
+
+        img:nth-child(3) {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 123px);
+        }
+      }
+
+      .pizza {
+        background-image: url("../img/produkty/Tlo_pizza.png");
+        height: 545px;
+
+        img:first-of-type {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(148px, 44px);
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(39px, 32px);
+        }
+
+        img:nth-child(3) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(27px, 175px);
+        }
+
+        img:nth-child(4) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(28px, 413px);
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 100px;
+          transform: translate(30px, 485px);
+          font-size: 11px;
+          color: #706f6f;
+        }
+      }
+    }
+
+    /* -------------------KONIEC produkty------------------*/
+
+    /* -----------------PRODUKT PIEROGI------------------- */
+
+    .segment1 {
+      .produkt {
+        height: 605px;
+        background-image: url("../img/pierogi/Tlo_produkt.png");
+
+        .pierogiWiz {
+          position: absolute;
+          transform: translate(30px, 66px);
+          top: 0;
+          left: 0;
+        }
+
+        .lezace {
+          position: absolute;
+          transform: translate(212px, 445px);
+          top: 0;
+          left: 0;
+        }
+
+        .pierogiTitle {
+          position: absolute;
+          transform: translate(0, 95px);
+          top: 0;
+          left: 0;
+          @media (max-width: 992px) {
+            width: 80%;
+          }
+        }
+
+        .pikto1 {
+          position: absolute;
+          transform: translate(0, 239px);
+          top: 0;
+          left: 0;
+        }
+
+        .pikto2 {
+          position: absolute;
+          transform: translate(120%, 241px);
+          top: 0;
+          left: 0;
+          @media (max-width: 992px) {
+            transform: translate(80%, 241px);
+          }
+        }
+
+        .pikto3 {
+          position: absolute;
+          transform: translate(270%, 239px);
+          top: 0;
+          left: 0;
+          @media (max-width: 992px) {
+            transform: translate(200%, 239px);
+          }
+        }
+
+        h3 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(0, 424px);
+          margin-top: 0;
+          font-size: 20px;
+          color: #7d4835;
+        }
+
+        p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 30px;
+          transform: translate(0, 459px);
+          font-size: 11px;
+          color: #706f6f;
+        }
+      }
+    }
+
+    .segment2 {
+      .ilustracja {
+        height: 763px;
+        margin-top: 10px;
+        background-image: url("../img/pierogi/Tlo_ilustracja.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        img:first-of-type {
+          position: absolute;
+          transform: translate(-50%, 0px);
+          top: 0;
+          left: 50%;
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          transform: translate(159px, 136px);
+          top: 0;
+          left: 0;
+        }
+
+        img:nth-child(3) {
+          position: absolute;
+          transform: translate(249px, 151px);
+          top: 0;
+          left: 0;
+        }
+
+        img:nth-child(4) {
+          position: absolute;
+          transform: translate(-180%, -10%);
+          bottom: 0;
+          right: 0;
+        }
+
+        img:nth-child(5) {
+          position: absolute;
+          transform: translate(-10%, -290%);
+          right: 0;
+          bottom: 0;
+        }
+
+        img:nth-child(6) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+
+    /* ----------------KONIEC produkt pierogi----------------*/
+
+    /* -------------------PRODUKT KUBEK--------------------- */
+
+    .produktKubek {
+      height: 519px;
+      background-image: url("../img/kubek/Tlo_produkt.png");
+      background-repeat: no-repeat;
+      .col-md-12 {
+        height: 100%;
+
+        .inner1 {
+          img {
+            position: absolute;
+            transform: translate(24px, 59px);
+            top: 0;
+            left: 0;
+            @media (max-width: 992px) {
+              width: 90%;
+            }
+          }
+        }
+
+        .inner2 {
+          .kubLogo {
+            position: absolute;
+            transform: translate(0, 97px);
+            top: 0;
+            left: 0;
+          }
+          img:nth-child(2) {
+            position: absolute;
+            transform: translate(119px, 105px);
+            top: 0;
+            left: 0;
+            @media (max-width: 992px) {
+              width: 60%;
+            }
+          }
+          img:nth-child(3) {
+            position: absolute;
+            transform: translate(117px, 148px);
+            top: 0;
+            left: 0;
+            @media (max-width: 992px) {
+              width: 60%;
+            }
+          }
+          p:nth-child(4) {
+            position: absolute;
+            transform: translate(4px, 282px);
+            top: 0;
+            left: 0;
+            right: 35px;
+            font-size: 11px;
+          }
+          .prostoZKubka {
+            position: absolute;
+            transform: translate(-50%, 391px);
+            top: 0;
+            left: 50%;
+            @media (max-width: 992px) {
+              width: 90%;
+            }
+          }
+          .swieze {
+            position: absolute;
+            transform: translate(-50%, 393px);
+            top: 0;
+            left: 50%;
+            @media (max-width: 992px) {
+              width: 90%;
+            }
+          }
+          .gotoweMin {
+            position: absolute;
+            transform: translate(-50%, 392px);
+            top: 0;
+            left: 50%;
+            @media (max-width: 992px) {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+
+    .ilustracjaKubek {
+      height: 747px;
+      background-image: url("../img/kubek/Tlo_ilustracja.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      @media (max-width: 992px) {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(747 / 992 * 100%);
+      }
+      .col-md-12 {
+        height: 100%;
+
+        img {
+          position: absolute;
+          transform: translate(44px, -45px);
+          top: 0;
+          left: 0;
+          @media (max-width: 992px) {
+            transform: translate(44px, -250%);
+          }
+        }
+      }
+    }
+
+    .daneLogistyczne {
+      height: 516px;
+      background-color: #ffffff;
+
+      .daneTitle {
+        position: absolute;
+        transform: translate(119px, 56px);
+        top: 0;
+        left: 0;
+      }
+
+      .daneAll {
+        padding: 162px 110px 0 119px;
+        @media (max-width: 992px) {
+          padding: 162px 50px 0 60px;
+        }
+        @media (max-width: 860px) {
+          padding: 162px 0 0 0;
+        }
+      }
+
+      .col-md-4 {
+        height: 178px;
+
+        .daneTabela {
+
+          p:first-of-type {
+            margin-bottom: 8px;
+            font-size: 14px;
+          }
+
+          P {
+            font-size: 12px;
+          }
+
+          img:nth-child(2) {
+            vertical-align: top;
+          }
+
+          img:nth-child(3) {
+            position: absolute;
+            transform: translate(0, 68px);
+            left: 0;
+            top: 0;
+          }
+
+          img:nth-child(4) {
+            position: absolute;
+            transform: translate(7px, 32px);
+            left: 0;
+            top: 0;
+          }
+
+          p:nth-child(5) {
+            position: absolute;
+            transform: translate(11px, 76px);
+            left: 0;
+            top: 0;
+          }
+
+          img:nth-child(6) {
+            position: absolute;
+            transform: translate(76px, 42px);
+            left: 0;
+            top: 0;
+          }
+
+          p:nth-child(7) {
+            position: absolute;
+            transform: translate(65px, 76px);
+            left: 0;
+            top: 0;
+          }
+
+          img:nth-child(8) {
+            position: absolute;
+            transform: translate(176px, 42px);
+            left: 0;
+            top: 0;
+          }
+
+          p:nth-child(9) {
+            position: absolute;
+            transform: translate(139px, 76px);
+            left: 0;
             top: 0;
           }
         }
       }
     }
-  }
 
-  /* ------------------KONIEC misja firmy------------------*/
+    /* ----------------KONIEC produkt kubek------------------*/
 
-  /* -----------------------PRODUKTY---------------------- */
+    /* -----------------------NAGRODY----------------------- */
 
-
-
-  .top {
-    .produkty {
-      height: 269px;
-      background-image: url("../img/produkty/Zdjecie_top.png");
-
-      img {
-        position: absolute;
-        transform: translate(-50%, 64px);
-        left: 50%;
-        top: 0;
-      }
-
-      .produktyText {
-        padding-top: 158px;
-        p {
-          color: white;
-          margin: 0;
-          font-size: 11px;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  .segment1 {
-    .pierogi {
-      background-image: url("../img/produkty/Tlo_pierogi.png");
-      height: 269px;
-
-      .pierogiPack {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(48px, -35px);
-        @media (max-width: 992px) {
-          width: 70%;
-        }
-      }
-
-      .pierogiLogo {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 64px);
-        @media (max-width: 992px) {
-          width: 80%;
-        }
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin: 0 20px 0 20px;
-        transform: translate(0, -29px);
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-
-    .kubekNaRaz {
-      background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
-      height: 269px;
-
-      .kubekLogo {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(26px, 29px);
-      }
-
-      .kubekPack {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(116px, -31px);
-        @media (max-width: 992px) {
-          width: 60%;
-        }
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 75px;
-        transform: translate(42px, -31px);
-        font-size: 11px;
-        color: #ffffff;
-      }
-    }
-  }
-
-  .segment2 {
-    .krokiety {
-      background-image: url("../img/produkty/Tlo_krokiety.png");
-      height: 269px;
-
-      .krokietyPack {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 25px);
-      }
-
-      .krokietyNazwa {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 78px);
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 50px;
-        transform: translate(35px, 139px);
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-
-    .nalesniki {
-      background-image: url("../img/produkty/Tlo_nalesniki.png");
-      height: 269px;
-
-      .nalesnikiNazwa {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 71px);
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 50px;
-        transform: translate(29px, 139px);
-        font-size: 11px;
-        color: #706f6f;
-      }
-
-      .nalesnikiPack {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 25px);
-      }
-    }
-  }
-
-  .segment3 {
-    .virtus {
-      background-image: url("../img/produkty/Tlo_virtus.png");
-      height: 546px;
-
-      img:first-of-type {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 33px);
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 182px);
-      }
-
-      img:nth-child(3) {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translate(0px, -2px);
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 221px;
-        transform: translate(205px, 478px);
-        font-size: 11px;
-        color: #ffffff;
-        @media (max-width: 992px) {
-          transform: translate(200px, 460px);
-        }
-      }
-    }
-
-    .daniaGotowe {
-      background-image: url("../img/produkty/Tlo_dania_gotowe.png");
-      height: 269px;
-
-      img:first-of-type {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 24px);
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 211px);
-        @media (max-width: 992px) {
-          width: 100%;
-          margin-top: 211px;
-          padding-bottom: calc(21 / 188 * 100%);
-          max-width: 188px;
-          transform: translate(-50%, 0);
-        }
-      }
-    }
-
-    .kluski {
-      background-image: url("../img/produkty/Tlo_kluski.png");
-      height: 269px;
-
-      img:first-of-type {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 26px);
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 211px);
-        @media (max-width: 992px) {
-          width: 100%;
-          margin-top: 211px;
-          padding-bottom: calc(21 / 212 * 100%);
-          max-width: 212px;
-          transform: translate(-50%, 0);
-        }
-      }
-    }
-
-    .nowosci {
-      background-image: url("../img/produkty/Tlo_nowosci.png");
-      height: 270px;
-
-      img:first-of-type {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 17px);
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 160px);
-        @media (max-width: 992px) {
-          width: 100%;
-          margin-top: 160px;
-          padding-bottom: calc(41 / 400 * 100%);
-          max-width: 400px;
-          transform: translate(-50%, 0);
-        }
-      }
-
-      img:nth-child(3) {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 123px);
-      }
-    }
-
-    .pizza {
-      background-image: url("../img/produkty/Tlo_pizza.png");
-      height: 545px;
-
-      img:first-of-type {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(148px, 44px);
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(39px, 32px);
-      }
-
-      img:nth-child(3) {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(27px, 175px);
-      }
-
-      img:nth-child(4) {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(28px, 413px);
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 100px;
-        transform: translate(30px, 485px);
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-  }
-
-
-
-  /* -------------------KONIEC produkty------------------*/
-
-  /* -----------------PRODUKT PIEROGI------------------- */
-
-  .segment1 {
-    .produkt {
-      height: 605px;
-      background-image: url("../img/pierogi/Tlo_produkt.png");
-
-      .pierogiWiz {
-        position: absolute;
-        transform: translate(30px, 66px);
-        top: 0;
-        left: 0;
-      }
-
-      .lezace {
-        position: absolute;
-        transform: translate(212px, 445px);
-        top: 0;
-        left: 0;
-      }
-
-      .pierogiTitle {
-        position: absolute;
-        transform: translate(0, 95px);
-        top: 0;
-        left: 0;
-        @media (max-width: 992px) {
-          width: 80%;
-        }
-      }
-
-      .pikto1 {
-        position: absolute;
-        transform: translate(0, 239px);
-        top: 0;
-        left: 0;
-      }
-
-      .pikto2 {
-        position: absolute;
-        transform: translate(120%, 241px);
-        top: 0;
-        left: 0;
-        @media (max-width: 992px) {
-          transform: translate(80%, 241px);
-        }
-      }
-
-      .pikto3 {
-        position: absolute;
-        transform: translate(270%, 239px);
-        top: 0;
-        left: 0;
-        @media (max-width: 992px) {
-          transform: translate(200%, 239px);
-        }
-      }
-
-      h3 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(0, 424px);
-        margin-top: 0;
-        font-size: 20px;
-        color: #7d4835;
-      }
-
-      p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 30px;
-        transform: translate(0, 459px);
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-  }
-
-  .segment2 {
-    .ilustracja {
-      height: 763px;
-      margin-top: 10px;
-      background-image: url("../img/pierogi/Tlo_ilustracja.png");
-      background-position: bottom;
-      background-repeat: no-repeat;
-
-      img:first-of-type {
-        position: absolute;
-        transform: translate(-50%, 0px);
-        top: 0;
-        left: 50%;
-      }
-
-      img:nth-child(2) {
-        position: absolute;
-        transform: translate(159px, 136px);
-        top: 0;
-        left: 0;
-      }
-
-      img:nth-child(3) {
-        position: absolute;
-        transform: translate(249px, 151px);
-        top: 0;
-        left: 0;
-      }
-
-      img:nth-child(4) {
-        position: absolute;
-        transform: translate(-180%, -10%);
-        bottom: 0;
-        right: 0;
-      }
-
-      img:nth-child(5) {
-        position: absolute;
-        transform: translate(-10%, -290%);
-        right: 0;
-        bottom: 0;
-      }
-
-      img:nth-child(6) {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    }
-  }
-
-  /* ----------------KONIEC produkt pierogi----------------*/
-
-  /* -------------------PRODUKT KUBEK--------------------- */
-
-  .produktKubek {
-    height: 519px;
-    background-image: url("../img/kubek/Tlo_produkt.png");
-    background-repeat: no-repeat;
-    .col-md-12 {
-      height: 100%;
-
-      .inner1 {
+    .top {
+      .nagrody {
+        background: url("../img/nagrody/podium.png") bottom no-repeat;
+        height: 371px;
         img {
           position: absolute;
-          transform: translate(24px, 59px);
+          transform: translate(-50%, 77px);
+          left: 50%;
           top: 0;
-          left: 0;
-          @media (max-width: 992px) {
-            width: 90%;
-          }
         }
       }
+    }
 
-      .inner2 {
-        .kubLogo {
+    .segment1 {
+      .nagrodyOrange {
+        height: 411px;
+        background: url("../img/nagrody/Tlo_segment1.png");
+        img {
           position: absolute;
-          transform: translate(0, 97px);
-          top: 0;
+          transform: translate(69px, 128px);
           left: 0;
-        }
-        img:nth-child(2) {
-          position: absolute;
-          transform: translate(119px, 105px);
           top: 0;
-          left: 0;
+          z-index: 1;
           @media (max-width: 992px) {
-            width: 60%;
+            width: 120%;
           }
         }
-        img:nth-child(3) {
+        p {
           position: absolute;
-          transform: translate(117px, 148px);
-          top: 0;
+          transform: translate(70px, 261px);
           left: 0;
-          @media (max-width: 992px) {
-            width: 60%;
-          }
-        }
-        p:nth-child(4) {
-          position: absolute;
-          transform: translate(4px, 282px);
           top: 0;
-          left: 0;
-          right: 35px;
+          right: -100px;
           font-size: 11px;
+          color: #666666;
+          z-index: 1;
         }
-        .prostoZKubka {
+      }
+
+      .przebojowy {
+        img {
           position: absolute;
-          transform: translate(-50%, 391px);
-          top: 0;
-          left: 50%;
-          @media (max-width: 992px) {
-            width: 90%;
-          }
-        }
-        .swieze {
-          position: absolute;
-          transform: translate(-50%, 393px);
-          top: 0;
-          left: 50%;
-          @media (max-width: 992px) {
-            width: 90%;
-          }
-        }
-        .gotoweMin {
-          position: absolute;
-          transform: translate(-50%, 392px);
-          top: 0;
-          left: 50%;
-          @media (max-width: 992px) {
-            width: 90%;
-          }
-        }
-      }
-    }
-  }
-
-  .ilustracjaKubek {
-    height: 747px;
-    background-image: url("../img/kubek/Tlo_ilustracja.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    @media (max-width: 992px) {
-      background-size: contain;
-      width: 100%;
-      height: 0;
-      padding-top: calc(747 / 992 * 100%);
-    }
-    .col-md-12 {
-      height: 100%;
-
-      img {
-        position: absolute;
-        transform: translate(44px, -45px);
-        top: 0;
-        left: 0;
-        @media (max-width: 992px) {
-          transform: translate(44px, -250%);
-        }
-      }
-    }
-  }
-
-  .daneLogistyczne {
-    height: 516px;
-    background-color: #ffffff;
-
-    .daneTitle {
-      position: absolute;
-      transform: translate(119px, 56px);
-      top: 0;
-      left: 0;
-    }
-
-    .daneAll {
-      padding: 162px 110px 0 119px;
-      @media (max-width: 992px) {
-        padding: 162px 50px 0 60px;
-      }
-      @media (max-width: 860px) {
-        padding: 162px 0 0 0;
-      }
-    }
-
-    .col-md-4 {
-      height: 178px;
-
-      .daneTabela {
-
-        p:first-of-type {
-          margin-bottom: 8px;
-          font-size: 14px;
-        }
-
-        P {
-          font-size: 12px;
-        }
-
-        img:nth-child(2) {
-          vertical-align: top;
-        }
-
-        img:nth-child(3) {
-          position: absolute;
-          transform: translate(0, 68px);
-          left: 0;
-          top: 0;
-        }
-
-        img:nth-child(4) {
-          position: absolute;
-          transform: translate(7px, 32px);
-          left: 0;
-          top: 0;
-        }
-
-        p:nth-child(5) {
-          position: absolute;
-          transform: translate(11px, 76px);
-          left: 0;
-          top: 0;
-        }
-
-        img:nth-child(6) {
-          position: absolute;
-          transform: translate(76px, 42px);
-          left: 0;
-          top: 0;
-        }
-
-        p:nth-child(7) {
-          position: absolute;
-          transform: translate(65px, 76px);
-          left: 0;
-          top: 0;
-        }
-
-        img:nth-child(8) {
-          position: absolute;
-          transform: translate(176px, 42px);
-          left: 0;
-          top: 0;
-        }
-
-        p:nth-child(9) {
-          position: absolute;
-          transform: translate(139px, 76px);
-          left: 0;
-          top: 0;
-        }
-      }
-    }
-  }
-
-  /* ----------------KONIEC produkt kubek------------------*/
-
-  /* -----------------------NAGRODY----------------------- */
-
-  .top {
-    .nagrody {
-      background: url("../img/nagrody/podium.png") bottom no-repeat;
-      height: 371px;
-      img {
-        position: absolute;
-        transform: translate(-50%, 77px);
-        left: 50%;
-        top: 0;
-      }
-    }
-  }
-
-  .segment1 {
-    .nagrodyOrange {
-      height: 411px;
-      background: url("../img/nagrody/Tlo_segment1.png");
-      img {
-        position: absolute;
-        transform: translate(69px, 128px);
-        left: 0;
-        top: 0;
-        z-index: 1;
-        @media (max-width: 992px) {
-          width: 120%;
-        }
-      }
-      p {
-        position: absolute;
-        transform: translate(70px, 261px);
-        left: 0;
-        top: 0;
-        right: -100px;
-        font-size: 11px;
-        color: #666666;
-        z-index: 1;
-      }
-    }
-
-    .przebojowy {
-      img {
-        position: absolute;
-        transform: translate(0px, -42px);
-        right: 0;
-        top: 0;
-        @media (max-width: 992px) {
-          width: 70%;
-        }
-      }
-    }
-  }
-
-  .segment2 {
-    .diament {
-      height: 411px;
-      img {
-        position: absolute;
-        transform: translate(14px, 92px);
-        left: 0;
-        top: 0;
-        z-index: 1;
-        @media (max-width: 992px) {
-          width: 120%;
-        }
-      }
-    }
-
-    .diament2 {
-      height: 411px;
-      border: solid 6px #eeeeee;
-      img {
-        position: absolute;
-        transform: translate(96px, 92px);
-        left: 0;
-        top: 0;
-      }
-      div {
-        position: absolute;
-        transform: translate(96px, 146px);
-        left: 0;
-        top: 0;
-        right: 163px;
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-  }
-
-  .segment3 {
-    .perla1 {
-      height: 411px;
-      background-image: url("../img/nagrody/Tlo_seg3.png");
-      img {
-        position: absolute;
-        transform: translate(69px, 112px);
-        left: 0;
-        top: 0;
-      }
-      p {
-        position: absolute;
-        transform: translate(69px, 246px);
-        left: 0;
-        top: 0;
-        right: 94px;
-        font-size: 11px;
-        color: #706f6f;
-      }
-    }
-
-    .perla2 {
-      img:first-of-type {
-        position: absolute;
-        transform: translate(47px, -30px);
-        left: 0;
-        top: 0;
-        z-index: 2;
-        @media (max-width: 992px) {
-          width: 50%;
-        }
-      }
-      img:nth-child(2) {
-        position: absolute;
-        transform: translate(314px, 67px);
-        left: 0;
-        top: 0;
-        z-index: 3;
-        @media (max-width: 992px) {
-          width: 45%;
-          transform: translate(-19px, 67px);
+          transform: translate(0px, -42px);
           right: 0;
-          left: auto;
-        }
-      }
-    }
-  }
-
-  .segment4 {
-    .jakosc1 {
-      height: 411px;
-      img {
-        position: absolute;
-        transform: translate(70px, 45px);
-        left: 0;
-        top: 0;
-        z-index: 1;
-        @media (max-width: 992px) {
-          width: 100%;
+          top: 0;
+          @media (max-width: 992px) {
+            width: 70%;
+          }
         }
       }
     }
 
-    .jakosc2 {
-      height: 411px;
-      background-image: url("../img/nagrody/Tlo_seg4.png");
-      img {
-        position: absolute;
-        transform: translate(92px, 151px);
-        left: 0;
-        top: 0;
-      }
-      p {
-        position: absolute;
-        transform: translate(92px, 207px);
-        left: 0;
-        top: 0;
-        right: 157px;
-        font-size: 11px;
-        color: #7d4835;
-      }
-    }
-  }
-
-  .segment5 {
-    .paragon {
-      height: 411px;
-      border: solid 6px #eeeeee;
-      img:first-of-type {
-        position: absolute;
-        transform: translate(-50%, 28px);
-        left: 50%;
-        top: 0;
-      }
-      img:nth-child(2) {
-        position: absolute;
-        transform: translate(69px, 245px);
-        left: 0;
-        top: 0;
-        @media (max-width: 992px) {
-          transform: translate(40px, 245px);
-        }
-      }
-      p {
-        position: absolute;
-        transform: translate(69px, 340px);
-        left: 0;
-        top: 0;
-        right: 98px;
-        font-size: 11px;
-        color: #706f6f;
-        @media (max-width: 992px) {
-          transform: translate(40px, 340px);
-        }
-      }
-    }
-  }
-
-  /* --------------------KONIEC nagrody--------------------*/
-
-  footer {
-    height: 244px;
-
-    .inner6 {
-      margin-top: 3px;
-      height: 100%;
-      background-image: url("../img/stopka_tlo.png");
-
-      .stopkaNav {
-        position: absolute;
-        transform: translate(121px, 78px);
-        left: 0;
-        top: 0;
+    .segment2 {
+      .diament {
+        height: 411px;
         img {
-          display: block;
-          margin-bottom: 8px;
+          position: absolute;
+          transform: translate(14px, 92px);
+          left: 0;
+          top: 0;
+          z-index: 1;
+          @media (max-width: 992px) {
+            width: 120%;
+          }
         }
       }
 
-      .kontakt {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-        p {
-          color: white;
-          font-family: Verdana, sans-serif;
+      .diament2 {
+        height: 411px;
+        border: solid 6px #eeeeee;
+        img {
+          position: absolute;
+          transform: translate(96px, 92px);
+          left: 0;
+          top: 0;
+        }
+        div {
+          position: absolute;
+          transform: translate(96px, 146px);
+          left: 0;
+          top: 0;
+          right: 163px;
           font-size: 11px;
-          margin: 0;
+          color: #706f6f;
+        }
+      }
+    }
+
+    .segment3 {
+      .perla1 {
+        height: 411px;
+        background-image: url("../img/nagrody/Tlo_seg3.png");
+        img {
+          position: absolute;
+          transform: translate(69px, 112px);
+          left: 0;
+          top: 0;
+        }
+        p {
+          position: absolute;
+          transform: translate(69px, 246px);
+          left: 0;
+          top: 0;
+          right: 94px;
+          font-size: 11px;
+          color: #706f6f;
+        }
+      }
+
+      .perla2 {
+        img:first-of-type {
+          position: absolute;
+          transform: translate(47px, -30px);
+          left: 0;
+          top: 0;
+          z-index: 2;
+          @media (max-width: 992px) {
+            width: 50%;
+          }
+        }
+        img:nth-child(2) {
+          position: absolute;
+          transform: translate(314px, 67px);
+          left: 0;
+          top: 0;
+          z-index: 3;
+          @media (max-width: 992px) {
+            width: 45%;
+            transform: translate(-19px, 67px);
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+
+    .segment4 {
+      .jakosc1 {
+        height: 411px;
+        img {
+          position: absolute;
+          transform: translate(70px, 45px);
+          left: 0;
+          top: 0;
+          z-index: 1;
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .jakosc2 {
+        height: 411px;
+        background-image: url("../img/nagrody/Tlo_seg4.png");
+        img {
+          position: absolute;
+          transform: translate(92px, 151px);
+          left: 0;
+          top: 0;
+        }
+        p {
+          position: absolute;
+          transform: translate(92px, 207px);
+          left: 0;
+          top: 0;
+          right: 157px;
+          font-size: 11px;
+          color: #7d4835;
+        }
+      }
+    }
+
+    .segment5 {
+      .paragon {
+        height: 411px;
+        border: solid 6px #eeeeee;
+        img:first-of-type {
+          position: absolute;
+          transform: translate(-50%, 28px);
+          left: 50%;
+          top: 0;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          transform: translate(69px, 245px);
+          left: 0;
+          top: 0;
+          @media (max-width: 992px) {
+            transform: translate(40px, 245px);
+          }
+        }
+        p {
+          position: absolute;
+          transform: translate(69px, 340px);
+          left: 0;
+          top: 0;
+          right: 98px;
+          font-size: 11px;
+          color: #706f6f;
+          @media (max-width: 992px) {
+            transform: translate(40px, 340px);
+          }
+        }
+      }
+    }
+
+    /* --------------------KONIEC nagrody--------------------*/
+
+    footer {
+      height: 244px;
+
+      .inner6 {
+        margin-top: 3px;
+        height: 100%;
+        background-image: url("../img/stopka_tlo.png");
+
+        .stopkaNav {
+          position: absolute;
+          transform: translate(121px, 78px);
+          left: 0;
+          top: 0;
+          @media (max-width: 768px) {
+            transform: translate(10%, 50%);
+            width: 130%;
+          }
+          img {
+            display: block;
+            margin-bottom: 8px;
+          }
+        }
+
+        .logoStopka {
+          @media (max-width: 768px) {
+            position: absolute;
+            transform: translate(-50%, 170%);
+            left: 50%;
+            top: 0;
+            margin: 0;
+          }
+        }
+
+        .kontakt {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+          @media (max-width: 768px) {
+            transform: translate(10%, 50%);
+            width: 120%;
+            left: 0;
+            top: 0;
+          }
+          @media (max-width: 400px) {
+            transform: translate(-10%, 70%);
+            width: 120%;
+            left: 0;
+            top: 0;
+          }
+          p {
+            color: white;
+            font-family: Verdana, sans-serif;
+            font-size: 11px;
+            margin: 0;
+            @media (max-width: 400px) {
+              font-size: 9px;
+            }
+          }
         }
       }
     }
