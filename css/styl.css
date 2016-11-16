@@ -176,6 +176,11 @@
 .inner4 {
   padding: 3px; }
 
+@media (max-width: 480px) {
+  .paddingMobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
 .positionCenter {
   left: 0;
   top: 0;
@@ -186,6 +191,18 @@
 
 .hide {
   display: none; }
+
+.col75 {
+  width: 62.5%;
+  /*@media (max-width: 768px) {
+    width: 100%;
+  }*/ }
+
+.col45 {
+  width: 37.5%;
+  /*@media (max-width: 768px) {
+    width: 100%;
+  }*/ }
 
 @media (max-width: 480px) {
   .col-xxs {
@@ -512,6 +529,9 @@ html body {
   html body .inner1 .oFirmieTitle {
     height: 372px;
     background-image: url("../img/ofirmie/zdjecie_top.png"); }
+    @media (max-width: 480px) {
+      html body .inner1 .oFirmieTitle img {
+        width: 90%; } }
   html body .segment1 .oFirmieOrange {
     height: 411px;
     background-image: url("../img/ofirmie/tlo_pomaranczowe.png"); }
@@ -520,6 +540,11 @@ html body {
       transform: translate(79px, 128px);
       left: 0;
       top: 0; }
+      @media (max-width: 480px) {
+        html body .segment1 .oFirmieOrange img {
+          transform: translate(-50%, 128px);
+          left: 50%;
+          width: 90%; } }
     html body .segment1 .oFirmieOrange p {
       position: absolute;
       transform: translate(79px, 261px);
@@ -528,6 +553,11 @@ html body {
       right: 158px;
       font-size: 11px;
       color: #ffffff; }
+      @media (max-width: 480px) {
+        html body .segment1 .oFirmieOrange p {
+          transform: translate(-50%, 261px);
+          left: 50%;
+          width: 90%; } }
   html body .segment1 .oFirmieSerce {
     height: 411px; }
     html body .segment1 .oFirmieSerce img {
@@ -547,20 +577,45 @@ html body {
   html body .segment2 .oFirmieBiuro {
     height: 411px;
     background-image: url("../img/ofirmie/zdjecie_biuro.png"); }
+    @media (max-width: 768px) and (min-width: 481px) {
+      html body .segment2 .oFirmieBiuro {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 0;
+        padding-top: calc(410 / 670 * 100%);
+        /*padding-top: calc(410 / 370 * 100%); (img-height / img-width * container-width) */ } }
+    @media (max-width: 480px) {
+      html body .segment2 .oFirmieBiuro {
+        background-size: cover; } }
   html body .segment2 .oFirmieOpis {
     height: 411px;
     background-image: url("../img/ofirmie/tlo_szare.png"); }
+    @media (max-width: 768px) {
+      html body .segment2 .oFirmieOpis {
+        background-size: cover; } }
     html body .segment2 .oFirmieOpis img {
       position: absolute;
       transform: translate(91px, 91px);
       left: 0;
       top: 0; }
+      @media (max-width: 480px) {
+        html body .segment2 .oFirmieOpis img {
+          transform: translate(-50%, 91px);
+          left: 50%;
+          width: 90%; } }
     html body .segment2 .oFirmieOpis div {
       position: absolute;
       transform: translate(92px, 146px);
       left: 0;
       top: 0;
       right: 158px; }
+      @media (max-width: 480px) {
+        html body .segment2 .oFirmieOpis div {
+          transform: translate(-50%, 146px);
+          left: 50%;
+          width: 90%; } }
       html body .segment2 .oFirmieOpis div p {
         font-size: 11px;
         color: #706f6f; }
@@ -574,6 +629,13 @@ html body {
     @media (max-width: 992px) {
       html body .segment3 .oFirmieYears h3 {
         transform: translate(15px, 300px); } }
+    @media (max-width: 768px) {
+      html body .segment3 .oFirmieYears h3 {
+        padding-top: 25%; } }
+    @media (max-width: 480px) {
+      html body .segment3 .oFirmieYears h3 {
+        padding-top: 0;
+        transform: translate(15px, 280px); } }
   html body .segment3 .oFirmieYears p {
     position: absolute;
     transform: translate(14px, 369px);
@@ -585,6 +647,15 @@ html body {
     @media (max-width: 992px) {
       html body .segment3 .oFirmieYears p {
         transform: translate(15px, 340px); } }
+    @media (max-width: 768px) {
+      html body .segment3 .oFirmieYears p {
+        padding-top: 20%;
+        font-size: 13px; } }
+    @media (max-width: 480px) {
+      html body .segment3 .oFirmieYears p {
+        transform: translate(15px, 340px);
+        font-size: 12px;
+        padding-top: 0; } }
   html body .segment3 .oFirmieYears img:nth-child(2) {
     /*position: absolute;
     transform: translate(0px, 78px);
@@ -604,20 +675,26 @@ html body {
         transform: translate(13px, 17px);
         left: 0;
         top: 0; }
-  html body .segment3 .oFirmieYears .oFirmie1995 {
+  @media (max-width: 768px) {
+    html body .segment3 .oFirmieYears .pad95Mobile {
+      padding: 3px 0 3px 3px; } }
+  html body .segment3 .oFirmieYears .pad95Mobile .oFirmie1995 {
     height: 468px;
     padding: 3.5px;
     background-image: url("../img/ofirmie/tlo_v2.png"); }
-    html body .segment3 .oFirmieYears .oFirmie1995 img:first-of-type {
+    html body .segment3 .oFirmieYears .pad95Mobile .oFirmie1995 img:first-of-type {
       position: absolute;
       transform: translate(13px, 17px);
       left: 0;
       top: 0; }
-  html body .segment3 .oFirmieYears .oFirmie1997 {
+  @media (max-width: 768px) {
+    html body .segment3 .oFirmieYears .pad97Mobile {
+      padding: 3px 3px 3px 0; } }
+  html body .segment3 .oFirmieYears .pad97Mobile .oFirmie1997 {
     height: 468px;
     padding: 3.5px;
     background-image: url("../img/ofirmie/tlo_v1.png"); }
-    html body .segment3 .oFirmieYears .oFirmie1997 img:first-of-type {
+    html body .segment3 .oFirmieYears .pad97Mobile .oFirmie1997 img:first-of-type {
       position: absolute;
       transform: translate(13px, 17px);
       left: 0;
@@ -635,41 +712,62 @@ html body {
         top: 0; }
   html body .certyfikat {
     height: 633px; }
-    html body .certyfikat img:first-of-type {
+    @media (max-width: 480px) {
+      html body .certyfikat {
+        height: 696px; } }
+    html body .certyfikat .cert1 {
       position: absolute;
       transform: translate(-50%, 54px);
       left: 50%;
       top: 0; }
-    html body .certyfikat img:nth-child(2) {
+      @media (max-width: 480px) {
+        html body .certyfikat .cert1 {
+          width: 95%; } }
+    html body .certyfikat .cert2 {
       position: absolute;
       transform: translate(-50%, 117px);
       left: 50%;
       top: 0; }
-    html body .certyfikat div {
+    html body .certyfikat .certText {
       position: absolute;
       transform: translate(90px, 251px);
       left: 0;
       top: 0;
       right: 195px;
       color: #706f6f; }
-      html body .certyfikat div .colorFormat {
+      html body .certyfikat .certText .colorFormat {
         color: #7d4835; }
-    html body .certyfikat img:nth-child(4) {
+      @media (max-width: 774px) {
+        html body .certyfikat .certText {
+          width: 95%;
+          transform: translate(-50%, 251px);
+          left: 50%; } }
+      @media (max-width: 620px) {
+        html body .certyfikat .certText {
+          font-size: 12px; } }
+      @media (max-width: 480px) {
+        html body .certyfikat .certText {
+          font-size: 11px;
+          transform: translate(-50%, 225px); } }
+    html body .certyfikat .fsscCert img {
       position: absolute;
-      transform: translate(107px, 500px);
-      left: 0;
+      transform: translate(-50%, 500px);
+      left: 50%;
       top: 0; }
-      @media (max-width: 992px) {
-        html body .certyfikat img:nth-child(4) {
-          transform: translate(80px, 500px); } }
-    html body .certyfikat img:nth-child(5) {
+      @media (max-width: 768px) {
+        html body .certyfikat .fsscCert img {
+          width: 90%; } }
+      @media (max-width: 480px) {
+        html body .certyfikat .fsscCert img {
+          transform: translate(-50%, 515px); } }
+    html body .certyfikat .ciaaCert img {
       position: absolute;
-      transform: translate(620px, 494px);
-      left: 0;
+      transform: translate(-50%, 494px);
+      left: 50%;
       top: 0; }
-      @media (max-width: 992px) {
-        html body .certyfikat img:nth-child(5) {
-          transform: translate(540px, 494px); } }
+      @media (max-width: 480px) {
+        html body .certyfikat .ciaaCert img {
+          transform: translate(-50%, 650%); } }
   html body .misja {
     height: 311px; }
   html body .segment1 .misjaSilosy {
@@ -685,16 +783,23 @@ html body {
     background-size: contain;
     background-repeat: no-repeat;
     height: 0;
-    padding-top: calc(411 / 368 * 100%);
-    /* (img-height / img-width * container-width) */ }
+    padding-top: calc(411 / 368 * 100%); }
+    @media (max-width: 480px) {
+      html body .segment1 .misjaOpis {
+        padding-top: calc(250 / 368 * 100%); } }
     html body .segment1 .misjaOpis img {
       position: absolute;
-      transform: translate(-32px, 119px);
+      transform: translate(-32px, -50%);
       right: 0;
-      top: 0;
+      top: 50%;
       max-width: 100%;
       width: auto;
       height: auto; }
+      @media (max-width: 480px) {
+        html body .segment1 .misjaOpis img {
+          width: 90%;
+          transform: translate(-50%, -50%);
+          left: 50%; } }
   html body .segment2 .misjaSeg2 {
     width: 100%;
     background-color: white;
@@ -711,6 +816,13 @@ html body {
       @media (max-width: 900px) {
         html body .segment2 .misjaSeg2 .misjaOpis2 img {
           transform: translate(45px, 40px); } }
+      @media (max-width: 768px) {
+        html body .segment2 .misjaSeg2 .misjaOpis2 img {
+          width: 80%; } }
+      @media (max-width: 480px) {
+        html body .segment2 .misjaSeg2 .misjaOpis2 img {
+          transform: translate(-50%, 0);
+          left: 50%; } }
     html body .segment2 .misjaSeg2 .misjaOpis2 div {
       position: absolute;
       transform: translate(79px, 154px);
@@ -723,8 +835,17 @@ html body {
           transform: translate(45px, 100px);
           right: 103px;
           font-size: 1.2vw; } }
+      @media (max-width: 768px) {
+        html body .segment2 .misjaSeg2 .misjaOpis2 div {
+          width: 90%;
+          transform: translate(-50%, 50%);
+          left: 50%;
+          font-size: 1.3vw; } }
+      @media (max-width: 480px) {
+        html body .segment2 .misjaSeg2 .misjaOpis2 div {
+          transform: translate(-50%, 35px);
+          font-size: 1.35vh; } }
   html body .segment2 .misjaBiuro {
-    /*height: 411px;*/
     background-image: url("../img/misja/Foto_biuro.png");
     width: 100%;
     background-size: contain;
@@ -732,6 +853,10 @@ html body {
     height: 0;
     padding-top: calc(411 / 368 * 100%);
     /* (img-height / img-width * container-width) */ }
+    @media (max-width: 480px) {
+      html body .segment2 .misjaBiuro {
+        padding-top: calc(300 / 368 * 100%);
+        background-position: center; } }
   html body .segment3 .inner7 {
     padding: 3px 0 3px 0; }
     html body .segment3 .inner7 .dziekujemy {
@@ -752,6 +877,10 @@ html body {
           transform: translate(-35px, 55px);
           right: 0;
           top: 0; }
+          @media (max-width: 768px) {
+            html body .segment3 .inner7 .dziekujemy div img {
+              width: 50%;
+              transform: translate(-5%, 40%); } }
   html body .top .produkty {
     height: 269px;
     background-image: url("../img/produkty/Zdjecie_top.png"); }
@@ -767,26 +896,35 @@ html body {
         margin: 0;
         font-size: 11px;
         text-align: center; }
-  html body .segment1 .pierogi {
+  @media (max-width: 768px) {
+    html body .segment1 .col75 {
+      width: 100%; } }
+  html body .segment1 .col75 .pierogi {
     background-image: url("../img/produkty/Tlo_pierogi.png");
     height: 269px; }
-    html body .segment1 .pierogi .pierogiPack {
+    @media (max-width: 768px) and (min-width: 480px) {
+      html body .segment1 .col75 .pierogi {
+        background-size: cover; } }
+    html body .segment1 .col75 .pierogi .pierogiPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(48px, -35px); }
       @media (max-width: 992px) {
-        html body .segment1 .pierogi .pierogiPack {
+        html body .segment1 .col75 .pierogi .pierogiPack {
           width: 70%; } }
-    html body .segment1 .pierogi .pierogiLogo {
+      @media (max-width: 480px) {
+        html body .segment1 .col75 .pierogi .pierogiPack {
+          transform: translate(35px, 35px); } }
+    html body .segment1 .col75 .pierogi .pierogiLogo {
       position: absolute;
       left: 50%;
       top: 0;
       transform: translate(-50%, 64px); }
       @media (max-width: 992px) {
-        html body .segment1 .pierogi .pierogiLogo {
+        html body .segment1 .col75 .pierogi .pierogiLogo {
           width: 80%; } }
-    html body .segment1 .pierogi p {
+    html body .segment1 .col75 .pierogi p {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -794,23 +932,29 @@ html body {
       transform: translate(0, -29px);
       font-size: 11px;
       color: #706f6f; }
-  html body .segment1 .kubekNaRaz {
+  @media (max-width: 768px) {
+    html body .segment1 .col45 {
+      width: 100%; } }
+  html body .segment1 .col45 .kubekNaRaz {
     background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
     height: 269px; }
-    html body .segment1 .kubekNaRaz .kubekLogo {
+    @media (max-width: 768px) and (min-width: 380px) {
+      html body .segment1 .col45 .kubekNaRaz {
+        background-size: cover; } }
+    html body .segment1 .col45 .kubekNaRaz .kubekLogo {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(26px, 29px); }
-    html body .segment1 .kubekNaRaz .kubekPack {
+    html body .segment1 .col45 .kubekNaRaz .kubekPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(116px, -31px); }
-      @media (max-width: 992px) {
-        html body .segment1 .kubekNaRaz .kubekPack {
+      @media (max-width: 480px) {
+        html body .segment1 .col45 .kubekNaRaz .kubekPack {
           width: 60%; } }
-    html body .segment1 .kubekNaRaz p {
+    html body .segment1 .col45 .kubekNaRaz p {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -830,7 +974,11 @@ html body {
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translate(-50%, 78px); }
+      transform: translate(-50%, 78px);
+      max-width: 100%; }
+      @media (max-width: 768px) and (min-width: 480px) {
+        html body .segment2 .krokiety .krokietyNazwa {
+          width: 90%; } }
     html body .segment2 .krokiety p {
       position: absolute;
       left: 0;
@@ -843,10 +991,15 @@ html body {
     background-image: url("../img/produkty/Tlo_nalesniki.png");
     height: 269px; }
     html body .segment2 .nalesniki .nalesnikiNazwa {
+      z-index: 1;
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translate(-50%, 71px); }
+      transform: translate(-50%, 71px);
+      max-width: 100%; }
+      @media (max-width: 768px) and (min-width: 480px) {
+        html body .segment2 .nalesniki .nalesnikiNazwa {
+          width: 90%; } }
     html body .segment2 .nalesniki p {
       position: absolute;
       left: 0;
@@ -863,16 +1016,21 @@ html body {
   html body .segment3 .virtus {
     background-image: url("../img/produkty/Tlo_virtus.png");
     height: 546px; }
+    @media (max-width: 768px) and (min-width: 480px) {
+      html body .segment3 .virtus {
+        background-size: cover; } }
     html body .segment3 .virtus img:first-of-type {
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translate(-50%, 33px); }
+      transform: translate(-50%, 33px);
+      max-width: 100%; }
     html body .segment3 .virtus img:nth-child(2) {
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translate(-50%, 182px); }
+      transform: translate(-50%, 182px);
+      max-width: 100%; }
     html body .segment3 .virtus img:nth-child(3) {
       position: absolute;
       bottom: 0;
@@ -932,11 +1090,17 @@ html body {
   html body .segment3 .nowosci {
     background-image: url("../img/produkty/Tlo_nowosci.png");
     height: 270px; }
+    @media (max-width: 768px) and (min-width: 480px) {
+      html body .segment3 .nowosci {
+        background-size: cover; } }
     html body .segment3 .nowosci img:first-of-type {
       position: absolute;
       left: 50%;
       top: 0;
       transform: translate(-50%, 17px); }
+      @media (max-width: 480px) {
+        html body .segment3 .nowosci img:first-of-type {
+          width: 90%; } }
     html body .segment3 .nowosci img:nth-child(2) {
       position: absolute;
       left: 50%;
@@ -962,21 +1126,42 @@ html body {
       left: 0;
       top: 0;
       transform: translate(148px, 44px); }
+      @media (max-width: 768px) and (min-width: 480px) {
+        html body .segment3 .pizza img:first-of-type {
+          left: 60%;
+          transform: translate(-50%, 44px); } }
+      @media (max-width: 480px) {
+        html body .segment3 .pizza img:first-of-type {
+          width: 80%;
+          transform: translate(70px, 44px); } }
     html body .segment3 .pizza img:nth-child(2) {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(39px, 32px); }
+      @media (max-width: 480px) {
+        html body .segment3 .pizza img:nth-child(2) {
+          width: 25%;
+          transform: translate(19px, 32px); } }
     html body .segment3 .pizza img:nth-child(3) {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(27px, 175px); }
+      @media (max-width: 480px) {
+        html body .segment3 .pizza img:nth-child(3) {
+          width: 25%;
+          transform: translate(7px, 175px); } }
     html body .segment3 .pizza img:nth-child(4) {
       position: absolute;
       left: 0;
       top: 0;
-      transform: translate(28px, 413px); }
+      transform: translate(28px, 413px);
+      max-width: 100%; }
+      @media (max-width: 480px) {
+        html body .segment3 .pizza img:nth-child(4) {
+          transform: translate(-50%, 413px);
+          left: 50%; } }
     html body .segment3 .pizza p {
       position: absolute;
       left: 0;
@@ -987,17 +1172,45 @@ html body {
       color: #706f6f; }
   html body .segment1 .produkt {
     height: 605px;
-    background-image: url("../img/pierogi/Tlo_produkt.png"); }
+    background-image: url("../img/pierogi/Tlo_produkt.png");
+    width: 100%; }
+    @media (max-width: 768px) {
+      html body .segment1 .produkt {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-top: calc(605 / 992 * 100%);
+        /* (img-height / img-width * container-width) */ } }
+    @media (max-width: 768px) {
+      html body .segment1 .produkt .mobilePierogi {
+        background-size: contain;
+        background-repeat: no-repeat;
+        /*height: 600px;*/
+        padding-top: calc(605 / 992 * 100%);
+        /* (img-height / img-width * container-width) */ } }
+    @media (max-width: 480px) {
+      html body .segment1 .produkt .mobilePierogi {
+        height: 300px; } }
     html body .segment1 .produkt .pierogiWiz {
       position: absolute;
       transform: translate(30px, 66px);
       top: 0;
       left: 0; }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt .pierogiWiz {
+          width: 40%;
+          left: 50%;
+          transform: translate(-50%, -110%); } }
     html body .segment1 .produkt .lezace {
       position: absolute;
       transform: translate(212px, 445px);
       top: 0;
       left: 0; }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt .lezace {
+          width: 30%;
+          left: 50%;
+          transform: translate(0, -60%); } }
     html body .segment1 .produkt .pierogiTitle {
       position: absolute;
       transform: translate(0, 95px);
@@ -1006,27 +1219,41 @@ html body {
       @media (max-width: 992px) {
         html body .segment1 .produkt .pierogiTitle {
           width: 80%; } }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt .pierogiTitle {
+          width: 60%;
+          left: 50%;
+          transform: translate(-50%, 30%); } }
     html body .segment1 .produkt .pikto1 {
       position: absolute;
       transform: translate(0, 239px);
       top: 0;
       left: 0; }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt .pikto1 {
+          width: 50%;
+          left: 50%;
+          transform: translate(-50%, -180%); } }
     html body .segment1 .produkt .pikto2 {
       position: absolute;
-      transform: translate(120%, 241px);
+      transform: translate(-10%, 241px);
       top: 0;
       left: 0; }
-      @media (max-width: 992px) {
+      @media (max-width: 768px) {
         html body .segment1 .produkt .pikto2 {
-          transform: translate(80%, 241px); } }
+          width: 60%;
+          left: 50%;
+          transform: translate(-50%, -200%); } }
     html body .segment1 .produkt .pikto3 {
       position: absolute;
-      transform: translate(270%, 239px);
+      transform: translate(0, 239px);
       top: 0;
       left: 0; }
-      @media (max-width: 992px) {
+      @media (max-width: 768px) {
         html body .segment1 .produkt .pikto3 {
-          transform: translate(200%, 239px); } }
+          width: 60%;
+          left: 50%;
+          transform: translate(-50%, -200%); } }
     html body .segment1 .produkt h3 {
       position: absolute;
       left: 0;
@@ -1035,6 +1262,13 @@ html body {
       margin-top: 0;
       font-size: 20px;
       color: #7d4835; }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt h3 {
+          bottom: 0;
+          transform: translate(25%, 72%); } }
+      @media (max-width: 480px) {
+        html body .segment1 .produkt h3 {
+          transform: translate(15%, 60%); } }
     html body .segment1 .produkt p {
       position: absolute;
       left: 0;
@@ -1043,107 +1277,182 @@ html body {
       transform: translate(0, 459px);
       font-size: 11px;
       color: #706f6f; }
+      @media (max-width: 768px) {
+        html body .segment1 .produkt p {
+          bottom: 0;
+          transform: translate(10%, 80%);
+          right: 10%; } }
+      @media (max-width: 480px) {
+        html body .segment1 .produkt p {
+          transform: translate(10%, 70%); } }
   html body .segment2 .ilustracja {
     height: 763px;
     margin-top: 10px;
     background-image: url("../img/pierogi/Tlo_ilustracja.png");
     background-position: bottom;
     background-repeat: no-repeat; }
+    @media (max-width: 768px) {
+      html body .segment2 .ilustracja {
+        background-size: contain;
+        height: 0;
+        padding-top: calc(744 / 992 * 100%);
+        /* (img-height / img-width * container-width) */ } }
     html body .segment2 .ilustracja img:first-of-type {
       position: absolute;
       transform: translate(-50%, 0px);
       top: 0;
       left: 50%; }
+      @media (max-width: 768px) {
+        html body .segment2 .ilustracja img:first-of-type {
+          width: 100%; } }
     html body .segment2 .ilustracja img:nth-child(2) {
       position: absolute;
       transform: translate(159px, 136px);
       top: 0;
       left: 0; }
+      @media (max-width: 768px) {
+        html body .segment2 .ilustracja img:nth-child(2) {
+          display: none; } }
     html body .segment2 .ilustracja img:nth-child(3) {
       position: absolute;
       transform: translate(249px, 151px);
       top: 0;
       left: 0; }
+      @media (max-width: 768px) {
+        html body .segment2 .ilustracja img:nth-child(3) {
+          display: none; } }
     html body .segment2 .ilustracja img:nth-child(4) {
       position: absolute;
       transform: translate(-180%, -10%);
       bottom: 0;
       right: 0; }
+      @media (max-width: 480px) {
+        html body .segment2 .ilustracja img:nth-child(4) {
+          width: 15%; } }
     html body .segment2 .ilustracja img:nth-child(5) {
       position: absolute;
       transform: translate(-10%, -290%);
       right: 0;
       bottom: 0; }
+      @media (max-width: 480px) {
+        html body .segment2 .ilustracja img:nth-child(5) {
+          width: 25%;
+          transform: translate(-5%, -250%); } }
     html body .segment2 .ilustracja img:nth-child(6) {
       position: absolute;
       bottom: 0;
       right: 0; }
+      @media (max-width: 480px) {
+        html body .segment2 .ilustracja img:nth-child(6) {
+          width: 25%; } }
   html body .produktKubek {
     height: 519px;
     background-image: url("../img/kubek/Tlo_produkt.png");
     background-repeat: no-repeat; }
-    html body .produktKubek .col-md-12 {
-      height: 100%; }
-      html body .produktKubek .col-md-12 .inner1 img {
-        position: absolute;
-        transform: translate(24px, 59px);
-        top: 0;
-        left: 0; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner1 img {
-            width: 90%; } }
-      html body .produktKubek .col-md-12 .inner2 .kubLogo {
-        position: absolute;
-        transform: translate(0, 97px);
-        top: 0;
-        left: 0; }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(2) {
-        position: absolute;
-        transform: translate(119px, 105px);
-        top: 0;
-        left: 0; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner2 img:nth-child(2) {
-            width: 60%; } }
-      html body .produktKubek .col-md-12 .inner2 img:nth-child(3) {
-        position: absolute;
-        transform: translate(117px, 148px);
-        top: 0;
-        left: 0; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner2 img:nth-child(3) {
-            width: 60%; } }
-      html body .produktKubek .col-md-12 .inner2 p:nth-child(4) {
-        position: absolute;
-        transform: translate(4px, 282px);
-        top: 0;
-        left: 0;
-        right: 35px;
-        font-size: 11px; }
-      html body .produktKubek .col-md-12 .inner2 .prostoZKubka {
-        position: absolute;
-        transform: translate(-50%, 391px);
-        top: 0;
-        left: 50%; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner2 .prostoZKubka {
-            width: 90%; } }
-      html body .produktKubek .col-md-12 .inner2 .swieze {
-        position: absolute;
-        transform: translate(-50%, 393px);
-        top: 0;
-        left: 50%; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner2 .swieze {
-            width: 90%; } }
-      html body .produktKubek .col-md-12 .inner2 .gotoweMin {
-        position: absolute;
-        transform: translate(-50%, 392px);
-        top: 0;
-        left: 50%; }
-        @media (max-width: 992px) {
-          html body .produktKubek .col-md-12 .inner2 .gotoweMin {
-            width: 90%; } }
+    @media (max-width: 768px) {
+      html body .produktKubek {
+        background-size: contain;
+        height: 0;
+        padding-top: calc(606 / 992 * 100%);
+        /* (img-height / img-width * container-width) */ } }
+    @media (max-width: 480px) {
+      html body .produktKubek {
+        height: 650px; } }
+    html body .produktKubek .col-md-12 .inner1 img {
+      position: absolute;
+      transform: translate(24px, 59px);
+      top: 0;
+      left: 0; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .inner1 img {
+          width: 90%; } }
+      @media (max-width: 768px) {
+        html body .produktKubek .col-md-12 .inner1 img {
+          width: 70%;
+          left: 50%;
+          transform: translate(-50%, -80%); } }
+    @media (max-width: 768px) {
+      html body .produktKubek .col-md-12 .mobileKubek {
+        background-size: contain;
+        background-repeat: no-repeat;
+        /*height: 600px;*/
+        padding-top: calc(605 / 992 * 100%);
+        /* (img-height / img-width * container-width) */ } }
+    @media (max-width: 480px) {
+      html body .produktKubek .col-md-12 .mobileKubek {
+        height: 300px; } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubLogo {
+      position: absolute;
+      transform: translate(0, 97px);
+      top: 0;
+      left: 0; }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubLogo {
+          width: 20%;
+          transform: translate(10%, 30%); } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
+      position: absolute;
+      transform: translate(119px, 105px);
+      top: 0;
+      left: 0; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
+          width: 60%; } }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
+          transform: translate(50%, 250%); } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
+      position: absolute;
+      transform: translate(117px, 148px);
+      top: 0;
+      left: 0; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
+          width: 60%; } }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
+          transform: translate(50%, 180%); } }
+    @media (max-width: 480px) {
+      html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText {
+        transform: translate(5%, 300%); } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText p {
+      position: absolute;
+      transform: translate(4px, 282px);
+      top: 0;
+      left: 0;
+      right: 35px;
+      font-size: 11px; }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText p {
+          width: 90%;
+          transform: translate(4px, 10%); } }
+    @media (max-width: 480px) {
+      html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto {
+        transform: translate(0, 15%); } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .prostoZKubka {
+      position: absolute;
+      transform: translate(-50%, 391px);
+      top: 0;
+      left: 50%; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .prostoZKubka {
+          width: 90%; } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
+      position: absolute;
+      transform: translate(-50%, 393px);
+      top: 0;
+      left: 50%; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
+          width: 90%; } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
+      position: absolute;
+      transform: translate(-50%, 392px);
+      top: 0;
+      left: 50%; }
+      @media (max-width: 992px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
+          width: 90%; } }
   html body .ilustracjaKubek {
     height: 747px;
     background-image: url("../img/kubek/Tlo_ilustracja.png");
@@ -1165,6 +1474,12 @@ html body {
         @media (max-width: 992px) {
           html body .ilustracjaKubek .col-md-12 img {
             transform: translate(44px, -250%); } }
+        @media (max-width: 768px) {
+          html body .ilustracjaKubek .col-md-12 img {
+            width: 40%; } }
+        @media (max-width: 480px) {
+          html body .ilustracjaKubek .col-md-12 img {
+            transform: translate(15%, -240%); } }
   html body .daneLogistyczne {
     height: 516px;
     background-color: #ffffff; }
@@ -1173,6 +1488,11 @@ html body {
       transform: translate(119px, 56px);
       top: 0;
       left: 0; }
+      @media (max-width: 520px) {
+        html body .daneLogistyczne .daneTitle {
+          width: 70%;
+          left: 50%;
+          transform: translate(-50%, 56px); } }
     html body .daneLogistyczne .daneAll {
       padding: 162px 110px 0 119px; }
       @media (max-width: 992px) {
@@ -1183,6 +1503,26 @@ html body {
           padding: 162px 0 0 0; } }
     html body .daneLogistyczne .col-md-4 {
       height: 178px; }
+      @media (max-width: 768px) {
+        html body .daneLogistyczne .col-md-4 {
+          height: 140px; } }
+      @media (max-width: 600px) and (min-width: 481px) {
+        html body .daneLogistyczne .col-md-4 {
+          display: block;
+          float: none;
+          width: 100%; } }
+      @media (max-width: 768px) and (min-width: 601px) {
+        html body .daneLogistyczne .col-md-4 .daneTabela {
+          height: 130px;
+          transform: translate(15%, 0); } }
+      @media (max-width: 600px) {
+        html body .daneLogistyczne .col-md-4 .daneTabela {
+          height: 130px;
+          transform: translate(25%, 0); } }
+      @media (max-width: 480px) {
+        html body .daneLogistyczne .col-md-4 .daneTabela {
+          height: 130px;
+          transform: translate(15%, 0); } }
       html body .daneLogistyczne .col-md-4 .daneTabela p:first-of-type {
         margin-bottom: 8px;
         font-size: 14px; }

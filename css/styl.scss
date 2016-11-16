@@ -1,78 +1,99 @@
 .container-fluid {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+margin: 0 auto;
+padding: 0;
+width: 100%;
+overflow-x: hidden;
+overflow-y: hidden;
 }
 
 @for $i from 1 through 12 {
-  .col-xs-#{$i} {
-    margin: 0;
-    padding: 0;
-  }
-  .col-sm-#{$i} {
-    margin: 0;
-    padding: 0;
-  }
-  .col-md-#{$i} {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.row {
+.col-xs-#{$i} {
   margin: 0;
   padding: 0;
 }
+.col-sm-#{$i} {
+  margin: 0;
+  padding: 0;
+}
+.col-md-#{$i} {
+  margin: 0;
+  padding: 0;
+}
+}
+
+.row {
+margin: 0;
+padding: 0;
+}
 
 .col-height {
-  height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+height: 100%;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .h100 {
-  height: 100%;
+height: 100%;
 }
 
 .h50 {
-  height: 50%;
+height: 50%;
 }
 
 .inner1 {
-  padding-bottom: 3px;
+padding-bottom: 3px;
 }
 
 .inner2 {
-  padding: 3px 3px 3px 0;
+padding: 3px 3px 3px 0;
 }
 
 .inner3 {
-  padding: 3px 0 3px 3px;
+padding: 3px 0 3px 3px;
 }
 
 .inner4 {
-  padding: 3px;
+padding: 3px;
+}
+
+.paddingMobile {
+@media (max-width: 480px) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 }
 
 .positionCenter {
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+position: absolute;
 }
 
 .hide {
-  display: none;
+display: none;
+}
+
+.col75 {
+width: 62.5%;
+/*@media (max-width: 768px) {
+  width: 100%;
+}*/
+}
+
+.col45 {
+width: 37.5%;
+/*@media (max-width: 768px) {
+  width: 100%;
+}*/
 }
 
 @media (max-width: 480px) {
   .col-xxs {
-    display:block;
-    float:none;
+    display: block;
+    float: none;
     width: 100%
   }
 }
@@ -514,6 +535,11 @@ html {
       .oFirmieTitle {
         height: 372px;
         background-image: url("../img/ofirmie/zdjecie_top.png");
+        img {
+          @media (max-width: 480px) {
+            width: 90%;
+          }
+        }
       }
     }
 
@@ -526,6 +552,11 @@ html {
           transform: translate(79px, 128px);
           left: 0;
           top: 0;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 128px);
+            left: 50%;
+            width: 90%;
+          }
         }
         p {
           position: absolute;
@@ -535,6 +566,11 @@ html {
           right: 158px;
           font-size: 11px;
           color: #ffffff;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 261px);
+            left: 50%;
+            width: 90%;
+          }
         }
       }
 
@@ -563,16 +599,37 @@ html {
       .oFirmieBiuro {
         height: 411px;
         background-image: url("../img/ofirmie/zdjecie_biuro.png");
+        @media (max-width: 768px) and (min-width: 481px) {
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 0;
+          padding-top: calc(410 / 670 * 100%);
+          /*padding-top: calc(410 / 370 * 100%); (img-height / img-width * container-width) */
+        }
+        @media (max-width: 480px) {
+          background-size: cover;
+        }
       }
 
       .oFirmieOpis {
         height: 411px;
         background-image: url("../img/ofirmie/tlo_szare.png");
+        @media (max-width: 768px) {
+          background-size: cover;
+        }
+
         img {
           position: absolute;
           transform: translate(91px, 91px);
           left: 0;
           top: 0;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 91px);
+            left: 50%;
+            width: 90%;
+          }
         }
         div {
           position: absolute;
@@ -580,6 +637,11 @@ html {
           left: 0;
           top: 0;
           right: 158px;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 146px);
+            left: 50%;
+            width: 90%;
+          }
           p {
             font-size: 11px;
             color: #706f6f;
@@ -600,6 +662,13 @@ html {
           @media (max-width: 992px) {
             transform: translate(15px, 300px);
           }
+          @media (max-width: 768px) {
+            padding-top: 25%;
+          }
+          @media (max-width: 480px) {
+            padding-top: 0;
+            transform: translate(15px, 280px);
+          }
         }
 
         p {
@@ -612,6 +681,15 @@ html {
           color: #706f6f;
           @media (max-width: 992px) {
             transform: translate(15px, 340px);
+          }
+          @media (max-width: 768px) {
+            padding-top: 20%;
+            font-size: 13px;
+          }
+          @media (max-width: 480px) {
+            transform: translate(15px, 340px);
+            font-size: 12px;
+            padding-top: 0;
           }
         }
 
@@ -641,29 +719,39 @@ html {
           }
         }
 
-        .oFirmie1995 {
-          height: 468px;
-          padding: 3.5px;
-          background-image: url("../img/ofirmie/tlo_v2.png");
+        .pad95Mobile {
+          @media (max-width: 768px) {
+            padding: 3px 0 3px 3px;
+          }
+          .oFirmie1995 {
+            height: 468px;
+            padding: 3.5px;
+            background-image: url("../img/ofirmie/tlo_v2.png");
 
-          img:first-of-type {
-            position: absolute;
-            transform: translate(13px, 17px);
-            left: 0;
-            top: 0;
+            img:first-of-type {
+              position: absolute;
+              transform: translate(13px, 17px);
+              left: 0;
+              top: 0;
+            }
           }
         }
 
-        .oFirmie1997 {
-          height: 468px;
-          padding: 3.5px;
-          background-image: url("../img/ofirmie/tlo_v1.png");
+        .pad97Mobile {
+          @media (max-width: 768px) {
+            padding: 3px 3px 3px 0;
+          }
+          .oFirmie1997 {
+            height: 468px;
+            padding: 3.5px;
+            background-image: url("../img/ofirmie/tlo_v1.png");
 
-          img:first-of-type {
-            position: absolute;
-            transform: translate(13px, 17px);
-            left: 0;
-            top: 0;
+            img:first-of-type {
+              position: absolute;
+              transform: translate(13px, 17px);
+              left: 0;
+              top: 0;
+            }
           }
         }
 
@@ -688,20 +776,26 @@ html {
 
     .certyfikat {
       height: 633px;
+      @media (max-width: 480px) {
+        height: 696px;
+      }
 
-      img:first-of-type {
+      .cert1 {
         position: absolute;
         transform: translate(-50%, 54px);
         left: 50%;
         top: 0;
+        @media (max-width: 480px) {
+          width: 95%;
+        }
       }
-      img:nth-child(2) {
+      .cert2 {
         position: absolute;
         transform: translate(-50%, 117px);
         left: 50%;
         top: 0;
       }
-      div {
+      .certText {
         position: absolute;
         transform: translate(90px, 251px);
         left: 0;
@@ -711,23 +805,42 @@ html {
         .colorFormat {
           color: #7d4835;
         }
-      }
-      img:nth-child(4) {
-        position: absolute;
-        transform: translate(107px, 500px);
-        left: 0;
-        top: 0;
-        @media (max-width: 992px) {
-          transform: translate(80px, 500px);
+        @media (max-width: 774px) {
+          width: 95%;
+          transform: translate(-50%, 251px);
+          left: 50%;
+        }
+        @media (max-width: 620px) {
+          font-size: 12px;
+        }
+        @media (max-width: 480px) {
+          font-size: 11px;
+          transform: translate(-50%, 225px);
         }
       }
-      img:nth-child(5) {
-        position: absolute;
-        transform: translate(620px, 494px);
-        left: 0;
-        top: 0;
-        @media (max-width: 992px) {
-          transform: translate(540px, 494px);
+      .fsscCert {
+        img {
+          position: absolute;
+          transform: translate(-50%, 500px);
+          left: 50%;
+          top: 0;
+          @media (max-width: 768px) {
+            width: 90%;
+          }
+          @media (max-width: 480px) {
+            transform: translate(-50%, 515px);
+          }
+        }
+      }
+      .ciaaCert {
+        img {
+          position: absolute;
+          transform: translate(-50%, 494px);
+          left: 50%;
+          top: 0;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 650%);
+          }
         }
       }
     }
@@ -754,15 +867,23 @@ html {
         background-size: contain;
         background-repeat: no-repeat;
         height: 0;
-        padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
+        padding-top: calc(411 / 368 * 100%);
+        @media (max-width: 480px) {
+          padding-top: calc(250 / 368 * 100%);
+        }
         img {
           position: absolute;
-          transform: translate(-32px, 119px);
+          transform: translate(-32px, -50%);
           right: 0;
-          top: 0;
+          top: 50%;
           max-width: 100%;
           width: auto;
           height: auto;
+          @media (max-width: 480px) {
+            width: 90%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+          }
         }
       }
     }
@@ -785,6 +906,13 @@ html {
             @media (max-width: 900px) {
               transform: translate(45px, 40px);
             }
+            @media (max-width: 768px) {
+              width: 80%;
+            }
+            @media (max-width: 480px) {
+              transform: translate(-50%, 0);
+              left: 50%;
+            }
           }
           div {
             position: absolute;
@@ -798,19 +926,32 @@ html {
               right: 103px;
               font-size: 1.2vw;
             }
+            @media (max-width: 768px) {
+              width: 90%;
+              transform: translate(-50%, 50%);
+              left: 50%;
+              font-size: 1.3vw;
+            }
+            @media (max-width: 480px) {
+              transform: translate(-50%, 35px);
+              font-size: 1.35vh;
+            }
           }
         }
 
       }
 
       .misjaBiuro {
-        /*height: 411px;*/
         background-image: url("../img/misja/Foto_biuro.png");
         width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
         height: 0;
         padding-top: calc(411 / 368 * 100%); /* (img-height / img-width * container-width) */
+        @media (max-width: 480px) {
+          padding-top: calc(300 / 368 * 100%);
+          background-position: center;
+        }
       }
     }
 
@@ -834,6 +975,10 @@ html {
               transform: translate(-35px, 55px);
               right: 0;
               top: 0;
+              @media (max-width: 768px) {
+                width: 50%;
+                transform: translate(-5%, 40%);
+              }
             }
           }
         }
@@ -869,70 +1014,89 @@ html {
     }
 
     .segment1 {
-      .pierogi {
-        background-image: url("../img/produkty/Tlo_pierogi.png");
-        height: 269px;
-
-        .pierogiPack {
-          position: absolute;
-          left: 0;
-          top: 0;
-          transform: translate(48px, -35px);
-          @media (max-width: 992px) {
-            width: 70%;
-          }
+      .col75 {
+        @media (max-width: 768px) {
+          width: 100%;
         }
-
-        .pierogiLogo {
-          position: absolute;
-          left: 50%;
-          top: 0;
-          transform: translate(-50%, 64px);
-          @media (max-width: 992px) {
-            width: 80%;
+        .pierogi {
+          background-image: url("../img/produkty/Tlo_pierogi.png");
+          height: 269px;
+          @media (max-width: 768px) and (min-width: 480px) {
+            background-size: cover;
           }
-        }
 
-        p {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          margin: 0 20px 0 20px;
-          transform: translate(0, -29px);
-          font-size: 11px;
-          color: #706f6f;
+          .pierogiPack {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(48px, -35px);
+            @media (max-width: 992px) {
+              width: 70%;
+            }
+            @media (max-width: 480px) {
+              transform: translate(35px, 35px);
+            }
+          }
+
+          .pierogiLogo {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 64px);
+            @media (max-width: 992px) {
+              width: 80%;
+            }
+          }
+
+          p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 0 20px 0 20px;
+            transform: translate(0, -29px);
+            font-size: 11px;
+            color: #706f6f;
+          }
         }
       }
 
-      .kubekNaRaz {
-        background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
-        height: 269px;
-
-        .kubekLogo {
-          position: absolute;
-          left: 0;
-          top: 0;
-          transform: translate(26px, 29px);
+      .col45 {
+        @media (max-width: 768px) {
+          width: 100%;
         }
-
-        .kubekPack {
-          position: absolute;
-          left: 0;
-          top: 0;
-          transform: translate(116px, -31px);
-          @media (max-width: 992px) {
-            width: 60%;
+        .kubekNaRaz {
+          background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
+          height: 269px;
+          @media (max-width: 768px) and (min-width: 380px) {
+            background-size: cover;
           }
-        }
 
-        p {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          right: 75px;
-          transform: translate(42px, -31px);
-          font-size: 11px;
-          color: #ffffff;
+          .kubekLogo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(26px, 29px);
+          }
+
+          .kubekPack {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(116px, -31px);
+            @media (max-width: 480px) {
+              width: 60%;
+            }
+          }
+
+          p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 75px;
+            transform: translate(42px, -31px);
+            font-size: 11px;
+            color: #ffffff;
+          }
         }
       }
     }
@@ -954,6 +1118,10 @@ html {
           left: 50%;
           top: 0;
           transform: translate(-50%, 78px);
+          max-width: 100%;
+          @media (max-width: 768px) and (min-width: 480px) {
+            width: 90%;
+          }
         }
 
         p {
@@ -972,10 +1140,15 @@ html {
         height: 269px;
 
         .nalesnikiNazwa {
+          z-index: 1;
           position: absolute;
           left: 50%;
           top: 0;
           transform: translate(-50%, 71px);
+          max-width: 100%;
+          @media (max-width: 768px) and (min-width: 480px) {
+            width: 90%;
+          }
         }
 
         p {
@@ -1001,12 +1174,16 @@ html {
       .virtus {
         background-image: url("../img/produkty/Tlo_virtus.png");
         height: 546px;
+        @media (max-width: 768px) and (min-width: 480px) {
+          background-size: cover;
+        }
 
         img:first-of-type {
           position: absolute;
           left: 50%;
           top: 0;
           transform: translate(-50%, 33px);
+          max-width: 100%;
         }
 
         img:nth-child(2) {
@@ -1014,6 +1191,7 @@ html {
           left: 50%;
           top: 0;
           transform: translate(-50%, 182px);
+          max-width: 100%;
         }
 
         img:nth-child(3) {
@@ -1092,12 +1270,18 @@ html {
       .nowosci {
         background-image: url("../img/produkty/Tlo_nowosci.png");
         height: 270px;
+        @media (max-width: 768px) and (min-width: 480px) {
+          background-size: cover;
+        }
 
         img:first-of-type {
           position: absolute;
           left: 50%;
           top: 0;
           transform: translate(-50%, 17px);
+          @media (max-width: 480px) {
+            width: 90%;
+          }
         }
 
         img:nth-child(2) {
@@ -1131,6 +1315,14 @@ html {
           left: 0;
           top: 0;
           transform: translate(148px, 44px);
+          @media(max-width: 768px) and (min-width: 480px) {
+            left: 60%;
+            transform: translate(-50%, 44px);
+          }
+          @media (max-width: 480px) {
+            width: 80%;
+            transform: translate(70px, 44px);
+          }
         }
 
         img:nth-child(2) {
@@ -1138,6 +1330,10 @@ html {
           left: 0;
           top: 0;
           transform: translate(39px, 32px);
+          @media (max-width: 480px) {
+            width: 25%;
+            transform: translate(19px, 32px);
+          }
         }
 
         img:nth-child(3) {
@@ -1145,6 +1341,10 @@ html {
           left: 0;
           top: 0;
           transform: translate(27px, 175px);
+          @media (max-width: 480px) {
+            width: 25%;
+            transform: translate(7px, 175px);
+          }
         }
 
         img:nth-child(4) {
@@ -1152,6 +1352,11 @@ html {
           left: 0;
           top: 0;
           transform: translate(28px, 413px);
+          max-width: 100%;
+          @media (max-width: 480px) {
+            transform: translate(-50%, 413px);
+            left: 50%;
+          }
         }
 
         p {
@@ -1174,12 +1379,36 @@ html {
       .produkt {
         height: 605px;
         background-image: url("../img/pierogi/Tlo_produkt.png");
+        width: 100%;
+        @media (max-width: 768px) {
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 0;
+          padding-top: calc(605 / 992 * 100%); /* (img-height / img-width * container-width) */
+        }
+
+        .mobilePierogi {
+          @media (max-width: 768px) {
+            background-size: contain;
+            background-repeat: no-repeat;
+            /*height: 600px;*/
+            padding-top: calc(605 / 992 * 100%); /* (img-height / img-width * container-width) */
+          }
+          @media (max-width: 480px) {
+            height: 300px;
+          }
+        }
 
         .pierogiWiz {
           position: absolute;
           transform: translate(30px, 66px);
           top: 0;
           left: 0;
+          @media (max-width: 768px) {
+            width: 40%;
+            left: 50%;
+            transform: translate(-50%, -110%);
+          }
         }
 
         .lezace {
@@ -1187,6 +1416,11 @@ html {
           transform: translate(212px, 445px);
           top: 0;
           left: 0;
+          @media (max-width: 768px) {
+            width: 30%;
+            left: 50%;
+            transform: translate(0, -60%);
+          }
         }
 
         .pierogiTitle {
@@ -1197,6 +1431,11 @@ html {
           @media (max-width: 992px) {
             width: 80%;
           }
+          @media (max-width: 768px) {
+            width: 60%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+          }
         }
 
         .pikto1 {
@@ -1204,25 +1443,34 @@ html {
           transform: translate(0, 239px);
           top: 0;
           left: 0;
+          @media (max-width: 768px) {
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%, -180%);
+          }
         }
 
         .pikto2 {
           position: absolute;
-          transform: translate(120%, 241px);
+          transform: translate(-10%, 241px);
           top: 0;
           left: 0;
-          @media (max-width: 992px) {
-            transform: translate(80%, 241px);
+          @media (max-width: 768px) {
+            width: 60%;
+            left: 50%;
+            transform: translate(-50%, -200%);
           }
         }
 
         .pikto3 {
           position: absolute;
-          transform: translate(270%, 239px);
+          transform: translate(0, 239px);
           top: 0;
           left: 0;
-          @media (max-width: 992px) {
-            transform: translate(200%, 239px);
+          @media (max-width: 768px) {
+            width: 60%;
+            left: 50%;
+            transform: translate(-50%, -200%);
           }
         }
 
@@ -1234,6 +1482,13 @@ html {
           margin-top: 0;
           font-size: 20px;
           color: #7d4835;
+          @media (max-width: 768px){
+            bottom: 0;
+            transform: translate(25%, 72%);
+          }
+          @media (max-width: 480px) {
+            transform: translate(15%, 60%);
+          }
         }
 
         p {
@@ -1244,6 +1499,14 @@ html {
           transform: translate(0, 459px);
           font-size: 11px;
           color: #706f6f;
+          @media (max-width: 768px) {
+            bottom: 0;
+            transform: translate(10%, 80%);
+            right: 10%;
+          }
+          @media (max-width: 480px) {
+            transform: translate(10%, 70%);
+          }
         }
       }
     }
@@ -1255,12 +1518,20 @@ html {
         background-image: url("../img/pierogi/Tlo_ilustracja.png");
         background-position: bottom;
         background-repeat: no-repeat;
+        @media (max-width: 768px) {
+          background-size: contain;
+          height: 0;
+          padding-top: calc(744 / 992 * 100%); /* (img-height / img-width * container-width) */
+        }
 
         img:first-of-type {
           position: absolute;
           transform: translate(-50%, 0px);
           top: 0;
           left: 50%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
 
         img:nth-child(2) {
@@ -1268,6 +1539,9 @@ html {
           transform: translate(159px, 136px);
           top: 0;
           left: 0;
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
 
         img:nth-child(3) {
@@ -1275,6 +1549,9 @@ html {
           transform: translate(249px, 151px);
           top: 0;
           left: 0;
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
 
         img:nth-child(4) {
@@ -1282,6 +1559,9 @@ html {
           transform: translate(-180%, -10%);
           bottom: 0;
           right: 0;
+          @media (max-width: 480px) {
+            width: 15%;
+          }
         }
 
         img:nth-child(5) {
@@ -1289,12 +1569,19 @@ html {
           transform: translate(-10%, -290%);
           right: 0;
           bottom: 0;
+          @media (max-width: 480px) {
+            width: 25%;
+            transform: translate(-5%, -250%);
+          }
         }
 
         img:nth-child(6) {
           position: absolute;
           bottom: 0;
           right: 0;
+          @media (max-width: 480px) {
+            width: 25%;
+          }
         }
       }
     }
@@ -1307,8 +1594,16 @@ html {
       height: 519px;
       background-image: url("../img/kubek/Tlo_produkt.png");
       background-repeat: no-repeat;
+      @media (max-width: 768px) {
+        background-size: contain;
+        height: 0;
+        padding-top: calc(606 / 992 * 100%); /* (img-height / img-width * container-width) */
+      }
+      @media (max-width: 480px) {
+        height: 650px;
+      }
+
       .col-md-12 {
-        height: 100%;
 
         .inner1 {
           img {
@@ -1319,67 +1614,109 @@ html {
             @media (max-width: 992px) {
               width: 90%;
             }
+            @media (max-width: 768px) {
+              width: 70%;
+              left: 50%;
+              transform: translate(-50%, -80%);
+            }
           }
         }
 
-        .inner2 {
-          .kubLogo {
-            position: absolute;
-            transform: translate(0, 97px);
-            top: 0;
-            left: 0;
+        .mobileKubek {
+          @media (max-width: 768px) {
+            background-size: contain;
+            background-repeat: no-repeat;
+            /*height: 600px;*/
+            padding-top: calc(605 / 992 * 100%); /* (img-height / img-width * container-width) */
           }
-          img:nth-child(2) {
-            position: absolute;
-            transform: translate(119px, 105px);
-            top: 0;
-            left: 0;
-            @media (max-width: 992px) {
-              width: 60%;
+          @media (max-width: 480px) {
+            height: 300px;
+          }
+
+          .inner2 {
+            .kubLogo {
+              position: absolute;
+              transform: translate(0, 97px);
+              top: 0;
+              left: 0;
+              @media (max-width: 480px) {
+                width: 20%;
+                transform: translate(10%, 30%);
+              }
             }
-          }
-          img:nth-child(3) {
-            position: absolute;
-            transform: translate(117px, 148px);
-            top: 0;
-            left: 0;
-            @media (max-width: 992px) {
-              width: 60%;
+            img:nth-child(2) {
+              position: absolute;
+              transform: translate(119px, 105px);
+              top: 0;
+              left: 0;
+              @media (max-width: 992px) {
+                width: 60%;
+              }
+              @media (max-width: 480px) {
+                transform: translate(50%, 250%);
+              }
             }
-          }
-          p:nth-child(4) {
-            position: absolute;
-            transform: translate(4px, 282px);
-            top: 0;
-            left: 0;
-            right: 35px;
-            font-size: 11px;
-          }
-          .prostoZKubka {
-            position: absolute;
-            transform: translate(-50%, 391px);
-            top: 0;
-            left: 50%;
-            @media (max-width: 992px) {
-              width: 90%;
+            img:nth-child(3) {
+              position: absolute;
+              transform: translate(117px, 148px);
+              top: 0;
+              left: 0;
+              @media (max-width: 992px) {
+                width: 60%;
+              }
+              @media (max-width: 480px) {
+                transform: translate(50%, 180%);
+              }
             }
-          }
-          .swieze {
-            position: absolute;
-            transform: translate(-50%, 393px);
-            top: 0;
-            left: 50%;
-            @media (max-width: 992px) {
-              width: 90%;
+            .kubekText {
+              @media (max-width: 480px) {
+                transform: translate(5%, 300%);
+              }
+              p {
+                position: absolute;
+                transform: translate(4px, 282px);
+                top: 0;
+                left: 0;
+                right: 35px;
+                font-size: 11px;
+                @media (max-width: 480px) {
+                  width: 90%;
+                  transform: translate(4px, 10%);
+                }
+              }
             }
-          }
-          .gotoweMin {
-            position: absolute;
-            transform: translate(-50%, 392px);
-            top: 0;
-            left: 50%;
-            @media (max-width: 992px) {
-              width: 90%;
+
+            .kubekPikto {
+              @media (max-width: 480px) {
+                transform: translate(0, 15%);
+              }
+              .prostoZKubka {
+                position: absolute;
+                transform: translate(-50%, 391px);
+                top: 0;
+                left: 50%;
+                @media (max-width: 992px) {
+                  width: 90%;
+                }
+              }
+              .swieze {
+                position: absolute;
+                transform: translate(-50%, 393px);
+                top: 0;
+                left: 50%;
+                @media (max-width: 992px) {
+                  width: 90%;
+                }
+              }
+              .gotoweMin {
+                position: absolute;
+                transform: translate(-50%, 392px);
+                top: 0;
+                left: 50%;
+                @media (max-width: 992px) {
+                  width: 90%;
+                }
+              }
             }
           }
         }
@@ -1408,6 +1745,12 @@ html {
           @media (max-width: 992px) {
             transform: translate(44px, -250%);
           }
+          @media (max-width: 768px) {
+            width: 40%;
+          }
+          @media (max-width: 480px) {
+            transform: translate(15%, -240%);
+          }
         }
       }
     }
@@ -1421,6 +1764,11 @@ html {
         transform: translate(119px, 56px);
         top: 0;
         left: 0;
+        @media (max-width: 520px) {
+          width: 70%;
+          left: 50%;
+          transform: translate(-50%, 56px);
+        }
       }
 
       .daneAll {
@@ -1435,8 +1783,28 @@ html {
 
       .col-md-4 {
         height: 178px;
+        @media (max-width: 768px) {
+          height: 140px;
+        }
+        @media (max-width: 600px) and (min-width: 481px) {
+          display: block;
+          float: none;
+          width: 100%;
+        }
 
         .daneTabela {
+          @media (max-width: 768px) and (min-width: 601px){
+            height: 130px;
+            transform: translate(15%, 0);
+          }
+          @media (max-width: 600px) {
+            height: 130px;
+            transform: translate(25%, 0);
+          }
+          @media (max-width: 480px) {
+            height: 130px;
+            transform: translate(15%, 0);
+          }
 
           p:first-of-type {
             margin-bottom: 8px;
