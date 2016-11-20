@@ -479,16 +479,29 @@ html body {
       left: 0;
       position: absolute;
       transform: translate(0, 151px); }
+      @media (max-width: 480px) {
+        html body .segment4 .historia .p1His {
+          transform: translate(0, 270%);
+          margin: 0;
+          padding: 0 25px 0 5px; } }
     html body .segment4 .historia .p2His {
       top: 0;
       left: 0;
       position: absolute;
       transform: translate(0, 126px); }
+      @media (max-width: 480px) {
+        html body .segment4 .historia .p2His {
+          transform: translate(0, 320%);
+          margin: 0; } }
     html body .segment4 .historia .p3His {
       top: 0;
       left: 0;
       position: absolute;
       transform: translate(0, 60px); }
+      @media (max-width: 480px) {
+        html body .segment4 .historia .p3His {
+          transform: translate(0, 90%);
+          margin: 0; } }
     html body .segment4 .historia .historiaLogo {
       padding-top: 14px;
       padding-left: 18px; }
@@ -638,7 +651,7 @@ html body {
         color: #706f6f; }
         @media (max-width: 480px) {
           html body .segment2 .oFirmieOpis div p {
-            font-size: 1.8vh; } }
+            font-size: 3.2vw; } }
   html body .segment3 .oFirmieYears h3 {
     position: absolute;
     transform: translate(15px, 325px);
@@ -1317,7 +1330,7 @@ html body {
       left: 50%; }
       @media (max-width: 768px) {
         html body .segment2 .ilustracja img:first-of-type {
-          width: 100%; } }
+          width: 97%; } }
     html body .segment2 .ilustracja img:nth-child(2) {
       position: absolute;
       transform: translate(159px, 136px);
