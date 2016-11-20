@@ -10,6 +10,7 @@
     <script type="text/javascript" src="script/script.js"></script>
 
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link type="text/css" rel="stylesheet" href="css/styl.css">
 
 </head>
@@ -33,7 +34,7 @@
     </div>
 
 
-    <div id="menu" class="row rozwijaneMenu hide">
+    <div id="menu" class="row rozwijaneMenu hideMenu">
         <div class="col-xxs col-xs-12 col-sm-12 col-md-12 h100">
             <div class="col-xxs col-xs-6 col-sm-6 col-md-6 h50">
                 <div class="inner1">
@@ -43,18 +44,18 @@
                             <thead></thead>
                             <tbody>
                             <tr>
-                                <td>O firmie</td>
+                                <td><a href="o_firmie.html">O firmie</a></td>
                                 <td>Aktualności</td>
                                 <td>Przetargi</td>
                             </tr>
                             <tr>
-                                <td>Misja firmy</td>
+                                <td><a href="misja.html">Misja firmy</a></td>
                                 <td>Kariera</td>
                                 <td>Fundusze EU</td>
                             </tr>
                             <tr>
                                 <td>Historia</td>
-                                <td>Nagrody</td>
+                                <td><a href="nagrody.html">Nagrody</a></td>
                             </tr>
                             </tbody>
                         </table>
@@ -70,9 +71,9 @@
                             <thead></thead>
                             <tbody>
                             <tr>
-                                <td>Pierogi</td>
+                                <td><a href="produkt_pierogi.html">Pierogi</a></td>
                                 <td>Pizze i zapiekanki</td>
-                                <td>Kubek na raz</td>
+                                <td><a href="produkt_kubek.html">Kubek na raz</a></td>
                             </tr>
                             <tr>
                                 <td>Naleśniki</td>
@@ -91,13 +92,14 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 sec_line">
+
+    <div class="row segment1">
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="col-xs-12 col-sm-6 col-md-6" >
                 <div class="inner1">
                     <div class="ofirmie">
                         <a href="o_firmie.html">
-                            <div class="ofirmieIn">
+                            <div id="ofirmie" class="ofirmieIn">
                                 <span class="helper"></span><img src="img/O_firmie_nt.png"/>
                             </div>
                         </a>
@@ -119,102 +121,120 @@
     </div>
 
 
-    <div class="col-xs-12 col-sm-8 col-md-6 hconst">
-        <div class="row h50">
-            <div class="col-xs-12 col-sm-12 col-md-12 h100">
+    <div class="segment2">
+        <div class="col-xs-12 col-sm-8 col-md-6 hconst">
+            <div class="row h50">
+                <div class="col-xs-12 col-sm-12 col-md-12 h100">
+                    <div class="inner2 h100">
+                        <a href="produkty.html" class="h100">
+                            <div class="produkty">
+                                <img class="produkt1" src="img/produkty.png"/>
+                                <img class="produkt2" src="img/Ikona_nowosc.png"/>
+                                <p>ciasto wypełnione malinami - wypróbuj nasze letnie produkty</p>
+                                <div id="slider">
+                                    <img class="slider w3-animate-right" src="img/packshot.png"/>
+                                    <img class="slider w3-animate-right" src="img/packshot2.png"/>
+                                    <img class="slider w3-animate-right" src="img/packshot3.png"/>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row h50">
+                <div class="col-xs-12 col-sm-12 col-md-12 h100">
+                    <div class="inner2 h100 paddingTabMobile">
+                        <div id="kariera" class="kariera">
+                            <img src="img/kariera.png" />
+                            <div class="kariera_text">
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Ut enim ad minim veniam</h4>
+                                <p>Tuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <h4>Duis aute irure</h4>
+                                <p>dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="segment3">
+        <div class="col-xs-12 col-sm-4 col-md-3 hconst">
+            <div class="h50">
+                <div class="col-xs-12 col-sm-12 col-md-12 h100">
+                    <div class="inner4 h100 paddingTabMobile">
+                        <div class="aktualnosci">
+                            <img src="img/aktualnosci.png"/>
+                            <div class="slider2 w3-animate-bottom">
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Ut enim ad minim veniam</h4>
+                                <p>Tuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="slider2 w3-animate-bottom">
+                                <h4>Ut enim ad minim veniam</h4>
+                                <p>Tuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h50">
+                <div class="col-xs-12 col-sm-12 col-md-12 h100">
+                    <div class="inner4">
+                        <img src="img/ikona_facebook.png"/>
+                        <img class="post positionCenter" src="img/grafika%20posta.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3 hconst">
+            <a href="nagrody.html">
+                <div class="inner5 osiagniecia h100 paddingMobile">
+                    <img src="img/osiagniecia.png"/>
+                    <h4>PRZEBÓJ FMCG</h4>
+                    <p>2012</p>
+                    <img class="nagroda" src="img/nagroda%20fmcg.png"/>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="segment4">
+        <div class="col-xs-12 col-sm-8 col-md-12 fourth_line">
+            <div class="col-xs-12 col-sm-12 col-md-5 hconst2">
                 <div class="inner2">
-                    <a href="produkty.html" class="h100">
-                        <div class="produkty">
-                            <img src="img/produkty.png"/>
-                            <img src="img/Ikona_nowosc.png"/>
-                            <p>ciasto wypełnione malinami - wypróbuj nasze letnie produkty</p>
-                            <img src="img/packshot.png"/>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row h50">
-            <div class="col-xs-12 col-sm-12 col-md-12 h100">
-                <div class="inner2 paddingMobile">
-                    <div class="kariera">
-                        <img src="img/kariera.png" />
-                        <div class="kariera_text">
-                            <h4>Lorem ipsum dolor</h4>
-                            <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <h4>Ut enim ad minim veniam</h4>
-                            <p>Tuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <h4>Duis aute irure</h4>
-                            <p>dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
+                    <div class="movie">
+                        <iframe width="406" height="241" src="https://www.youtube.com/embed/XTr2SEpiGZo" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4 col-md-3 hconst">
-        <div class="h50">
-            <div class="col-xs-12 col-sm-12 col-md-12 h100">
-                <div class="inner4 h100 paddingMobile">
-                    <div class="aktualnosci">
-                        <img src="img/aktualnosci.png"/>
-                        <h4>Lorem ipsum dolor</h4>
-                        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <h4>Ut enim ad minim veniam</h4>
-                        <p>Tuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="h50">
-            <div class="col-xs-12 col-sm-12 col-md-12 h100">
-                <div class="inner4">
-                    <img src="img/ikona_facebook.png"/>
-                    <img class="post positionCenter" src="img/grafika%20posta.png"/>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4 col-md-3 hconst">
-        <a href="nagrody.html">
-            <div class="inner5">
-                <img src="img/osiagniecia.png"/>
-                <h4>PRZEBÓJ FMCG</h4>
-                <p>2012</p>
-                <img class="nagroda" src="img/nagroda%20fmcg.png"/>
-            </div>
-        </a>
-    </div>
-
-
-    <div class="col-xs-12 col-sm-8 col-md-12 fourth_line">
-        <div class="col-xs-12 col-sm-12 col-md-5 hconst2">
-            <div class="inner2">
-                <div class="movie">
-                    <iframe width="406" height="241" src="https://www.youtube.com/embed/XTr2SEpiGZo" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-7">
-            <div class="inner3 paddingMobile">
-                <div class="historia">
-                    <img src="img/historia.png" class="historiaLogo"/>
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <img class="r92" src="img/1992.png"/>
-                            <p class="p1His">Sit amet, consectetur adipiscing elit</p>
-                            <img class="s1" src="img/strzala_1.png"/>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <img class="r95" src="img/1995.png"/>
-                            <p class="p2His">nisi ut aliquip ex ea commodo consequat.</p>
-                            <img class="s2" src="img/strzala_2.png">
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <img class="r01" src="img/2001.png"/>
-                            <p class="p3His">Sit amet, consectetur adipiscing elit consectetur.</p>
+            <div class="col-xs-12 col-sm-12 col-md-7">
+                <div class="inner3 h100 paddingTabMobile">
+                    <div class="historia">
+                        <img src="img/historia.png" class="historiaLogo"/>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <img class="r92" src="img/1992.png"/>
+                                <p class="p1His">Sit amet, consectetur adipiscing elit</p>
+                                <img class="s1" src="img/strzala_1.png"/>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <img class="r95" src="img/1995.png"/>
+                                <p class="p2His">nisi ut aliquip ex ea commodo consequat.</p>
+                                <img class="s2" src="img/strzala_2.png">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <img class="r01" src="img/2001.png"/>
+                                <p class="p3His">Sit amet, consectetur adipiscing elit consectetur.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

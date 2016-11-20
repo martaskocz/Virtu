@@ -176,8 +176,26 @@
 .inner4 {
   padding: 3px; }
 
+.inner5 {
+  padding: 3px 0 3px 3px;
+  border: 6px solid #e7e7e7; }
+  @media (max-width: 992px) {
+    .inner5 {
+      padding: 3px 3px 3px 0; } }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+  a:hover {
+    text-decoration: none; }
+
 @media (max-width: 480px) {
   .paddingMobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+@media (max-width: 768px) {
+  .paddingTabMobile {
     padding-left: 0 !important;
     padding-right: 0 !important; } }
 
@@ -189,20 +207,14 @@
   margin: auto;
   position: absolute; }
 
-.hide {
+.hideMenu {
   display: none; }
 
 .col75 {
-  width: 62.5%;
-  /*@media (max-width: 768px) {
-    width: 100%;
-  }*/ }
+  width: 62.5%; }
 
 .col45 {
-  width: 37.5%;
-  /*@media (max-width: 768px) {
-    width: 100%;
-  }*/ }
+  width: 37.5%; }
 
 @media (max-width: 480px) {
   .col-xxs {
@@ -276,7 +288,8 @@ html body {
       position: absolute;
       transform: translate(-30px, 113px);
       top: 0;
-      right: 0; }
+      right: 0;
+      color: #000000; }
       @media (max-width: 480px) {
         html body .rozwijaneMenu .menuLeft table {
           transform: translate(-50%, 90%);
@@ -308,224 +321,217 @@ html body {
         font-size: 11px;
         padding: 4px;
         text-align: center; }
-  html body .sec_line .ofirmie {
+  html body .hconst {
+    height: 490px; }
+  html body .hconst2 {
+    height: 241px; }
+  html body .segment1 .ofirmie {
     height: 269px; }
-    html body .sec_line .ofirmie .ofirmieIn {
+    html body .segment1 .ofirmie .ofirmieIn {
       background-image: url("../img/ofirmie.png");
       background-size: cover;
       height: 100%; }
-      html body .sec_line .ofirmie .ofirmieIn .helper {
+      html body .segment1 .ofirmie .ofirmieIn .helper {
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-      html body .sec_line .ofirmie .ofirmieIn img {
+      html body .segment1 .ofirmie .ofirmieIn img {
         padding-left: 17px;
         padding-bottom: 18px;
         vertical-align: bottom; }
-  html body .sec_line .misjafirmy {
+  html body .segment1 .misjafirmy {
     height: 269px; }
-    html body .sec_line .misjafirmy .misjafirmyIn {
+    html body .segment1 .misjafirmy .misjafirmyIn {
       height: 100%;
       text-align: center; }
-      html body .sec_line .misjafirmy .misjafirmyIn .helper {
+      html body .segment1 .misjafirmy .misjafirmyIn .helper {
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-      html body .sec_line .misjafirmy .misjafirmyIn img {
+      html body .segment1 .misjafirmy .misjafirmyIn img {
         vertical-align: middle; }
-  html body .hconst {
-    height: 490px; }
-  html body .h50 {
-    height: 50%; }
-  html body .inner2 {
-    height: 100%; }
-    html body .inner2 .produkty img:nth-child(1) {
-      padding-left: 16px;
-      padding-top: 17px;
-      vertical-align: top;
-      left: 0; }
-    html body .inner2 .produkty img:nth-child(2) {
-      position: absolute;
-      transform: translate(0, 71px);
-      left: 17px; }
-    html body .inner2 .produkty p {
-      font-size: 14px;
-      color: #706f6f;
-      text-transform: uppercase;
-      position: absolute;
-      transform: translate(87px, 94px);
-      right: 315px;
-      top: 0;
-      left: 0;
-      z-index: 1; }
-      @media (max-width: 500px) {
-        html body .inner2 .produkty p {
-          display: none; } }
-    html body .inner2 .produkty img:nth-child(4) {
-      position: absolute;
-      transform: translate(0, 0);
-      right: 1%;
-      z-index: -1; }
-  html body .inner2 .kariera {
+  html body .segment2 .produkty .produkt1 {
+    padding-left: 16px;
+    padding-top: 17px;
+    vertical-align: top;
+    left: 0; }
+  html body .segment2 .produkty .produkt2 {
+    position: absolute;
+    transform: translate(0, 71px);
+    left: 17px; }
+  html body .segment2 .produkty p {
+    font-size: 14px;
+    color: #706f6f;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translate(87px, 94px);
+    right: 315px;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    @media (max-width: 500px) {
+      html body .segment2 .produkty p {
+        display: none; } }
+  html body .segment2 .produkty #slider img {
+    position: absolute;
+    transform: translate(0, 0);
+    right: 1%;
+    z-index: -1;
+    top: 0; }
+    @media (max-width: 480px) {
+      html body .segment2 .produkty #slider img:first-child {
+        transform: translate(15%, 0); } }
+    html body .segment2 .produkty #slider img:nth-child(2) {
+      height: 99%;
+      transform: translate(-5%, 0); }
+    html body .segment2 .produkty #slider img:nth-child(3) {
+      max-width: 100%;
+      transform: translate(-15%, 10%); }
+  html body .segment2 .kariera {
     background-image: url(../img/kariera_tlo.png);
     background-size: cover;
     height: 100%; }
-    html body .inner2 .kariera img {
+    html body .segment2 .kariera img {
       padding-left: 18px;
       padding-top: 17px;
       vertical-align: top;
       left: 0; }
-    html body .inner2 .kariera .kariera_text {
+    html body .segment2 .kariera .kariera_text {
       color: white;
       font-family: Verdana, sans-serif;
       padding-left: 18px;
       padding-right: 78px;
       padding-bottom: 8px; }
-      html body .inner2 .kariera .kariera_text h4 {
+      html body .segment2 .kariera .kariera_text h4 {
         font-size: 14px;
         margin: 8px 0 3px 0; }
-        html body .inner2 .kariera .kariera_text h4:first-of-type {
+        html body .segment2 .kariera .kariera_text h4:first-of-type {
           margin-top: 34px; }
-      html body .inner2 .kariera .kariera_text p {
+      html body .segment2 .kariera .kariera_text p {
         font-size: 10px; }
-  html body .inner4 {
-    padding: 3px; }
-    html body .inner4 .aktualnosci {
-      background-color: #e7e7e7;
-      height: 100%;
-      padding-left: 13px;
-      color: #706f6f; }
-      html body .inner4 .aktualnosci img {
-        padding-top: 15px; }
-      html body .inner4 .aktualnosci h4 {
-        font-size: 15px;
-        padding-right: 16px; }
-        html body .inner4 .aktualnosci h4:first-of-type {
-          margin-top: 32px; }
-      html body .inner4 .aktualnosci p {
-        font-size: 11px;
-        padding-right: 16px; }
-  html body .inner4 .post {
+  html body .segment3 .aktualnosci {
+    background-color: #e7e7e7;
+    height: 100%;
+    padding-left: 13px;
+    color: #706f6f; }
+    html body .segment3 .aktualnosci img {
+      padding-top: 15px; }
+    html body .segment3 .aktualnosci h4 {
+      font-size: 15px;
+      padding-right: 16px; }
+      html body .segment3 .aktualnosci h4:first-of-type {
+        margin-top: 32px; }
+    html body .segment3 .aktualnosci p {
+      font-size: 11px;
+      padding-right: 16px; }
+  html body .segment3 .post {
     transform: translate(0px, 20px);
     z-index: -100; }
-  html body a {
-    text-decoration: none; }
-    html body a .inner5 {
-      height: 99%;
-      margin: 3px 0 3px 3px;
-      border: 6px solid #e7e7e7; }
-      @media (max-width: 992px) {
-        html body a .inner5 {
-          margin: 3px 3px 3px 0; } }
-      html body a .inner5 img:first-of-type {
-        padding-top: 10px;
-        padding-left: 11px; }
-      html body a .inner5 h4 {
-        font-size: 15px;
-        padding-left: 11px;
-        color: #706f6f;
-        margin-top: 24px;
-        margin-bottom: 0; }
-      html body a .inner5 p {
-        font-size: 11px;
-        padding-left: 11px;
-        color: #706f6f; }
-      html body a .inner5 .nagroda {
-        position: absolute;
-        transform: translate(-3px, 110px);
-        z-index: -100;
-        top: 0;
-        right: 0; }
-  html body .hconst2 {
-    height: 241px; }
-  html body .movie {
+  html body .segment3 .osiagniecia img:first-of-type {
+    padding-top: 10px;
+    padding-left: 11px; }
+  html body .segment3 .osiagniecia h4 {
+    font-size: 15px;
+    padding-left: 11px;
+    color: #706f6f;
+    margin-top: 24px;
+    margin-bottom: 0; }
+  html body .segment3 .osiagniecia p {
+    font-size: 11px;
+    padding-left: 11px;
+    color: #706f6f; }
+  html body .segment3 .osiagniecia .nagroda {
+    position: absolute;
+    transform: translate(-3px, 110px);
+    z-index: -100;
+    top: 0;
+    right: 0; }
+  html body .segment4 .movie {
     height: 241px;
     width: 406px; }
     @media (max-width: 992px) {
-      html body .movie {
+      html body .segment4 .movie {
         position: absolute;
         transform: translate(-50%, 0);
         left: 50%; } }
     @media (max-width: 480px) {
-      html body .movie {
+      html body .segment4 .movie {
         width: 100%; } }
-  html body iframe {
-    height: 100%; }
-    @media (max-width: 480px) {
-      html body iframe {
-        width: 100%; } }
-  html body .inner3 {
-    height: 100%; }
-    html body .inner3 .historia {
-      height: 241px;
-      background-image: url("../img/Historia_tlo.png"); }
-      @media (max-width: 992px) {
-        html body .inner3 .historia {
-          margin-top: 3px; } }
-      html body .inner3 .historia p {
-        color: #ffffff;
-        font-size: 11px;
-        text-align: center;
-        margin: 0 32px 0 32px; }
-      html body .inner3 .historia .p1His {
-        margin-left: 10px;
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 151px); }
-      html body .inner3 .historia .p2His {
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 126px); }
-      html body .inner3 .historia .p3His {
-        top: 0;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 60px); }
-      html body .inner3 .historia .historiaLogo {
-        padding-top: 14px;
-        padding-left: 18px; }
-      html body .inner3 .historia .r92 {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(17px, 84px); }
-        @media (max-width: 768px) {
-          html body .inner3 .historia .r92 {
-            width: 55%; } }
-      html body .inner3 .historia .s1 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(80%, 82px); }
-        @media (max-width: 480px) {
-          html body .inner3 .historia .s1 {
-            width: 35%; } }
-      html body .inner3 .historia .r95 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(-50%, 61px); }
-        @media (max-width: 768px) {
-          html body .inner3 .historia .r95 {
-            width: 55%; } }
-      html body .inner3 .historia .s2 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(10%, 13px); }
-        @media (max-width: 480px) {
-          html body .inner3 .historia .s2 {
-            width: 55%; } }
-      html body .inner3 .historia .r01 {
-        left: 50%;
-        top: 0;
-        position: absolute;
-        transform: translate(-50%, 0px); }
-        @media (max-width: 768px) {
-          html body .inner3 .historia .r01 {
-            width: 55%; } }
+    html body .segment4 .movie iframe {
+      height: 100%; }
+      @media (max-width: 480px) {
+        html body .segment4 .movie iframe {
+          width: 100%; } }
+  html body .segment4 .historia {
+    height: 241px;
+    background-image: url("../img/Historia_tlo.png"); }
+    @media (max-width: 992px) {
+      html body .segment4 .historia {
+        margin-top: 3px; } }
+    html body .segment4 .historia p {
+      color: #ffffff;
+      font-size: 11px;
+      text-align: center;
+      margin: 0 32px 0 32px; }
+    html body .segment4 .historia .p1His {
+      margin-left: 10px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: translate(0, 151px); }
+    html body .segment4 .historia .p2His {
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: translate(0, 126px); }
+    html body .segment4 .historia .p3His {
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: translate(0, 60px); }
+    html body .segment4 .historia .historiaLogo {
+      padding-top: 14px;
+      padding-left: 18px; }
+    html body .segment4 .historia .r92 {
+      left: 0;
+      top: 0;
+      position: absolute;
+      transform: translate(17px, 84px); }
+      @media (max-width: 768px) {
+        html body .segment4 .historia .r92 {
+          width: 55%; } }
+    html body .segment4 .historia .s1 {
+      left: 50%;
+      top: 0;
+      position: absolute;
+      transform: translate(80%, 82px); }
+      @media (max-width: 480px) {
+        html body .segment4 .historia .s1 {
+          width: 35%; } }
+    html body .segment4 .historia .r95 {
+      left: 50%;
+      top: 0;
+      position: absolute;
+      transform: translate(-50%, 61px); }
+      @media (max-width: 768px) {
+        html body .segment4 .historia .r95 {
+          width: 55%; } }
+    html body .segment4 .historia .s2 {
+      left: 50%;
+      top: 0;
+      position: absolute;
+      transform: translate(10%, 13px); }
+      @media (max-width: 480px) {
+        html body .segment4 .historia .s2 {
+          width: 55%; } }
+    html body .segment4 .historia .r01 {
+      left: 50%;
+      top: 0;
+      position: absolute;
+      transform: translate(-50%, 0px); }
+      @media (max-width: 768px) {
+        html body .segment4 .historia .r01 {
+          width: 55%; } }
   html body .inner1 .oFirmieTitle {
     height: 372px;
     background-image: url("../img/ofirmie/zdjecie_top.png"); }
@@ -584,17 +590,28 @@ html body {
         background-repeat: no-repeat;
         background-position: center;
         height: 0;
-        padding-top: calc(410 / 670 * 100%);
-        /*padding-top: calc(410 / 370 * 100%); (img-height / img-width * container-width) */ } }
+        padding-top: calc(410 / 670 * 100%); } }
     @media (max-width: 480px) {
       html body .segment2 .oFirmieBiuro {
-        background-size: cover; } }
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 0;
+        padding-top: calc(300 / 670 * 100%); } }
   html body .segment2 .oFirmieOpis {
     height: 411px;
     background-image: url("../img/ofirmie/tlo_szare.png"); }
     @media (max-width: 768px) {
       html body .segment2 .oFirmieOpis {
-        background-size: cover; } }
+        background-size: cover;
+        padding-top: calc(300 / 670 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment2 .oFirmieOpis {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 0;
+        padding-top: calc(750 / 670 * 100%); } }
     html body .segment2 .oFirmieOpis img {
       position: absolute;
       transform: translate(91px, 91px);
@@ -602,7 +619,7 @@ html body {
       top: 0; }
       @media (max-width: 480px) {
         html body .segment2 .oFirmieOpis img {
-          transform: translate(-50%, 91px);
+          transform: translate(-50%, 100%);
           left: 50%;
           width: 90%; } }
     html body .segment2 .oFirmieOpis div {
@@ -613,12 +630,15 @@ html body {
       right: 158px; }
       @media (max-width: 480px) {
         html body .segment2 .oFirmieOpis div {
-          transform: translate(-50%, 146px);
+          transform: translate(-50%, 80px);
           left: 50%;
           width: 90%; } }
       html body .segment2 .oFirmieOpis div p {
         font-size: 11px;
         color: #706f6f; }
+        @media (max-width: 480px) {
+          html body .segment2 .oFirmieOpis div p {
+            font-size: 1.8vh; } }
   html body .segment3 .oFirmieYears h3 {
     position: absolute;
     transform: translate(15px, 325px);
@@ -657,10 +677,6 @@ html body {
         font-size: 12px;
         padding-top: 0; } }
   html body .segment3 .oFirmieYears img:nth-child(2) {
-    /*position: absolute;
-    transform: translate(0px, 78px);
-    left: 0;
-    top: 0;*/
     width: 100%;
     margin-top: 72px;
     padding-bottom: calc(215 / 242 * 100%); }
@@ -806,8 +822,10 @@ html body {
     background-size: contain;
     background-repeat: no-repeat;
     height: 0;
-    padding-top: calc(411 / 618 * 100%);
-    /* (img-height / img-width * container-width) */ }
+    padding-top: calc(411 / 618 * 100%); }
+    @media (max-width: 480px) {
+      html body .segment2 .misjaSeg2 {
+        padding-top: calc(650 / 618 * 100%); } }
     html body .segment2 .misjaSeg2 .misjaOpis2 img {
       position: absolute;
       transform: translate(79px, 92px);
@@ -844,15 +862,14 @@ html body {
       @media (max-width: 480px) {
         html body .segment2 .misjaSeg2 .misjaOpis2 div {
           transform: translate(-50%, 35px);
-          font-size: 1.35vh; } }
+          font-size: 3.2vw; } }
   html body .segment2 .misjaBiuro {
     background-image: url("../img/misja/Foto_biuro.png");
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     height: 0;
-    padding-top: calc(411 / 368 * 100%);
-    /* (img-height / img-width * container-width) */ }
+    padding-top: calc(411 / 368 * 100%); }
     @media (max-width: 480px) {
       html body .segment2 .misjaBiuro {
         padding-top: calc(300 / 368 * 100%);
@@ -865,8 +882,7 @@ html body {
       background-size: contain;
       background-repeat: no-repeat;
       height: 0;
-      padding-top: calc(562 / 992 * 100%);
-      /* (img-height / img-width * container-width) */ }
+      padding-top: calc(562 / 992 * 100%); }
       html body .segment3 .inner7 .dziekujemy div {
         max-height: 167px;
         max-width: 433px; }
@@ -897,34 +913,34 @@ html body {
         font-size: 11px;
         text-align: center; }
   @media (max-width: 768px) {
-    html body .segment1 .col75 {
+    html body .segment1 .col75a {
       width: 100%; } }
-  html body .segment1 .col75 .pierogi {
+  html body .segment1 .col75a .pierogi {
     background-image: url("../img/produkty/Tlo_pierogi.png");
     height: 269px; }
     @media (max-width: 768px) and (min-width: 480px) {
-      html body .segment1 .col75 .pierogi {
+      html body .segment1 .col75a .pierogi {
         background-size: cover; } }
-    html body .segment1 .col75 .pierogi .pierogiPack {
+    html body .segment1 .col75a .pierogi .pierogiPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(48px, -35px); }
       @media (max-width: 992px) {
-        html body .segment1 .col75 .pierogi .pierogiPack {
+        html body .segment1 .col75a .pierogi .pierogiPack {
           width: 70%; } }
       @media (max-width: 480px) {
-        html body .segment1 .col75 .pierogi .pierogiPack {
+        html body .segment1 .col75a .pierogi .pierogiPack {
           transform: translate(35px, 35px); } }
-    html body .segment1 .col75 .pierogi .pierogiLogo {
+    html body .segment1 .col75a .pierogi .pierogiLogo {
       position: absolute;
       left: 50%;
       top: 0;
       transform: translate(-50%, 64px); }
       @media (max-width: 992px) {
-        html body .segment1 .col75 .pierogi .pierogiLogo {
+        html body .segment1 .col75a .pierogi .pierogiLogo {
           width: 80%; } }
-    html body .segment1 .col75 .pierogi p {
+    html body .segment1 .col75a .pierogi p {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -933,28 +949,28 @@ html body {
       font-size: 11px;
       color: #706f6f; }
   @media (max-width: 768px) {
-    html body .segment1 .col45 {
+    html body .segment1 .col45a {
       width: 100%; } }
-  html body .segment1 .col45 .kubekNaRaz {
+  html body .segment1 .col45a .kubekNaRaz {
     background-image: url("../img/produkty/Tlo_kubek_na_raz.png");
     height: 269px; }
     @media (max-width: 768px) and (min-width: 380px) {
-      html body .segment1 .col45 .kubekNaRaz {
+      html body .segment1 .col45a .kubekNaRaz {
         background-size: cover; } }
-    html body .segment1 .col45 .kubekNaRaz .kubekLogo {
+    html body .segment1 .col45a .kubekNaRaz .kubekLogo {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(26px, 29px); }
-    html body .segment1 .col45 .kubekNaRaz .kubekPack {
+    html body .segment1 .col45a .kubekNaRaz .kubekPack {
       position: absolute;
       left: 0;
       top: 0;
       transform: translate(116px, -31px); }
       @media (max-width: 480px) {
-        html body .segment1 .col45 .kubekNaRaz .kubekPack {
+        html body .segment1 .col45a .kubekNaRaz .kubekPack {
           width: 60%; } }
-    html body .segment1 .col45 .kubekNaRaz p {
+    html body .segment1 .col45a .kubekNaRaz p {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -1185,9 +1201,7 @@ html body {
       html body .segment1 .produkt .mobilePierogi {
         background-size: contain;
         background-repeat: no-repeat;
-        /*height: 600px;*/
-        padding-top: calc(605 / 992 * 100%);
-        /* (img-height / img-width * container-width) */ } }
+        padding-top: calc(605 / 992 * 100%); } }
     @media (max-width: 480px) {
       html body .segment1 .produkt .mobilePierogi {
         height: 300px; } }
@@ -1295,8 +1309,7 @@ html body {
       html body .segment2 .ilustracja {
         background-size: contain;
         height: 0;
-        padding-top: calc(744 / 992 * 100%);
-        /* (img-height / img-width * container-width) */ } }
+        padding-top: calc(744 / 992 * 100%); } }
     html body .segment2 .ilustracja img:first-of-type {
       position: absolute;
       transform: translate(-50%, 0px);
@@ -1353,11 +1366,10 @@ html body {
       html body .produktKubek {
         background-size: contain;
         height: 0;
-        padding-top: calc(606 / 992 * 100%);
-        /* (img-height / img-width * container-width) */ } }
+        padding-top: calc(1800 / 992 * 100%); } }
     @media (max-width: 480px) {
       html body .produktKubek {
-        height: 650px; } }
+        padding-top: calc(1800 / 992 * 100%); } }
     html body .produktKubek .col-md-12 .inner1 img {
       position: absolute;
       transform: translate(24px, 59px);
@@ -1370,26 +1382,22 @@ html body {
         html body .produktKubek .col-md-12 .inner1 img {
           width: 70%;
           left: 50%;
-          transform: translate(-50%, -80%); } }
+          transform: translate(-50%, -265%); } }
     @media (max-width: 768px) {
       html body .produktKubek .col-md-12 .mobileKubek {
         background-size: contain;
         background-repeat: no-repeat;
-        /*height: 600px;*/
         padding-top: calc(605 / 992 * 100%);
         /* (img-height / img-width * container-width) */ } }
-    @media (max-width: 480px) {
-      html body .produktKubek .col-md-12 .mobileKubek {
-        height: 300px; } }
     html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubLogo {
       position: absolute;
       transform: translate(0, 97px);
       top: 0;
       left: 0; }
-      @media (max-width: 480px) {
+      @media (max-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubLogo {
           width: 20%;
-          transform: translate(10%, 30%); } }
+          transform: translate(10%, -310%); } }
     html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
       position: absolute;
       transform: translate(119px, 105px);
@@ -1398,9 +1406,9 @@ html body {
       @media (max-width: 992px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
           width: 60%; } }
-      @media (max-width: 480px) {
+      @media (max-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(2) {
-          transform: translate(50%, 250%); } }
+          transform: translate(50%, -1600%); } }
     html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
       position: absolute;
       transform: translate(117px, 148px);
@@ -1409,21 +1417,30 @@ html body {
       @media (max-width: 992px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
           width: 60%; } }
-      @media (max-width: 480px) {
+      @media (max-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 img:nth-child(3) {
-          transform: translate(50%, 180%); } }
-    @media (max-width: 480px) {
-      html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText {
-        transform: translate(5%, 300%); } }
-    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText p {
+          transform: translate(50%, -650%); } }
+    @media (max-width: 768px) {
+      html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekTextHelp {
+        height: 100px; } }
+    @media (max-width: 768px) {
+      html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekTextHelp .kubekText {
+        height: 100%;
+        width: 90%;
+        position: absolute;
+        transform: translate(5%, -210%); } }
+    html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekTextHelp .kubekText p {
       position: absolute;
       transform: translate(4px, 282px);
       top: 0;
       left: 0;
       right: 35px;
       font-size: 11px; }
-      @media (max-width: 480px) {
-        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekText p {
+      @media (max-width: 768px) and (min-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekTextHelp .kubekText p {
+          font-size: 13px; } }
+      @media (max-width: 768px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekTextHelp .kubekText p {
           width: 90%;
           transform: translate(4px, 10%); } }
     @media (max-width: 480px) {
@@ -1434,25 +1451,46 @@ html body {
       transform: translate(-50%, 391px);
       top: 0;
       left: 50%; }
-      @media (max-width: 992px) {
+      @media (max-width: 992px) and (min-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .prostoZKubka {
           width: 90%; } }
+      @media (max-width: 768px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .prostoZKubka {
+          transform: translate(-50%, -750%);
+          width: 80%; } }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .prostoZKubka {
+          width: 85%; } }
     html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
       position: absolute;
       transform: translate(-50%, 393px);
       top: 0;
       left: 50%; }
-      @media (max-width: 992px) {
+      @media (max-width: 992px) and (min-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
           width: 90%; } }
+      @media (max-width: 768px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
+          transform: translate(-50%, -690%);
+          width: 80%; } }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .swieze {
+          width: 85%; } }
     html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
       position: absolute;
       transform: translate(-50%, 392px);
       top: 0;
       left: 50%; }
-      @media (max-width: 992px) {
+      @media (max-width: 992px) and (min-width: 768px) {
         html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
           width: 90%; } }
+      @media (max-width: 768px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
+          transform: translate(-50%, -830%);
+          width: 80%; } }
+      @media (max-width: 480px) {
+        html body .produktKubek .col-md-12 .mobileKubek .inner2 .kubekPikto .gotoweMin {
+          width: 85%; } }
   html body .ilustracjaKubek {
     height: 747px;
     background-image: url("../img/kubek/Tlo_ilustracja.png");
@@ -1568,14 +1606,33 @@ html body {
   html body .top .nagrody {
     background: url("../img/nagrody/podium.png") bottom no-repeat;
     height: 371px; }
+    @media (max-width: 480px) {
+      html body .top .nagrody {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(650 / 992 * 100%); } }
     html body .top .nagrody img {
       position: absolute;
       transform: translate(-50%, 77px);
       left: 50%;
-      top: 0; }
+      top: 0;
+      max-width: 100%; }
+      @media (max-width: 480px) {
+        html body .top .nagrody img {
+          width: 90%; } }
   html body .segment1 .nagrodyOrange {
     height: 411px;
     background: url("../img/nagrody/Tlo_segment1.png"); }
+    @media (max-width: 768px) {
+      html body .segment1 .nagrodyOrange {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(411 / 370 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment1 .nagrodyOrange {
+        padding-top: calc(300 / 370 * 100%); } }
     html body .segment1 .nagrodyOrange img {
       position: absolute;
       transform: translate(69px, 128px);
@@ -1585,15 +1642,52 @@ html body {
       @media (max-width: 992px) {
         html body .segment1 .nagrodyOrange img {
           width: 120%; } }
-    html body .segment1 .nagrodyOrange p {
+      @media (max-width: 768px) {
+        html body .segment1 .nagrodyOrange img {
+          transform: translate(10%, 50%); } }
+      @media (max-width: 480px) {
+        html body .segment1 .nagrodyOrange img {
+          width: 90%;
+          left: 50%;
+          transform: translate(-50%, 50%); } }
+    @media (max-width: 768px) {
+      html body .segment1 .nagrodyOrange .nagrodyTextHelp {
+        height: 100px; } }
+    @media (max-width: 768px) {
+      html body .segment1 .nagrodyOrange .nagrodyTextHelp .nagrodyText {
+        height: 100%;
+        width: 90%;
+        position: absolute;
+        transform: translate(5%, -50%); } }
+  @media (max-width: 768px) and (max-width: 480px) {
+    html body .segment1 .nagrodyOrange .nagrodyTextHelp .nagrodyText {
+      transform: translate(5%, -60%); } }
+
+    html body .segment1 .nagrodyOrange .nagrodyTextHelp .nagrodyText p {
       position: absolute;
       transform: translate(70px, 261px);
-      left: 0;
       top: 0;
+      left: 0;
       right: -100px;
       font-size: 11px;
       color: #666666;
       z-index: 1; }
+      @media (max-width: 768px) {
+        html body .segment1 .nagrodyOrange .nagrodyTextHelp .nagrodyText p {
+          width: 120%;
+          transform: translate(5%, 10%); } }
+      @media (max-width: 480px) {
+        html body .segment1 .nagrodyOrange .nagrodyTextHelp .nagrodyText p {
+          font-size: 13px;
+          width: 90%;
+          left: 50%;
+          transform: translate(-50%, 30%); } }
+  @media (max-width: 480px) {
+    html body .segment1 .przebojowy {
+      background-size: contain;
+      width: 100%;
+      height: 0;
+      padding-top: calc(200 / 370 * 100%); } }
   html body .segment1 .przebojowy img {
     position: absolute;
     transform: translate(0px, -42px);
@@ -1602,8 +1696,23 @@ html body {
     @media (max-width: 992px) {
       html body .segment1 .przebojowy img {
         width: 70%; } }
+    @media (max-width: 480px) {
+      html body .segment1 .przebojowy img {
+        transform: translate(-50%, -15%);
+        left: 50%;
+        z-index: 1; } }
   html body .segment2 .diament {
-    height: 411px; }
+    height: 411px;
+    background-image: url("../img/nagrody/Tlo_segment2.png"); }
+    @media (max-width: 768px) {
+      html body .segment2 .diament {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(411 / 370 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment2 .diament {
+        padding-top: calc(300 / 370 * 100%); } }
     html body .segment2 .diament img {
       position: absolute;
       transform: translate(14px, 92px);
@@ -1613,38 +1722,122 @@ html body {
       @media (max-width: 992px) {
         html body .segment2 .diament img {
           width: 120%; } }
+      @media (max-width: 768px) {
+        html body .segment2 .diament img {
+          transform: translate(1%, 20%); } }
+      @media (max-width: 480px) {
+        html body .segment2 .diament img {
+          transform: translate(1%, 20%);
+          width: 100%; } }
   html body .segment2 .diament2 {
     height: 411px;
     border: solid 6px #eeeeee; }
+    @media (max-width: 768px) {
+      html body .segment2 .diament2 {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(425 / 670 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment2 .diament2 {
+        padding-top: calc(600 / 670 * 100%); } }
     html body .segment2 .diament2 img {
       position: absolute;
       transform: translate(96px, 92px);
       left: 0;
       top: 0; }
-    html body .segment2 .diament2 div {
+      @media (max-width: 768px) {
+        html body .segment2 .diament2 img {
+          width: 80%;
+          transform: translate(15%, 80%); } }
+    @media (max-width: 768px) {
+      html body .segment2 .diament2 .nagrodyTextHelp2 {
+        height: 100px; } }
+    html body .segment2 .diament2 .nagrodyTextHelp2 .nagrodyText2 {
+      height: 100%;
+      width: 90%;
       position: absolute;
       transform: translate(96px, 146px);
-      left: 0;
       top: 0;
-      right: 163px;
-      font-size: 11px;
-      color: #706f6f; }
+      left: 0;
+      right: 163px; }
+      @media (max-width: 768px) {
+        html body .segment2 .diament2 .nagrodyTextHelp2 .nagrodyText2 {
+          transform: translate(9%, 20%); } }
+      html body .segment2 .diament2 .nagrodyTextHelp2 .nagrodyText2 p {
+        font-size: 11px;
+        color: #706f6f;
+        z-index: 1;
+        width: 85%; }
+        @media (max-width: 768px) {
+          html body .segment2 .diament2 .nagrodyTextHelp2 .nagrodyText2 p {
+            transform: translate(5%, 10%);
+            font-size: 10px;
+            width: 95%; } }
+        @media (max-width: 480px) {
+          html body .segment2 .diament2 .nagrodyTextHelp2 .nagrodyText2 p {
+            font-size: 11px; } }
   html body .segment3 .perla1 {
     height: 411px;
     background-image: url("../img/nagrody/Tlo_seg3.png"); }
+    @media (max-width: 768px) {
+      html body .segment3 .perla1 {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(411 / 370 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment3 .perla1 {
+        padding-top: calc(300 / 370 * 100%); } }
     html body .segment3 .perla1 img {
       position: absolute;
       transform: translate(69px, 112px);
       left: 0;
       top: 0; }
-    html body .segment3 .perla1 p {
+      @media (max-width: 768px) {
+        html body .segment3 .perla1 img {
+          width: 80%;
+          transform: translate(10%, 20%); } }
+      @media (max-width: 480px) {
+        html body .segment3 .perla1 img {
+          width: auto;
+          transform: translate(20%, 20%); } }
+    @media (max-width: 768px) {
+      html body .segment3 .perla1 .nagrodyTextHelp3 {
+        height: 100px; } }
+    @media (max-width: 768px) {
+      html body .segment3 .perla1 .nagrodyTextHelp3 .nagrodyText3 {
+        height: 100%;
+        width: 90%;
+        position: absolute;
+        transform: translate(5%, -50%); } }
+    html body .segment3 .perla1 .nagrodyTextHelp3 .nagrodyText3 p {
       position: absolute;
       transform: translate(69px, 246px);
-      left: 0;
       top: 0;
+      left: 0;
       right: 94px;
       font-size: 11px;
       color: #706f6f; }
+      @media (max-width: 768px) {
+        html body .segment3 .perla1 .nagrodyTextHelp3 .nagrodyText3 p {
+          width: 120%;
+          transform: translate(4%, 30%); } }
+      @media (max-width: 600px) {
+        html body .segment3 .perla1 .nagrodyTextHelp3 .nagrodyText3 p {
+          font-size: 10px;
+          transform: translate(4%, 20%); } }
+      @media (max-width: 480px) {
+        html body .segment3 .perla1 .nagrodyTextHelp3 .nagrodyText3 p {
+          width: 90%;
+          font-size: 12px;
+          transform: translate(4%, 20%); } }
+  @media (max-width: 480px) {
+    html body .segment3 .perla2 {
+      background-size: contain;
+      width: 100%;
+      height: 0;
+      padding-top: calc(270 / 370 * 100%); } }
   html body .segment3 .perla2 img:first-of-type {
     position: absolute;
     transform: translate(47px, -30px);
@@ -1668,6 +1861,15 @@ html body {
         left: auto; } }
   html body .segment4 .jakosc1 {
     height: 411px; }
+    @media (max-width: 768px) {
+      html body .segment4 .jakosc1 {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(411 / 370 * 100%); } }
+    @media (max-width: 480px) {
+      html body .segment4 .jakosc1 {
+        padding-top: calc(300 / 370 * 100%); } }
     html body .segment4 .jakosc1 img {
       position: absolute;
       transform: translate(70px, 45px);
@@ -1677,22 +1879,53 @@ html body {
       @media (max-width: 992px) {
         html body .segment4 .jakosc1 img {
           width: 100%; } }
+      @media (max-width: 768px) {
+        html body .segment4 .jakosc1 img {
+          transform: translate(10%, 10%); } }
+      @media (max-width: 480px) {
+        html body .segment4 .jakosc1 img {
+          left: 50%;
+          transform: translate(-50%, 10%);
+          width: 70%; } }
   html body .segment4 .jakosc2 {
     height: 411px;
     background-image: url("../img/nagrody/Tlo_seg4.png"); }
+    @media (max-width: 768px) {
+      html body .segment4 .jakosc2 {
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: calc(445 / 670 * 100%); } }
     html body .segment4 .jakosc2 img {
       position: absolute;
       transform: translate(92px, 151px);
       left: 0;
       top: 0; }
-    html body .segment4 .jakosc2 p {
+      @media (max-width: 768px) {
+        html body .segment4 .jakosc2 img {
+          width: 80%;
+          transform: translate(15%, 80%); } }
+    @media (max-width: 768px) {
+      html body .segment4 .jakosc2 .nagrodyTextHelp4 {
+        height: 100px; } }
+    @media (max-width: 768px) {
+      html body .segment4 .jakosc2 .nagrodyTextHelp4 .nagrodyText4 {
+        height: 100%;
+        width: 90%;
+        position: absolute;
+        transform: translate(5%, -60%); } }
+    html body .segment4 .jakosc2 .nagrodyTextHelp4 .nagrodyText4 p {
       position: absolute;
       transform: translate(92px, 207px);
-      left: 0;
       top: 0;
+      left: 0;
       right: 157px;
       font-size: 11px;
       color: #7d4835; }
+      @media (max-width: 768px) {
+        html body .segment4 .jakosc2 .nagrodyTextHelp4 .nagrodyText4 p {
+          width: 90%;
+          transform: translate(8%, 0); } }
   html body .segment5 .paragon {
     height: 411px;
     border: solid 6px #eeeeee; }
@@ -1709,6 +1942,11 @@ html body {
       @media (max-width: 992px) {
         html body .segment5 .paragon img:nth-child(2) {
           transform: translate(40px, 245px); } }
+      @media (max-width: 480px) {
+        html body .segment5 .paragon img:nth-child(2) {
+          transform: translate(-50%, 245px);
+          left: 50%;
+          max-width: 90%; } }
     html body .segment5 .paragon p {
       position: absolute;
       transform: translate(69px, 340px);
@@ -1720,6 +1958,11 @@ html body {
       @media (max-width: 992px) {
         html body .segment5 .paragon p {
           transform: translate(40px, 340px); } }
+      @media (max-width: 480px) {
+        html body .segment5 .paragon p {
+          width: 80%;
+          transform: translate(-50%, 330px);
+          left: 50%; } }
   html body footer {
     height: 244px; }
     html body footer .inner6 {
